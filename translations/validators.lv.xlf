@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="lv" datatype="plaintext" original="file.ext">
+  <file source-language="ru" target-language="lv" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -592,6 +592,18 @@
       <trans-unit id=".esazsm" resname="Your password should be at least {{ limit }} characters">
         <source>Your password should be at least {{ limit }} characters</source>
         <target>__Your password should be at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="YE.RsuK" resname="Name is required">
+        <source>Name is required</source>
+        <target>__Name is required</target>
+      </trans-unit>
+      <trans-unit id="qukpEQE" resname="Email is required">
+        <source>Email is required</source>
+        <target>__Email is required</target>
+      </trans-unit>
+      <trans-unit id="C87PZlD" resname="Invalid email format">
+        <source>Invalid email format</source>
+        <target>__Invalid email format</target>
       </trans-unit>
     </body>
   </file>

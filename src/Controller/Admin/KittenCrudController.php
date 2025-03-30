@@ -31,8 +31,8 @@ class KittenCrudController extends AbstractCrudController
             AssociationField::new('kittenStatus'),
             AssociationField::new('litter'),
             ImageField::new('imageLink')
-                ->setBasePath('/images/cats')
-                ->setUploadDir('public/images/cats')
+                ->setBasePath('/img/cats')
+                ->setUploadDir('public/img/cats')
                 ->setUploadedFileNamePattern('[randomhash].[extension]')
                 ->onlyOnIndex(),
             TextField::new('imageFile')

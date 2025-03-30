@@ -19,20 +19,27 @@
             <link rel="canonical" href="{{ app.request.uri }}" />
         {% endblock %}
         <link rel="icon" href="{{ asset('img/icons/favicon.png') }}">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/intlTelInput.min.js"></script>
+{#        <link#}
+{#        rel="stylesheet"#}
+{#        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"#}
+{#        />#}
+{#        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>#}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+{#        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/intlTelInput.min.js"></script>#}
         <script src="https://yastatic.net/share2/share.js" async></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/css/intlTelInput.css">
+{#        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/css/intlTelInput.css">#}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/23.8.0/css/intlTelInput.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/23.8.0/js/intlTelInput.min.js"></script>
+
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
             <link rel="stylesheet" href="{{ asset('css/variables.css') }}">
@@ -94,9 +101,9 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Eng</a></li>
-                                <li><a class="dropdown-item" href="#">Rus</a></li>
-                                <li><a class="dropdown-item" href="#">Lat</a></li>
+                                <li><a class="dropdown-item" href="/en">Eng</a></li>
+                                <li><a class="dropdown-item" href="/ru">Rus</a></li>
+                                <li><a class="dropdown-item" href="/lv">Lat</a></li>
                             </ul>
                             </li>
                             </ul>
@@ -108,75 +115,103 @@
                 {# Logo #}
                 <a class="navbar-brand fs-4 logo" href="{{ path('app_home') }}">Grande Linci</a>
                 {# Toggle btn #}
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="{{ 'Toggle navigation'|trans }}">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 {# Sidebar #}
                 <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">GL</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">GL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="{{ 'Close'|trans }}"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+                            <li class="nav-item d-block d-lg-none">
+                                <a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">{{ 'Home'|trans }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ path('app_about_us') }}">{{ 'About us'|trans }}</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ 'Kittens'|trans }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ path('app_available_kittens', {id: 'default'}) }}">{{ 'Main Coon'|trans }}</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ 'Our cats'|trans }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ path('app_our_cats') }}">{{ 'Main Coon'|trans }}</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ path('app_gallery') }}">{{ 'Gallery'|trans }}</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ 'About breed'|trans }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ path('app_about_main_coon') }}">{{ 'Main Coon'|trans }}</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ path('app_contacts') }}">{{ 'Contacts'|trans }}</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                {% if app.user %}
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {{ 'Hello, '|trans}}{{ app.user.username }}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ path('app_user_dashboard') }}">{{ 'Personal Cabinet'|trans }}</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <a class="dropdown-item" href="{{ path('app_logout') }}"
+                                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                {{ 'Logout'|trans }}
+                                            </a>
+                                            <form id="logout-form" action="{{ path('app_logout') }}" method="post" style="display: none;">
+                                                <input type="hidden" name="_csrf_token" value="{{ csrf_token('logout') }}">
+                                            </form>
+                                        </li>
+                                    </ul>
+                                {% else %}
+                                    <button class="nav-link btn" onclick="window.location.href='{{ path('app_login') }}'">
+                                        {{ 'Log in'|trans }}
+                                    </button>
+                                {% endif %}
+                            </li>
+
+                            <li class="nav-item d-block d-lg-none nav-divider">
+                                <div class="image-container"><img src="{{ asset('img/arrow/dark-arrow.png') }}"></div>
+                            </li>
+
+                            <li class="nav-item d-block d-lg-none">
+                                <a class="nav-link disabled" aria-disabled="true">{{ 'Riga, Latvia'|trans }}</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                        <li class="nav-item d-block d-lg-none">
-                            <a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">Home</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ path('app_about_us') }}">{{ 'About us'|trans }}</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      {{ 'Kittens'|trans }}
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ path('app_available_kittens', {id: 'default'}) }}">{{ 'Main Coon'|trans }}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ 'Our cats'|trans }}
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ path('app_our_cats') }}">{{ 'Main Coon'|trans }}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ path('app_gallery') }}">{{ 'Gallery'|trans }}</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       {{ 'About breed'|trans }}
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ path('app_about_main_coon') }}">{{ 'Main Coon'|trans }}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
-                        </ul>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ path('app_contacts') }}">{{ 'Contacts'|trans }}</a>
-                    </li>
 
-                        <li class="nav-item d-block d-lg-none nav-divider">
-                            <div class="image-container"><img src="{{ asset('img/arrow/dark-arrow.png') }}"></div>
-                        </li>
 
-                        <li class="nav-item d-block d-lg-none">
-                            <a class="nav-link disabled" aria-disabled="true">Riga, Latvia</a>
-                        </li>
-
-                        <li class="nav-item d-block d-lg-none">
+                <li class="nav-item d-block d-lg-none">
                             <a class="nav-link" href="tel:+37125614622">+371 (25) 614-622</a>
                         </li>
 
@@ -189,9 +224,9 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Eng</a></li>
-                                <li><a class="dropdown-item" href="#">Rus</a></li>
-                                <li><a class="dropdown-item" href="#">Lat</a></li>
+                                <li><a class="dropdown-item" href="/en">Eng</a></li>
+                                <li><a class="dropdown-item" href="/ru">Rus</a></li>
+                                <li><a class="dropdown-item" href="/lv">Lat</a></li>
                             </ul>
                         </li>
                     </ul>

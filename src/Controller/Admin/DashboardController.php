@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Booking;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -33,6 +34,7 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::subMenu('Entities', 'fa fa-home')->setSubItems([
+            MenuItem::linkToCrud('Bookings', 'fas fa-list', Booking::class),
             MenuItem::linkToCrud('Cats', 'fas fa-list', Cat::class),
             MenuItem::linkToCrud('Colors', 'fas fa-list', Color::class),
             MenuItem::linkToCrud('Guest requests', 'fas fa-list', GuestRequest::class),

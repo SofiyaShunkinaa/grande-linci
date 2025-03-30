@@ -5,145 +5,145 @@
 {% block desc %}Добро пожаловать в наш питомник мейн-кунов! Здесь вы найдете информацию о породе, наших кошках и котятах, а также полезные советы по уходу.{% endblock %}
 {% block keywords %}мейн кун, питомник, котята{% endblock %}
 {% block microdata %}
-<!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
-        <script type="application/ld+json">
+    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
+    <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Grande Linci LV",
-          "telephone": "+371(25)614-622",
-          "email": "karoleinga@gmail.com"
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Grande Linci LV",
+            "telephone": "+371(25)614-622",
+            "email": "karoleinga@gmail.com"
         }
-        </script>
+    </script>
 {% endblock %}
 {% block og_title %}Добро пожаловать на Grande Linci LV{% endblock %}
 {% block og_description %}Питомник Grande Linci LV - это роскошные мейн-куны, заботливое разведение и профессиональный уход.{% endblock %}
 {% block body %}
 
-<div class="container-fluid d-flex flex-column align-items-center justify-content-between home-preview position-fixed z-0">
-</div>
-<div class="container-fluid d-flex flex-column align-items-center justify-content-between preview-content position-fixed z-1">
-    <div class="logo-group container d-flex flex-column align-items-center justify-content-center">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-between home-preview position-fixed z-0">
+    </div>
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-between preview-content position-fixed z-1">
+        <div class="logo-group container d-flex flex-column align-items-center justify-content-center">
             <h1>GRANDE LINCI* LV</h1>
             <div class="arrow-group d-flex justify-content-between align-items-center">
-            <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
-            <div class="arrow-body"></div>
-            <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
+                <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
+                <div class="arrow-body"></div>
+                <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
             </div>
             <p class="sublogo">{{ "Maine Coon and Oriental Cattery"|trans }}</p>
         </div>
 
-    <div class="down-link d-flex flex-column align-items-center justify-content-center">
-    <p><a href="#litter-section" class="text-decoration-none text-white">{{ "Choose a kitten"|trans }}</a></p>
-    <img src="{{ asset('img/arrow/down.png') }}" alt="down arrow">
-    </div>
-
-    <div class="position-absolute cat-preview image-container left"><img src="{{ asset('img/cat-father.webp') }}" alt="cat"></div>
-    <div class="position-absolute cat-preview image-container right"><img src="{{ asset('img/cat-mother.webp') }}" alt="cat"></div>
-</div>
- 
-<div class="container-fluid position-absolute z-2 main-content">
-    <div class=" section-green section">
-<div class="container d-flex flex-column align-items-center justify-content-center">
-    <div class="title d-flex flex-column align-items-center justify-content-center">
-    <h2 class="ungapped">{{ "Welcome"|trans}}</h2>
-    <img src="{{ asset('img/arrow/simple-arrow.png') }}" class="arrow-divider--green" alt="arrow">
-        <p class="col-sm-12 col-md-8">
-            Добро пожаловать в питомник Grande Linci! Мы рады видеть вас в нашем уютном уголке, где царит любовь и забота о кошках. Здесь вы найдете великолепных мейн кунов и элегантных ориентальных кошек, которые станут верными спутниками и любимцами вашей семьи. Наша цель — создать здоровое и дружелюбное окружение для наших питомцев, а также поделиться с вами красотой и уникальностью этих замечательных пород.
-        </p>
-    </div>
-
-    <div class="swiper swiper-home container slider-container">
-        <div class="swiper-wrapper ">
-            <div class="swiper-slide image-container"><img src="{{ asset('img/slider/1.webp') }}" alt="slider slide"></div>
-            <div class="swiper-slide image-container"><img src="{{ asset('img/slider/2.webp') }}" alt="slider slide"></div>
-            <div class="swiper-slide image-container"><img src="{{ asset('img/slider/3.webp') }}" alt="slider slide"></div>
-            <div class="swiper-slide image-container"><img src="{{ asset('img/slider/4.webp') }}" alt="slider slide"></div>
-            <div class="swiper-slide image-container"><img src="{{ asset('img/slider/5.webp') }}" alt="slider slide"></div>
+        <div class="down-link d-flex flex-column align-items-center justify-content-center">
+            <p><a href="#litter-section" class="text-decoration-none text-white">{{ "Choose a kitten"|trans }}</a></p>
+            <img src="{{ asset('img/arrow/down.png') }}" alt="down arrow">
         </div>
-    
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
-    </div>
-<div class="section section-white container-fluid">
-    <div class="container">
 
+        <div class="position-absolute cat-preview image-container left"><img src="{{ asset('img/cat-father.webp') }}" alt="cat"></div>
+        <div class="position-absolute cat-preview image-container right"><img src="{{ asset('img/cat-mother.webp') }}" alt="cat"></div>
+    </div>
 
-        <div class="section-inner d-flex about-us home">
-            <div class="side-image image-container shaded-grey col-md-3"><img src="{{ asset('img/default.png') }}" alt="cat"></div>
-            <div class="aside-text d-flex flex-column align-items-start">
-                <div class="title">
-                    <h2>{{ "About us"|trans }}</h2>
+    <div class="container-fluid position-absolute z-2 main-content">
+        <div class=" section-green section">
+            <div class="container d-flex flex-column align-items-center justify-content-center">
+                <div class="title d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="ungapped">{{ "Welcome"|trans}}</h2>
+                    <img src="{{ asset('img/arrow/simple-arrow.png') }}" class="arrow-divider--green" alt="arrow">
+                    <p class="col-sm-12 col-md-8">
+                        Добро пожаловать в питомник Grande Linci! Мы рады видеть вас в нашем уютном уголке, где царит любовь и забота о кошках. Здесь вы найдете великолепных мейн кунов и элегантных ориентальных кошек, которые станут верными спутниками и любимцами вашей семьи. Наша цель — создать здоровое и дружелюбное окружение для наших питомцев, а также поделиться с вами красотой и уникальностью этих замечательных пород.
+                    </p>
                 </div>
-                <p>
-                Grande Linci — это питомник в Риге, который специализируется на разведении мейн кунов и ориентальных кошек. Мы с гордостью занимаемся селекцией и заботой о наших питомцах, обеспечивая им высочайший уровень жизни и здоровья. Наши кошки отличаются великолепным характером, яркой внешностью и, что не менее важно, крепким здоровьем. Мы стремимся к тому, чтобы каждая семья, принявшая в дом одного из наших котят, ощутила всю радость общения с этими удивительными существами.
-            </p>
-            <div class="image-container">
-                <img src="{{ asset('img/arrow/dark-arrow.png') }}" alt="arrow">
-            </div>
-            <button class="btn"><a href="{{ path('app_about_us') }}" >{{ "Learn more"|trans}}</a></button>
-            </div>
-        </div>
-    </div>
-</div>
 
+                <div class="swiper swiper-home container slider-container">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide image-container"><img src="{{ asset('img/slider/1.webp') }}" alt="slider slide"></div>
+                        <div class="swiper-slide image-container"><img src="{{ asset('img/slider/2.webp') }}" alt="slider slide"></div>
+                        <div class="swiper-slide image-container"><img src="{{ asset('img/slider/3.webp') }}" alt="slider slide"></div>
+                        <div class="swiper-slide image-container"><img src="{{ asset('img/slider/4.webp') }}" alt="slider slide"></div>
+                        <div class="swiper-slide image-container"><img src="{{ asset('img/slider/5.webp') }}" alt="slider slide"></div>
+                    </div>
 
-<div class="section section-green container-fluid litter" id="litter-section">
-    <div class="container d-flex flex-column align-items-center justify-content-center">
-    {% if litter is not null %}
-        <div class="title d-flex flex-column align-items-center justify-content-center">
-            <h2>{{ "LITTER"|trans}} {{ litter.name }}</h2>
-            <img src="{{ asset('img/arrow/simple-arrow.png') }}" alt="arrow">
-            <p>{{ litter.date | date('d.m.Y') }}</p>
-        </div>
-
-        <div class="d-flex d-md-block">
-            <div class="section-inner d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start litter__parents">
-        <div class="d-flex d-md-block col-lg-3 col-md-4"><div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
-            <div class="image-container shaded-green">
-                <img src="{{ asset('img/cats/' ~ mother.imageLink )}}" alt="Cat mother">
-            </div>
-            <h4>{{ mother.name }}</h4>
-        </div><div class="horizontal-line col-2 d-block d-md-none"></div> </div>
-
-        <div class="parent-divider image-container mb-0 d-none d-md-block">
-            <img src="{{ asset('img/arrow/litter-divider-lg.png') }}" alt="arrow">
-        </div>
-        <div class="d-flex d-md-block col-lg-3 col-md-4">
-        <div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
-            <div class="image-container shaded-green">
-                <img src="{{ asset('img/cats/' ~ father.imageLink )}}" alt="Cat father">
-            </div>
-            <h4>{{ father.name }}</h4>
-        </div><div class="horizontal-line col-2 d-block d-md-none"></div></div>
-        </div>
-            <div class="vertical-line"></div>
-        </div>
-    </div>
-    <div class="section-white container custom-container section d-flex flex-wrap section-kittens justify-content-center">
-        {% for kitten in kittens %}
-            <div class="col-md-3 col-12 d-flex flex-column align-items-center">
-                <div class="image-container">
-                    <img src="{{ asset('img/kittens/' ~ kitten.imageLink )}}" alt="kitten">
+                    <div class="swiper-pagination"></div>
                 </div>
-                <h4>{{ kitten.name }}</h4>
-                <div class="kitten-status 
+            </div>
+        </div>
+        <div class="section section-white container-fluid">
+            <div class="container">
+
+
+                <div class="section-inner d-flex about-us home">
+                    <div class="side-image image-container shaded-grey col-md-3"><img src="{{ asset('img/default.png') }}" alt="cat"></div>
+                    <div class="aside-text d-flex flex-column align-items-start">
+                        <div class="title">
+                            <h2>{{ "About us"|trans }}</h2>
+                        </div>
+                        <p>
+                            Grande Linci — это питомник в Риге, который специализируется на разведении мейн кунов и ориентальных кошек. Мы с гордостью занимаемся селекцией и заботой о наших питомцах, обеспечивая им высочайший уровень жизни и здоровья. Наши кошки отличаются великолепным характером, яркой внешностью и, что не менее важно, крепким здоровьем. Мы стремимся к тому, чтобы каждая семья, принявшая в дом одного из наших котят, ощутила всю радость общения с этими удивительными существами.
+                        </p>
+                        <div class="image-container">
+                            <img src="{{ asset('img/arrow/dark-arrow.png') }}" alt="arrow">
+                        </div>
+                        <button class="btn"><a href="{{ path('app_about_us') }}" >{{ "Learn more"|trans}}</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-green container-fluid litter" id="litter-section">
+            <div class="container d-flex flex-column align-items-center justify-content-center">
+                {% if litter is not null %}
+                <div class="title d-flex flex-column align-items-center justify-content-center">
+                    <h2>{{ "LITTER"|trans}} {{ litter.name }}</h2>
+                    <img src="{{ asset('img/arrow/simple-arrow.png') }}" alt="arrow">
+                    <p>{{ litter.date | date('d.m.Y') }}</p>
+                </div>
+
+                <div class="d-flex d-md-block">
+                    <div class="section-inner d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start litter__parents">
+                        <div class="d-flex d-md-block col-lg-3 col-md-4"><div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
+                                <div class="image-container shaded-green">
+                                    <img src="{{ asset('img/cats/' ~ mother.imageLink )}}" alt="Cat mother">
+                                </div>
+                                <h4>{{ mother.name }}</h4>
+                            </div><div class="horizontal-line col-2 d-block d-md-none"></div> </div>
+
+                        <div class="parent-divider image-container mb-0 d-none d-md-block">
+                            <img src="{{ asset('img/arrow/litter-divider-lg.png') }}" alt="arrow">
+                        </div>
+                        <div class="d-flex d-md-block col-lg-3 col-md-4">
+                            <div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
+                                <div class="image-container shaded-green">
+                                    <img src="{{ asset('img/cats/' ~ father.imageLink )}}" alt="Cat father">
+                                </div>
+                                <h4>{{ father.name }}</h4>
+                            </div><div class="horizontal-line col-2 d-block d-md-none"></div></div>
+                    </div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="section-white container custom-container section d-flex flex-wrap section-kittens justify-content-center">
+                {% for kitten in kittens %}
+                    <div class="col-md-3 col-12 d-flex flex-column align-items-center">
+                        <div class="image-container">
+                            <img src="{{ asset('img/kittens/' ~ kitten.imageLink )}}" alt="kitten">
+                        </div>
+                        <h4>{{ kitten.name }}</h4>
+                        <div class="kitten-status
                 {% if kitten.kittenStatus == 'At home' %}status-home{% endif %}
                 {% if kitten.kittenStatus == 'Reserved' %}status-reserved{% endif %}
                 {% if kitten.kittenStatus == 'Available' %}status-available{% endif %}">
-                    <span>{{ kitten.kittenStatus }}</span>
-                </div>
+                            <span>{{ kitten.kittenStatus }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+                {% else %}
+                    <h2>{{ "No active litter available!"|trans }}</h2>
+                {% endif %}
             </div>
-        {% endfor %}
-        {% else %}
-            <h2>No active litter available!</h2>
-        {% endif %}
+        </div>
+
+
+        {% include 'forms/contact_form.html.twig' %}
+        {% include 'footer.html.twig' %}
     </div>
-</div>
-
-
-{% include 'forms/contact_form.html.twig' %}
-{% include 'footer.html.twig' %}
-</div>
 {% endblock %}

@@ -24,6 +24,14 @@ class SecurityController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/login_check", name="app_login_check")
+     */
+    public function loginCheck(): RedirectResponse
+    {
+        return $this->redirectToRoute('app_user_dashboard');
+    }
+
     #[Route(path: '/logout', name: 'app_logout')]
     public function logout(): void
     {

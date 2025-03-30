@@ -26,8 +26,8 @@ class CatCrudController extends AbstractCrudController
             AssociationField::new('breed'),
             AssociationField::new('gender'),
             ImageField::new('imageLink')
-                ->setBasePath('/images/cats')
-                ->setUploadDir('public/images/cats')
+                ->setBasePath('/img/cats')
+                ->setUploadDir('public/img/cats')
                 ->setUploadedFileNamePattern('[randomhash].[extension]')
                 ->onlyOnIndex(),
             TextField::new('imageFile')

@@ -14,6 +14,16 @@ nav.navbar{
     flex-direction: column;
     padding: 0;
 }
+nav button.btn.nav-link{
+    border: none;
+    font-size: 16px;
+    color: var(--green);
+}
+
+.login-container{
+    color: white !important;
+    margin-top: 20px;
+}
 a{
     color: black;
 }

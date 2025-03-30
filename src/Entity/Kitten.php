@@ -145,4 +145,9 @@ class Kitten
     {
         return $this->imageFile;
     }
+
+    public function __toString(): string
+    {
+        return $this->name;
+    }
 }
