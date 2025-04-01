@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Чат с администратором{% endblock %}
+
+{% block body %}
+    <h1>Чат с администратором</h1>
+
+    <div class="chat-container">
+        <div class="messages">
+            {% for message in chat.messages %}
+                <div class="message {% if message.sender == 'admin' %}admin-message{% else %}user-message{% endif %}">
+                    <p><strong>{{ message.sender == 'admin' ? 'Администратор' : chat.user.username }}:</strong></p>
+                    <p>{{ message.content }}</p>
+                    {% if message.type == 'image' %}
+                        <img src="{{ message.imagePath }}" alt="Изображение" class="chat-image">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="message-form">
+            <form action="{{ path('send_message', {'chatId': chat.id}) }}" method="post" enctype="multipart/form-data">
+                <textarea name="content" placeholder="Введите сообщение..."></textarea>
+                <input type="file" name="image">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    <style>
+        .chat-container {
+            width: 60%;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .messages {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+
+        .user-message {
+            background: #d1e7dd;
+            align-self: flex-start;
+        }
+
+        .admin-message {
+            background: #f8d7da;
+            align-self: flex-end;
+            text-align: right;
+        }
+
+        .chat-image {
+            max-width: 200px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .message-form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+{% endblock %}

@@ -150,4 +150,15 @@ class Kitten
     {
         return $this->name;
     }
+
+    public function getDetails(): string
+    {
+        return sprintf(
+            "%s (Помет: %s, Окрас: %s)",
+            $this->getName(),
+            $this->getLitter()?->getName() ?? 'Неизвестно',
+            $this->getColor()?->getName() ?? 'Неизвестно'
+        );
+    }
+
 }
