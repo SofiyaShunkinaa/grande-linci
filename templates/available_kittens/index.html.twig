@@ -135,62 +135,77 @@
                             </div>
                             <h4>{{ kitten.name }}</h4>
                             <button class="kitten-status book-kitten-button
-    {% if kitten.kittenStatus == 'At home' %}status-home{% endif %}
-    {% if kitten.kittenStatus == 'Reserved' %}status-reserved{% endif %}
-    {% if kitten.kittenStatus == 'Available' %}status-available{% endif %}"
+            {% if kitten.kittenStatus == 'At home' %}status-home disabled btn{% endif %}
+            {% if kitten.kittenStatus == 'Reserved' %}status-reserved disabled btn{% endif %}
+            {% if kitten.kittenStatus == 'Available' %}status-available{% endif %}"
                                     data-bs-toggle="modal"
                                     data-bs-target="#bookingModal{{ kitten.id }}"
                                     data-kitten-id="{{ kitten.id }}">
                                 <span>{{ kitten.kittenStatus }}</span>
                             </button>
 
-
-                            {% if app.user and kitten.kittenStatus == 'Available' %}
-                                <!-- Модальное окно бронирования -->
+                            <!-- Проверяем, авторизован ли пользователь -->
+                            {% if not app.user %}
                                 <div class="modal fade" id="bookingModal{{ kitten.id }}" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="bookingModalLabel">Забронировать {{ kitten.name }}</h5>
+                                                <h5 class="modal-title" id="bookingModalLabel">Уведомление</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                {{ form_start(form, { 'action': path('kitten_book', { 'id': kitten.id }), 'method': 'POST' }) }}
-
-                                                <input type="hidden" name="kitten_id" id="kitten_id_{{ kitten.id }}" value="{{ kitten.id }}">
-
-                                                <div class="d-flex justify-content-between">
-                                                    <button type="submit" class="btn btn-primary">Забронировать</button>
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-                                                </div>
-
-                                                {{ form_end(form) }}
+                                            <div class="modal-body text-center">
+                                                <p>Для бронирования необходимо <a href="{{ path('app_register') }}">зарегистрироваться</a> или <a href="{{ path('app_login') }}">войти</a>.</p>
                                             </div>
-
-
-
-
-                                <script>
-                                                document.querySelector(".modal-backdrop").remove();
-
-                                                document.addEventListener("DOMContentLoaded", function () {
-                                                    const buttons = document.querySelectorAll(".book-kitten-button");
-
-                                                    buttons.forEach(button => {
-                                                        button.addEventListener("click", function () {
-                                                            const kittenId = this.getAttribute("data-kitten-id");
-                                                                document.getElementById("kitten_id").value = kittenId;
-                                                        });
-                                                    });
-                                                });
-                                            </script>
-
                                         </div>
                                     </div>
                                 </div>
+                            {% elseif kitten.kittenStatus == 'Available' %}
+                                {% set existingBooking = bookings|filter(booking => booking.kitten.id == kitten.id and booking.user.id == app.user.id) %}
+
+                                {% if existingBooking|length > 0 %}
+                                    <!-- Попап о наличии активной заявки -->
+                                    <div class="modal fade" id="bookingModal{{ kitten.id }}" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="bookingModalLabel">Уведомление</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <p>Вы уже оставили заявку на этого котенка.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <!-- Модальное окно бронирования -->
+                                    <div class="modal fade" id="bookingModal{{ kitten.id }}" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="bookingModalLabel">Забронировать {{ kitten.name }}</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    {{ form_start(form, { 'action': path('kitten_book', { 'id': kitten.id }), 'method': 'POST' }) }}
+
+                                                    <input type="hidden" name="kitten_id" id="kitten_id_{{ kitten.id }}" value="{{ kitten.id }}">
+
+                                                    <div class="d-flex justify-content-between">
+                                                        <button type="submit" class="btn btn-primary">Забронировать</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                                    </div>
+
+                                                    {{ form_end(form) }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
                             {% endif %}
                         </div>
                     {% endfor %}
+
                 </div>
 
             {% else %}

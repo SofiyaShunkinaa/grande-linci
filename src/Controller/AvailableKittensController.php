@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\BookingRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -17,7 +18,7 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 class AvailableKittensController extends AbstractController
 {
     #[Route('/available-kittens/{id}', name: 'app_available_kittens', methods: ['GET', 'POST'])]
-    public function index($id, LitterService $litterService, Request $request, EntityManagerInterface $entityManager): Response
+    public function index($id, LitterService $litterService, Request $request, EntityManagerInterface $entityManager, BookingRepository $bookingRepository): Response
     {
         $litters = $litterService->getAllLitters();
         $buttons = [];
@@ -71,6 +72,44 @@ class AvailableKittensController extends AbstractController
             'father' => $dad,
             'kittens' => $kittens,
             'form' => $form->createView(),
+            'bookings' => $bookingRepository->findAll(),
         ]);
     }
+
+    #[Route('/litter/change', name: 'change_litter', methods: ['POST'])]
+    public function changeLitter(Request $request, LitterService $litterService): JsonResponse
+    {
+        $litterId = $request->request->get('litterId');
+
+        if (!$litterId) {
+            return new JsonResponse(['error' => 'Litter ID is missing'], 400);
+        }
+
+        [$litter, $mother, $father] = $litterService->getLitterById($litterId);
+        if (!$litter) {
+            return new JsonResponse(['error' => 'Litter not found'], 404);
+        }
+
+        $kittens = $litterService->getAllKittens($litter);
+
+        return new JsonResponse([
+            'name' => $litter->getName(),
+            'date' => $litter->getDate()->format('d.m.Y'),
+            'mother' => [
+                'name' => $mother->getName(),
+                'image' => $mother->getImageLink(),
+            ],
+            'father' => [
+                'name' => $father->getName(),
+                'image' => $father->getImageLink(),
+            ],
+            'kittens' => array_map(fn($kitten) => [
+                'id' => $kitten->getId(),
+                'name' => $kitten->getName(),
+                'image' => $kitten->getImageLink(),
+                'status' => $kitten->getKittenStatus(),
+            ], $kittens),
+        ]);
+    }
+
 }

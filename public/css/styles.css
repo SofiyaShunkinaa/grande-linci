@@ -476,6 +476,12 @@ p{
 .contacts.main-content .section-green h2{
     text-align: center;
 }
+.modal-backdrop.show{
+    display: none;
+}
+.modal-body a{
+    color: var(--green);
+}
 @media (max-width:1024px){
     .section-inner.about-us.home{
         gap: 40px;

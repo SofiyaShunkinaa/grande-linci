@@ -62,30 +62,52 @@ class BookingCrudController extends AbstractCrudController
         ];
     }
 
-    // Переопределяем метод сохранения сущности
-    public function persistEntity(EntityManagerInterface $entityManager, $entityInstance): void
+    public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        if ($entityInstance instanceof Booking) {
-            // Получаем текущий статус бронирования
+        if($entityInstance instanceof Booking){
             $status = $entityInstance->getStatus();
 
-            // Проверяем, если статус "Подтверждено", то меняем статус котенка
             if ($status === 'Подтверждено') {
                 $kitten = $entityInstance->getKitten();
 
                 if ($kitten) {
-                    // Получаем статус "Reserved" из базы данных
                     $reservedStatus = $entityManager->getRepository(KittenStatus::class)->findOneBy(['name' => 'Reserved']);
 
                     if ($reservedStatus) {
-                        // Обновляем статус котенка
                         $kitten->setKittenStatus($reservedStatus);
-                        $entityManager->persist($kitten); // Сохраняем изменения для котенка
+                        $entityManager->persist($kitten);
+                        $entityManager->flush(); // Применяем изменения к котенку
                     }
                 }
             }
         }
 
-        parent::persistEntity($entityManager, $entityInstance);  // Важно вызвать родительский метод для нормального сохранения
+        parent::updateEntity($entityManager, $entityInstance);
     }
+
+
+    // Переопределяем метод сохранения сущности
+    public function persistEntity(EntityManagerInterface $entityManager, $entityInstance): void
+    {
+        if ($entityInstance instanceof Booking) {
+            $status = $entityInstance->getStatus();
+
+            if ($status === 'Подтверждено') {
+                $kitten = $entityInstance->getKitten();
+
+                if ($kitten) {
+                    $reservedStatus = $entityManager->getRepository(KittenStatus::class)->findOneBy(['name' => 'Reserved']);
+
+                    if ($reservedStatus) {
+                        $kitten->setKittenStatus($reservedStatus);
+                        $entityManager->persist($kitten);
+                        $entityManager->flush(); // Добавляем flush, чтобы изменения записались в БД
+                    }
+                }
+            }
+        }
+
+        parent::persistEntity($entityManager, $entityInstance);
+    }
+
 }

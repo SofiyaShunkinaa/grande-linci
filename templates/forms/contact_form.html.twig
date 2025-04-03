@@ -13,13 +13,13 @@
                 </div>
                 <p class="form-desc col-10">If you have any questions or cooperation issues, please sign up to have request to the extra conent!</p>
                 <div class="col-lg-7 col-md-10 form-wrapper">
-{#                {{ form_start(form) }}#}
-{#                    {{ form_row(form.name) }}#}
-{#                    {{ form_row(form.email) }}#}
-{#                    {{ form_row(form.phone, {'attr': {'id': 'phone'}}) }}#}
-{#                    {{ form_row(form.message) }}#}
-{#                    {{ form_end(form) }}#}
+                {{ form_start(form, {'attr': {'id': 'contact-form'}}) }}
+                    {{ form_row(form.name) }}
+                    {{ form_row(form.email) }}
+                    {{ form_row(form.phone, {'attr': {'id': 'phone'}}) }}
+                    {{ form_row(form.message) }}
                     <button class="btn btn-primary">Send request</button>
+                    {{ form_end(form) }}
 
                 </div>
             </div>

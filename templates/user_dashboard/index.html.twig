@@ -19,12 +19,55 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">
-                            <h5>{{ 'Ваш чат'|trans }}</h5>
-                            {% if chat %}
-                                <a href="#">{{ 'Перейти в чат'|trans }}</a>
-                            {% else %}
-                                <a href="#">{{ 'Начать чат с администратором'|trans }}</a>
-                            {% endif %}
+{#                            <h5>{{ 'Ваш чат'|trans }}</h5>#}
+{#                            {% if chat %}#}
+{#                                <a href="#">{{ 'Перейти в чат'|trans }}</a>#}
+{#                            {% else %}#}
+{#                                <a href="#">{{ 'Начать чат с администратором'|trans }}</a>#}
+{#                            {% endif %}#}
+{#                        </div>#}
+{#                    </div>#}
+
+                    <h3>Мои заявки</h3>
+
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">{{ message }}</div>
+                    {% endfor %}
+
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Номер заявки</th>
+                            <th>Котенок</th>
+                            <th>Дата бронирования</th>
+                            <th>Статус</th>
+                            <th>Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for booking in bookings %}
+                            <tr>
+                                <td>#{{ booking.id }}</td>
+                                <td>{{ booking.kitten.name }}</td>
+                                <td>{{ booking.createdAt|date('d.m.Y') }}</td>
+                                <td>{{ booking.status }}</td>
+                                <td>
+                                    {% if booking.status == 'В ожидании' %}
+                                        <form method="POST" action="{{ path('cancel_booking', { id: booking.id }) }}">
+                                            <button type="submit" class="btn btn-danger btn-sm">Отменить</button>
+                                        </form>
+                                    {% else %}
+                                        <span class="text-muted">Нельзя отменить</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="4" class="text-center">У вас пока нет заявок.</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
                         </div>
                     </div>
                 </div>
