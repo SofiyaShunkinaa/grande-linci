@@ -96,16 +96,23 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav  mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
+                            {% set currentLocale = app.request.locale %}
+                            {% set languageLabel = {
+                                'en': 'Eng',
+                                'ru': 'Rus',
+                                'lv': 'Lat'
+                            }[currentLocale] ?? 'Lang' %}
+                            <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                lang
+                            {{ languageLabel }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/en">Eng</a></li>
-                                <li><a class="dropdown-item" href="/ru">Rus</a></li>
-                                <li><a class="dropdown-item" href="/lv">Lat</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'lv'})) }}">Lat</a></li>
                             </ul>
-                            </li>
+
+                        </li>
                             </ul>
                         </div>
                  </div>
@@ -224,10 +231,11 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/en">Eng</a></li>
-                                <li><a class="dropdown-item" href="/ru">Rus</a></li>
-                                <li><a class="dropdown-item" href="/lv">Lat</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'lv'})) }}">Lat</a></li>
                             </ul>
+
                         </li>
                     </ul>
 

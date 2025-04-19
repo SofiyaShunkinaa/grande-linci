@@ -46,6 +46,10 @@ class HomeController extends AbstractController
         [$litter, $mom, $dad] = $litterService->getLitter();
         $kittens = $litterService->get5Kittens($litter);
 
+        if ($this->isGranted('ROLE_ADMIN')) {
+            return $this->redirectToRoute('admin');
+        }
+
         // Обрабатываем отправку формы
         if ($form->isSubmitted() && $form->isValid()) {
             $guestRequest->setRequestDate(new \DateTime());  // Устанавливаем текущую дату запроса
