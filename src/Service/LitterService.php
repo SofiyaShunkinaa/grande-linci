@@ -2,6 +2,7 @@
 
 namespace App\Service;
 
+use App\Entity\Breed;
 use App\Entity\Litter;
 use App\Repository\LitterRepository;
 use App\Repository\KittenRepository;
@@ -30,6 +31,20 @@ class LitterService
     public function getLitter(): ?array
     {
         $litter = $this->getActiveLitter();
+
+        if (!$litter) {
+            return null;
+        }
+
+        $mom = $this->catRepository->findOneBy(['id' => $litter->getCatMother()]);
+        $dad = $this->catRepository->findOneBy(['id' => $litter->getCatFather()]);
+
+        return [$litter, $mom, $dad];
+    }
+
+    public function getLitterByBreed(Breed $breed): ?array
+    {
+        $litter = $this->litterRepository->findOneByIsActiveBreed($breed);
 
         if (!$litter) {
             return null;
@@ -78,9 +93,9 @@ class LitterService
         return $totalCount !== $atHomeCount;
     }
 
-    public function getAllLitters(): ?array
+    public function getAllLitters(Breed $breed): ?array
     {
-        $litters = $this->litterRepository->findAll();
+        $litters = $this->litterRepository->findBy(['breed' => $breed]);
         return $litters;
     }
 }

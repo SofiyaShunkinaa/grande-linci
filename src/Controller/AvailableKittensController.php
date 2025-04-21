@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\BookingRepository;
+use App\Repository\BreedRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -17,10 +18,11 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 class AvailableKittensController extends AbstractController
 {
-    #[Route('/available-kittens/{id}', name: 'app_available_kittens', methods: ['GET', 'POST'])]
-    public function index($id, LitterService $litterService, Request $request, EntityManagerInterface $entityManager, BookingRepository $bookingRepository): Response
+    #[Route('/available-kittens/{keyWord}/{id}', name: 'app_available_kittens', requirements: ['keyWord' => '[^/]+'], defaults: ['id' => 'default', 'keyWord' => 'main-coons'], methods: ['GET', 'POST'])]
+    public function index($id, LitterService $litterService, Request $request, EntityManagerInterface $entityManager, BookingRepository $bookingRepository, ?string $keyWord, BreedRepository $breedRepository): Response
     {
-        $litters = $litterService->getAllLitters();
+        $breed = $breedRepository->findOneBy(['keyWord' => $keyWord]);
+        $litters = $litterService->getAllLitters($breed);
         $buttons = [];
         foreach ($litters as $litter) {
             $status = $litterService->getLitterStatus($litter);
@@ -35,7 +37,7 @@ class AvailableKittensController extends AbstractController
             [$litter, $mom, $dad] = $litterService->getLitterById($id);
             $kittens = $litterService->getAllKittens($litter);
         } else {
-            [$litter, $mom, $dad] = $litterService->getLitter();
+            [$litter, $mom, $dad] = $litterService->getLitterbyBreed($breed);
             $kittens = $litterService->getAllKittens($litter);
         }
 
@@ -61,7 +63,10 @@ class AvailableKittensController extends AbstractController
             $entityManager->flush();
 
             $this->addFlash('success', 'Ваша заявка отправлена!');
-            return $this->redirectToRoute('app_available_kittens', ['id' => $id]);
+            return $this->redirectToRoute('app_available_kittens', [
+                'id' => $id,
+                'keyWord' => $keyWord,
+            ]);
         }
 
         return $this->render('available_kittens/index.html.twig', [

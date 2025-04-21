@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Repository\CatRepository;
 use App\Entity\Cat;
+use App\Entity\Breed;
 
 class CatService
 {
@@ -14,23 +15,29 @@ class CatService
         $this->catRepository = $catRepository;
     }
 
-    public function getMaleCats(): ?array
+    public function getMaleCats(Breed $breed): ?array
     {
-        $maleCats = $this->catRepository->findByGender('1');
+        $maleCats = $this->catRepository->findBy([
+            'gender' => '1',
+            'breed' => $breed,
+        ]);
 
         if(!$maleCats){
-            return null;
+            return [];
         }
 
         return $maleCats;
     }
 
-    public function getFemaleCats(): ?array
+    public function getFemaleCats(Breed $breed): ?array
     {
-        $femaleCats = $this->catRepository->findByGender('2');
+        $femaleCats = $this->catRepository->findBy([
+            'gender' => '2',
+            'breed' => $breed,
+        ]);
 
         if(!$femaleCats){
-            return null;
+            return [];
         }
 
         return $femaleCats;

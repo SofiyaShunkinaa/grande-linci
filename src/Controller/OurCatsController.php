@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\BreedRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -9,11 +10,12 @@ use App\Service\CatService;
 
 class OurCatsController extends AbstractController
 {
-    #[Route('/our-cats', name: 'app_our_cats')]
-    public function index(CatService $catService): Response
+    #[Route('/our-cats/{keyWord}', name: 'app_our_cats', defaults: ['keyWord' => ''])]
+    public function index(?string $keyWord, CatService $catService, BreedRepository $breedRepository): Response
     {
-        $females = $catService->getFemaleCats();
-        $males = $catService->getMaleCats();
+        $breed = $breedRepository->findOneBy(['keyWord' => $keyWord]);
+        $females = $catService->getFemaleCats($breed);
+        $males = $catService->getMaleCats($breed);
         $cats = [];
         $femaleIndex = 0;
         $maleIndex = 0;

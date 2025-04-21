@@ -16,6 +16,9 @@ class Breed
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $keyWord = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,5 +38,16 @@ class Breed
     public function __toString(): string
     {
         return $this->name;
+    }
+    public function getKeyWord(): ?string
+    {
+        return $this->keyWord;
+    }
+
+    public function setKeyWord(string $keyWord): static
+    {
+        $this->keyWord = $keyWord;
+
+        return $this;
     }
 }

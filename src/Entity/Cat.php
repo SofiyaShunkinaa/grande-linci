@@ -34,7 +34,7 @@ class Cat
     #[ORM\Column(type: Types::TEXT, nullable: true, options: ["default" => "default.png"])]
     private ?string $imageLink = 'default.png';
 
-    #[Vich\UploadableField(mapping: 'kitten_image', fileNameProperty: 'imageLink')]
+    #[Vich\UploadableField(mapping: 'cat_image', fileNameProperty: 'imageLink')]
     private ?File $imageFile = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
