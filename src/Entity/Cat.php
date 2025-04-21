@@ -34,8 +34,12 @@ class Cat
     #[ORM\Column(type: Types::TEXT, nullable: true, options: ["default" => "default.png"])]
     private ?string $imageLink = 'default.png';
 
-    #[Vich\UploadableField(mapping: 'cat_image', fileNameProperty: 'imageLink')]
+    #[Vich\UploadableField(mapping: 'kitten_image', fileNameProperty: 'imageLink')]
     private ?File $imageFile = null;
+
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $updatedAt = null;
+
 
     public function getId(): ?int
     {
@@ -105,12 +109,29 @@ class Cat
     public function setImageFile(?File $imageFile = null): void
     {
         $this->imageFile = $imageFile;
+
+        if ($imageFile !== null) {
+            $this->updatedAt = new \DateTime(); // ВАЖНО!
+        }
     }
+
 
     public function getImageFile(): ?File
     {
         return $this->imageFile;
     }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(?\DateTimeInterface $updatedAt): static
+    {
+        $this->updatedAt = $updatedAt;
+        return $this;
+    }
+
 
     public function __toString(): string
     {
