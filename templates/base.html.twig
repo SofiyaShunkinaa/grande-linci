@@ -144,11 +144,11 @@
                                     {{ 'Kittens'|trans }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ path('app_available_kittens', {id: 'default'}) }}">{{ 'Main Coon'|trans }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ path('app_available_kittens', { keyWord: 'main-coons', id: 'default' }) }}">{{ 'Main Coon'|trans }}</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ path('app_available_kittens', { keyWord: 'orientals', id: 'default' }) }}">{{ 'Oriaental'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
