@@ -23,6 +23,7 @@ class LitterRepository extends ServiceEntityRepository
             ->andWhere('l.isActive = :isActive')
             ->setParameter('isActive', true)
             ->orderBy('l.id', 'DESC')
+            ->setMaxResults(1)
             ->getQuery()
             ->getOneOrNullResult()
         ;
@@ -36,6 +37,7 @@ class LitterRepository extends ServiceEntityRepository
             ->setParameter('isActive', true)
             ->setParameter('breed', $breed)
             ->orderBy('l.id', 'DESC')
+            ->setMaxResults(1)
             ->getQuery()
             ->getOneOrNullResult();
     }
