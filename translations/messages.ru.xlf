@@ -323,7 +323,7 @@
       </trans-unit>
       <trans-unit id="M4X.5nR" resname="Reserved">
         <source>Reserved</source>
-        <target>Зарезервирован</target>
+        <target>Забронирован</target>
       </trans-unit>
       <trans-unit id="_8zaBg6" resname="At home">
         <source>At home</source>
@@ -525,18 +525,82 @@
         <source>Отмена</source>
         <target>Отмена</target>
       </trans-unit>
-      <trans-unit id="j76bdcv1" resname="Available">
-                          <source>Available</source>
-                          <target>Доступен</target>
-                        </trans-unit>
-                        <trans-unit id="j76bdcv2" resname="At home">
-                                      <source>At home</source>
-                                      <target>Дома</target>
-                                    </trans-unit>
-                  <trans-unit id="j76bdcv3" resname="Reserved">
-                                            <source>Reserved</source>
-                                            <target>Забронирован</target>
-                                          </trans-unit>
+      <trans-unit id="ujBHTeH" resname="About us page text">
+        <source>About us page text</source>
+        <target>В самом сердце нашего питомника разворачивается удивительная история, начавшаяся с любви к мейн кунам. Мы, как команда, посвятили свою страсть этой благородной породе, стремясь создать не просто питомник, а настоящий дом для каждого пушистого сердца. Наш путь озарён радостью рождений и успехами на выставках, но главной целью всегда было — построить семью для наших мейн кунов и их будущих владельцев. История нашего питомника — это история любви к этим великолепным существам, и мы рады поделиться ею с вами!</target>
+      </trans-unit>
+      <trans-unit id="Log7bKe" resname="advanage 1">
+        <source>advanage 1</source>
+        <target>Все наши мейн куны находятся в отличном состоянии здоровья и готовы переехать в ваш дом.</target>
+      </trans-unit>
+      <trans-unit id="F7dKU6a" resname="advantage 2">
+        <source>advantage 2</source>
+        <target>Мы осуществляем доставку по всему миру, и наши выпускники уже живут в 35 странах!</target>
+      </trans-unit>
+      <trans-unit id="OtVeKUa" resname="advantage 3">
+        <source>advantage 3</source>
+        <target>Мы уделяем особое внимание социализации, делая их отличными компаньонами.</target>
+      </trans-unit>
+      <trans-unit id="M8murZS" resname="advantage 4">
+        <source>advantage 4</source>
+        <target>Мы уделяем особое внимание социализации, делая их отличными компаньонами.</target>
+      </trans-unit>
+      <trans-unit id="FtYtDnx" resname="Для бронирования необходимо">
+        <source>Для бронирования необходимо</source>
+        <target>Для бронирования необходимо</target>
+      </trans-unit>
+      <trans-unit id=".WP8AWh" resname="зарегистрироваться">
+        <source>зарегистрироваться</source>
+        <target>зарегистрироваться</target>
+      </trans-unit>
+      <trans-unit id="vKy.96V" resname="или">
+        <source>или</source>
+        <target>или</target>
+      </trans-unit>
+      <trans-unit id="EhImKD_" resname="войти">
+        <source>войти</source>
+        <target>войти</target>
+      </trans-unit>
+      <trans-unit id=".GdyDFr" resname="Вы уже оставили заявку на этого котенка.">
+        <source>Вы уже оставили заявку на этого котенка.</source>
+        <target>Вы уже оставили заявку на этого котенка.</target>
+      </trans-unit>
+      <trans-unit id="OfbYXm4" resname="Мои заявки">
+        <source>Мои заявки</source>
+        <target>Мои заявки</target>
+      </trans-unit>
+      <trans-unit id="viNiMAp" resname="Номер заявки">
+        <source>Номер заявки</source>
+        <target>Номер заявки</target>
+      </trans-unit>
+      <trans-unit id="FEZWbmu" resname="Котенок">
+        <source>Котенок</source>
+        <target>Котенок</target>
+      </trans-unit>
+      <trans-unit id="jv271Dv" resname="Дата бронирования">
+        <source>Дата бронирования</source>
+        <target>Дата бронирования</target>
+      </trans-unit>
+      <trans-unit id="IlB3xtR" resname="Статус">
+        <source>Статус</source>
+        <target>Статус</target>
+      </trans-unit>
+      <trans-unit id="a1Oq.ii" resname="Действие">
+        <source>Действие</source>
+        <target>Действие</target>
+      </trans-unit>
+      <trans-unit id="fEf3KSu" resname="Отменить">
+        <source>Отменить</source>
+        <target>Отменить</target>
+      </trans-unit>
+      <trans-unit id="SJqK5xs" resname="Нельзя отменить">
+        <source>Нельзя отменить</source>
+        <target>Нельзя отменить</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV8" resname="У вас пока нет заявок.">
+        <source>У вас пока нет заявок.</source>
+        <target>У вас пока нет заявок.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

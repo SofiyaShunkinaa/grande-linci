@@ -104,7 +104,7 @@
         <div class="container d-flex flex-column align-items-center justify-content-center" id="litter-block">
             {% if litter is not null %}
                 <div class="title d-flex flex-column align-items-center justify-content-center">
-                    <h2>LITTER {{ litter.name }}</h2>
+                    <h2>{{ 'LITTER'|trans }} {{ litter.name }}</h2>
                     <img src="{{ asset('img/arrow/simple-arrow.png') }}" alt="arrow">
                     <p>{{ litter.date | date('d.m.Y') }}</p>
                 </div>
@@ -143,7 +143,7 @@
                                     data-bs-toggle="modal"
                                     data-bs-target="#bookingModal{{ kitten.id }}"
                                     data-kitten-id="{{ kitten.id }}">
-                                <span>{{ kitten.kittenStatus }}</span>
+                                <span>{{ kitten.kittenStatus|trans }}</span>
                             </button>
 
                             <!-- Проверяем, авторизован ли пользователь -->
@@ -152,11 +152,11 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="bookingModalLabel">Уведомление</h5>
+                                                <h5 class="modal-title" id="bookingModalLabel">{{ 'Уведомление'|trans}}</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body text-center">
-                                                <p>Для бронирования необходимо <a href="{{ path('app_register') }}">зарегистрироваться</a> или <a href="{{ path('app_login') }}">войти</a>.</p>
+                                                <p>{{ 'Для бронирования необходимо'|trans}} <a href="{{ path('app_register') }}">{{ 'зарегистрироваться'|trans}}</a> {{ 'или'|trans}} <a href="{{ path('app_login') }}">{{ 'войти'|trans}}</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -170,11 +170,11 @@
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="bookingModalLabel">Уведомление</h5>
+                                                    <h5 class="modal-title" id="bookingModalLabel">{{ 'Уведомление'|trans }}</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body text-center">
-                                                    <p>Вы уже оставили заявку на этого котенка.</p>
+                                                    <p>{{ 'Вы уже оставили заявку на этого котенка.'|trans }}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,7 +185,7 @@
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="bookingModalLabel">Забронировать {{ kitten.name }}</h5>
+                                                    <h5 class="modal-title" id="bookingModalLabel">{{ 'Забронировать'|trans }} {{ kitten.name }}</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
@@ -194,8 +194,8 @@
                                                     <input type="hidden" name="kitten_id" id="kitten_id_{{ kitten.id }}" value="{{ kitten.id }}">
 
                                                     <div class="d-flex justify-content-between">
-                                                        <button type="submit" class="btn btn-primary">Забронировать</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                                        <button type="submit" class="btn btn-primary">{{ 'Забронировать'|trans }}</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'Отмена'|trans }}</button>
                                                     </div>
 
                                                     {{ form_end(form) }}

@@ -28,7 +28,7 @@
 {#                        </div>#}
 {#                    </div>#}
 
-                    <h3>Мои заявки</h3>
+                    <h3>{{ 'Мои заявки'|trans }}</h3>
 
                     {% for message in app.flashes('success') %}
                         <div class="alert alert-success">{{ message }}</div>
@@ -37,11 +37,11 @@
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th>Номер заявки</th>
-                            <th>Котенок</th>
-                            <th>Дата бронирования</th>
-                            <th>Статус</th>
-                            <th>Действие</th>
+                            <th>{{ 'Номер заявки'|trans }}</th>
+                            <th>{{ 'Котенок'|trans }}</th>
+                            <th>{{ 'Дата бронирования'|trans }}</th>
+                            <th>{{ 'Статус'|trans }}</th>
+                            <th>{{ 'Действие'|trans }}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -50,20 +50,20 @@
                                 <td>#{{ booking.id }}</td>
                                 <td>{{ booking.kitten.name }}</td>
                                 <td>{{ booking.createdAt|date('d.m.Y') }}</td>
-                                <td>{{ booking.status }}</td>
+                                <td>{{ booking.status|trans }}</td>
                                 <td>
                                     {% if booking.status == 'В ожидании' %}
                                         <form method="POST" action="{{ path('cancel_booking', { id: booking.id }) }}">
-                                            <button type="submit" class="btn btn-danger btn-sm">Отменить</button>
+                                            <button type="submit" class="btn btn-danger btn-sm">{{ 'Отменить'|trans }}</button>
                                         </form>
                                     {% else %}
-                                        <span class="text-muted">Нельзя отменить</span>
+                                        <span class="text-muted">{{ 'Нельзя отменить'|trans }}</span>
                                     {% endif %}
                                 </td>
                             </tr>
                         {% else %}
                             <tr>
-                                <td colspan="4" class="text-center">У вас пока нет заявок.</td>
+                                <td colspan="4" class="text-center">{{ 'У вас пока нет заявок.'|trans }}</td>
                             </tr>
                         {% endfor %}
                         </tbody>

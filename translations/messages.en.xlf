@@ -35,7 +35,15 @@
       </trans-unit>
       <trans-unit id="hRXb2d8" resname="About_breed.main_coons.breed_history.text">
         <source>About_breed.main_coons.breed_history.text</source>
-        <target>History of the breed</target>
+        <target>The Maine Coon breed is shrouded in many legends, each adding charm and mystery to this majestic cat. According to the first legend, the Maine Coon originated on the North American continent, specifically in the state of Maine. This state gave the breed the first part of its name — “Maine”, referring to its geographic origin. The second part is believed to come from the word “raccoon” due to the visual similarity, especially their fluffy tails. However, from a scientific standpoint, raccoons and Maine Coons have no genetic connection.
+
+                Another captivating story links the breed to the famous French queen Marie Antoinette. Legend has it that during the French Revolution, she planned to escape to America, bringing not only her belongings but also her beloved long-haired cats. Although the queen never made it, the cats arrived and mated with local breeds, giving rise to a new one — the ancestor of today’s Maine Coons.
+
+                The third legend is rooted in maritime history. According to this tale, Maine Coons came to North America with sailors who took cats aboard to protect ships from rats. With their thick fur and excellent hunting skills, they adapted well to the harsh climate and soon became local favorites. The blend of seafaring cats and native breeds helped shape the strong and unique Maine Coon we know today.
+
+                Despite the variety of legends, they all agree on one thing — Maine Coons have always been extraordinary cats, attracting people with their striking appearance, hunting abilities, and friendly character. Today, Maine Coons continue to impress with their loyalty, intelligence, and distinctive look, making them one of the most beloved cat breeds in the world.
+
+                Thus, a Maine Coon is not just a pet — it's a symbol of history, strength, and endurance. Regardless of which origin story you prefer, these cats have secured a permanent place in the hearts of those who admire their unique personality and majestic appearance.</target>
       </trans-unit>
       <trans-unit id="KZ8ohsG" resname="About_breed.main_coons.appearance.title">
         <source>About_breed.main_coons.appearance.title</source>
@@ -43,7 +51,15 @@
       </trans-unit>
       <trans-unit id="8mtnigJ" resname="About_breed.main_coons.appearance.text">
         <source>About_breed.main_coons.appearance.text</source>
-        <target>Physical appearance</target>
+        <target>Maine Coons are a breed of cats that instantly draw attention thanks to their impressive size and powerful build. They stand out among other domestic cats not only due to their large dimensions but also because of distinctive features that make them resemble wild predators. One of these features is the shape of the head, which in Maine Coons has a square contour, giving them a commanding appearance. Their ears are set high, large, and often adorned with tufts at the tips, creating a resemblance to wild cats like lynxes. These tufts not only add to their striking appearance but also play a role in enhancing hearing, helping them detect even the faintest sounds.
+
+                The muscular and strong body of a Maine Coon is another trait that makes them resilient and powerful. They have broad chests and sturdy legs, allowing them to remain active and energetic even in adulthood. This body type makes them not only graceful in movement but also capable of long and vigorous play.
+
+                One of the most memorable features of a Maine Coon’s appearance is its long and fluffy tail. This tail is not only beautiful but also serves important functions. When sleeping, a Maine Coon often curls into a ball and uses its tail as a “blanket” to protect itself from the cold and stay warm. The tail also helps with balance during jumps and play.
+
+                Maine Coons’ fur has a unique texture. On the head and front legs, it is relatively short and dense, but becomes longer and thicker along the sides and back, creating a “coat-like” effect. This fur is especially useful in cold weather, providing extra protection from low temperatures and keeping the cat warm and comfortable. It’s also worth noting that Maine Coon fur has water-repellent properties, which allows them to feel at ease even in rainy weather.
+
+                The variety of Maine Coon colors also deserves attention. According to the CFA (Cat Fanciers’ Association), there are over 75 different color variations within this breed. This makes every Maine Coon unique, as it is hard to find two cats that look exactly the same. From classic black or gray to rare red and spotted patterns, each Maine Coon has its own distinct appearance, adding even more charm to this breed.</target>
       </trans-unit>
       <trans-unit id="C86GxE0" resname="About_breed.main_coons.character.title">
         <source>About_breed.main_coons.character.title</source>
@@ -51,7 +67,7 @@
       </trans-unit>
       <trans-unit id="W5iVSd3" resname="About_breed.main_coons.character.text">
         <source>About_breed.main_coons.character.text</source>
-        <target>Temperament and behavior</target>
+        <target>Maine Coons are a surprisingly friendly and affectionate breed of cats that maintains a balance between independence and loyalty to their owners. Despite their impressive size and wild appearance, these cats have a calm and balanced personality, which makes them excellent companions for the family. It is important to note that Maine Coons do not require constant attention and can remain unobtrusive, preferring to spend time with people, but not insisting on active interaction if it is not required. One of the remarkable features of Maine Coons is their ability to easily adapt to different living conditions and interact with people of different ages. They get along well with children, showing patience and good-naturedness in games and communication. These cats remain playful throughout their lives, so even an adult Maine Coon does not lose interest in active games and hunting activities. Their friendliness extends to other animals, especially if they were introduced to them at an early age. Maine Coons can get along with dogs and other cats, demonstrating their social nature. However, it is worth remembering the hunting instinct of Maine Coons, which can manifest itself in relationships with small animals. Birds, rodents and even aquarium fish can become objects of their attention. Despite this, their hunting behavior rarely turns into aggression. This is most often manifested in an interest in movement or noise produced by small animals. Owners should be careful if there are such pets in the house to prevent potential incidents. Maine Coons love active games, especially those that involve elements of hunting and stalking. Movable toys, such as mice on strings or interactive devices, keep these cats occupied for a long time. They love to explore space and often show an interest in height, so shelves and scratching posts on different levels will be a great addition to the Maine Coon play space. Due to their curiosity and activity, they easily learn new tricks and enjoy participating in educational games. Thus, Maine Coons are the real "silent giants" of the feline world. Despite their impressive size, they remain kind, peaceful and playful pets that bring harmony and joy to the home.</target>
       </trans-unit>
       <trans-unit id="iWt8gIG" resname="About_breed.main_coons.health.title">
         <source>About_breed.main_coons.health.title</source>
@@ -59,11 +75,11 @@
       </trans-unit>
       <trans-unit id="qwcPHog" resname="About_breed.main_coons.health.text">
         <source>About_breed.main_coons.health.text</source>
-        <target>Health care</target>
+        <target>Maine Coons, as a rule, are strong and hardy cats, but despite this, they can be prone to a number of hereditary diseases characteristic of the breed. Taking care of your pet's health begins with understanding the possible risks and regular veterinary checkups. One of the most common problems is hypertrophic cardiomyopathy, a disease in which the heart muscle becomes too thick. This leads to a decrease in the efficiency of cardiac function, which can cause various complications such as shortness of breath, lethargy, and heart attacks. For the timely detection of cardiomyopathy, it is important to conduct regular examinations with a veterinarian, since in the early stages the disease may be asymptomatic. Another potential disease in Maine Coons is hip dysplasia. This condition occurs when the hip joint does not develop properly, leading to pain and limited movement. Maine Coons are large cats with powerful muscles, and dysplasia can significantly reduce their activity and mobility. Symptoms of dysplasia may include lameness, an unwillingness to jump or run, and a marked decrease in activity. Also among Maine Coons, there is a deficiency of pyruvate kinase, an enzyme necessary for normal metabolism. A lack of this enzyme leads to anemia, which manifests itself in the form of weakness, lethargy and fatigue. This hereditary disease can be diagnosed using a special blood test. Spinal muscular atrophy is another genetic disorder that can occur in Maine Coons. This condition is characterized by progressive loss of nerve cells that control muscle movement. Gradually, cats with this disease may experience problems with coordination of movements and weakness in their limbs. Although this disease does not cause pain, it limits the activity and quality of life of the pet. Responsible Maine Coon breeders pay great attention to the prevention of hereditary diseases. They conduct DNA tests to identify a predisposition to hypertrophic cardiomyopathy, pyruvate kinase deficiency and spinal muscular atrophy, which minimizes the risks of these diseases in future generations. By purchasing a kitten from a trusted breeder, you can be sure that your pet has passed the necessary examinations and does not have serious genetic predispositions.</target>
       </trans-unit>
       <trans-unit id="1Iwl2ZR" resname="About_breed.main_coons.care.title">
         <source>About_breed.main_coons.care.title</source>
-        <target>Care</target>
+        <target>Maine Coons are large and beautiful cats, known for their thick and long hair, which requires special attention. Before getting this breed, it should be borne in mind that Maine Coons need regular care, especially for their fur. To keep it in good condition, it is recommended to use high-quality combs with wide teeth and special brushes for daily care. Regular combing helps to avoid hair tangles and the appearance of tangles, which most often occur in the abdomen, hind legs and armpits. If the wool has already become tangled, you will need a special tool to carefully remove them. For beginners in Maine Coon grooming, it is better to contact a professional groomer to make sure that all procedures are performed correctly and painlessly for the animal. In addition to grooming, Maine Coons need regular medical checkups and routine vaccination. Annual visits to the vet and updating vaccinations are an important part of taking care of a pet's health. It is important to monitor the condition of the Maine Coon's teeth, gums and ears, as problems with them can develop unnoticeably, but have serious consequences. The veterinarian may also recommend preventive tests, especially for large breeds of cats, to rule out possible genetic diseases. If you have purchased a kitten from a kennel, it is usually already vaccinated against major diseases such as feline flu and other infections. However, in the future, the pet will need repeated vaccinations to maintain immunity and protect it from various infections. It is also necessary to carry out timely treatments against parasites such as fleas and ticks, especially if the cat goes outside. For the comfort and full development of the Maine Coon at home, it is necessary to create a cozy space where the pet can actively spend time. Maine Coons are active and curious cats, so it is important to provide them with enough toys to help them realize their hunting instincts. Interactive toys, soft balls, feather rods, and climbing complexes with shelves are suitable. It is important that the shelves and scratching posts are strong and stable, as an adult Maine Coon can weigh up to 10 kg. Pay attention to the quality of the scratching posts — they must be tall and strong enough to withstand the weight and active games of large cats. In addition, Maine Coons like to watch what is happening from a height, so they will like tall structures on which they can relax and play. Climbing complexes not only support the physical activity of the cat, but also help to avoid damage to furniture and wallpaper, as the pet will be able to sharpen its claws on a specially designated surface. Proper Maine Coon care includes not only hygiene, but also attention to the emotional state of the pet. This breed of cats is intelligent and friendly, so they need to communicate and interact with their owner. Regular games, affection and care will make your Maine Coon happy and healthy, and caring for him will become a pleasure.</target>
       </trans-unit>
       <trans-unit id="Hkg6Dp4" resname="About_breed.main_coons.care.text">
         <source>About_breed.main_coons.care.text</source>
@@ -337,18 +353,107 @@
         <source>Отмена</source>
         <target>Cancel</target>
       </trans-unit>
-      <trans-unit id="j76bdcv1" resname="Available">
-                    <source>Available</source>
-                    <target>Available</target>
-                  </trans-unit>
-                  <trans-unit id="j76bdcv2" resname="At home">
-                                <source>At home</source>
-                                <target>At home</target>
-                              </trans-unit>
-            <trans-unit id="j76bdcv3" resname="Reserved">
-                                      <source>Reserved</source>
-                                      <target>Reserved</target>
-                                    </trans-unit>
+      <trans-unit id="5nREczf" resname="Available">
+        <source>Available</source>
+        <target>Available</target>
+      </trans-unit>
+      <trans-unit id="_8zaBg6" resname="At home">
+        <source>At home</source>
+        <target>At home</target>
+      </trans-unit>
+      <trans-unit id="M4X.5nR" resname="Reserved">
+        <source>Reserved</source>
+        <target>Reserved</target>
+      </trans-unit>
+      <trans-unit id="ujBHTeH" resname="About us page text">
+        <source>About us page text</source>
+        <target>At the heart of our cattery unfolds a remarkable story that began with a love for Maine Coons. As a team, we've dedicated our passion to this noble breed, aspiring to create not just a cattery but a true home for every furry heart. Our journey has been adorned with the joys of births and successes at exhibitions, but the central goal has always been to build a family for our Maine Coons and their future owners. The cattery's history is a tale of love for these magnificent creatures, and we are delighted to share it with you!</target>
+      </trans-unit>
+      <trans-unit id="Log7bKe" resname="advanage 1">
+        <source>advanage 1</source>
+        <target>All our Maine Coons are in excellent health condition and ready to move to a your home.</target>
+      </trans-unit>
+      <trans-unit id="F7dKU6a" resname="advantage 2">
+        <source>advantage 2</source>
+        <target>We offer worldwide delivery, and our graduates are already living in 35 countries!</target>
+      </trans-unit>
+      <trans-unit id="OtVeKUa" resname="advantage 3">
+        <source>advantage 3</source>
+        <target>We pay special attention to socialization, making them excellent companions.</target>
+      </trans-unit>
+      <trans-unit id="M8murZS" resname="advantage 4">
+        <source>advantage 4</source>
+        <target>We pay special attention to socialization, making them excellent companions.</target>
+      </trans-unit>
+      <trans-unit id="FtYtDnx" resname="Для бронирования необходимо">
+        <source>Для бронирования необходимо</source>
+        <target>To make a reservation, you need to</target>
+      </trans-unit>
+      <trans-unit id=".WP8AWh" resname="зарегистрироваться">
+        <source>зарегистрироваться</source>
+        <target>register</target>
+      </trans-unit>
+      <trans-unit id="vKy.96V" resname="или">
+        <source>или</source>
+        <target>or</target>
+      </trans-unit>
+      <trans-unit id="EhImKD_" resname="войти">
+        <source>войти</source>
+        <target>log in</target>
+      </trans-unit>
+      <trans-unit id=".GdyDFr" resname="Вы уже оставили заявку на этого котенка.">
+          <source>Вы уже оставили заявку на этого котенка.</source>
+          <target>You have already submitted a request for this kitten.</target>
+      </trans-unit>
+      <trans-unit id="OfbYXm4" resname="Мои заявки">
+          <source>Мои заявки</source>
+          <target>My Requests</target>
+      </trans-unit>
+      <trans-unit id="viNiMAp" resname="Номер заявки">
+          <source>Номер заявки</source>
+          <target>Request Number</target>
+      </trans-unit>
+      <trans-unit id="FEZWbmu" resname="Котенок">
+          <source>Котенок</source>
+          <target>Kitten</target>
+      </trans-unit>
+      <trans-unit id="jv271Dv" resname="Дата бронирования">
+          <source>Дата бронирования</source>
+          <target>Booking Date</target>
+      </trans-unit>
+      <trans-unit id="IlB3xtR" resname="Статус">
+          <source>Статус</source>
+          <target>Status</target>
+      </trans-unit>
+      <trans-unit id="a1Oq.ii" resname="Действие">
+          <source>Действие</source>
+          <target>Action</target>
+      </trans-unit>
+      <trans-unit id="fEf3KSu" resname="Отменить">
+          <source>Отменить</source>
+          <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="SJqK5xs" resname="Нельзя отменить">
+          <source>Нельзя отменить</source>
+          <target>Cannot be canceled</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV8" resname="У вас пока нет заявок.">
+          <source>У вас пока нет заявок.</source>
+          <target>You don't have any requests yet.</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV81" resname="Подтверждено">
+          <source>Подтверждено</source>
+          <target>Confirmed</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV82" resname="В ожидании">
+          <source>В ожидании</source>
+          <target>Pending</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV83" resname="Отклонено">
+          <source>Отклонено</source>
+          <target>Declined</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>

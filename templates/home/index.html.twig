@@ -183,7 +183,7 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        {{ form_start(form, { 'action': path('kitten_book', { 'id': kitten.id }), 'method': 'POST' }) }}
+                                                        {{ form_start(formBooking, { 'action': path('kitten_book', { 'id': kitten.id }), 'method': 'POST' }) }}
 
                                                         <input type="hidden" name="kitten_id" id="kitten_id_{{ kitten.id }}" value="{{ kitten.id }}">
 
@@ -192,7 +192,7 @@
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'Отмена'|trans}}</button>
                                                         </div>
 
-                                                        {{ form_end(form) }}
+                                                        {{ form_end(formBooking) }}
                                                     </div>
                                                 </div>
                                             </div>

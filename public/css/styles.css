@@ -251,6 +251,14 @@ h4{
     padding: 14px 28px;
     margin-top: 20px;
 }
+.btn{
+    padding: 14px 28px;
+    border: 2px solid var(--green);
+    border-radius: 0;
+    background: var(--white);
+    font-size: 20px;
+    color: var(--green);
+}
 .status-home{
     background: var(--grey-light);
     color: white;
@@ -283,14 +291,6 @@ footer h6{
 }
 footer .container.p-4{
     padding-top: 40px !important;
-}
-.btn{
-    padding: 14px 28px;
-    border: 2px solid var(--green);
-    border-radius: 0;
-    background: var(--white);
-    font-size: 20px;
-    color: var(--green);
 }
 .form-wrapper form>div{
     display: flex;
