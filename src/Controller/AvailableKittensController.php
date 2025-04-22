@@ -18,9 +18,10 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 class AvailableKittensController extends AbstractController
 {
-    #[Route('/available-kittens/{keyWord}/{id}', name: 'app_available_kittens', requirements: ['keyWord' => '[^/]+'], defaults: ['id' => 'default', 'keyWord' => 'main-coons'], methods: ['GET', 'POST'])]
+    #[Route('/available-kittens/{keyWord}/{id}', name: 'app_available_kittens', requirements: ['keyWord' => '[^/]+'], defaults: ['id' => 'default'], methods: ['GET', 'POST'])]
     public function index($id, LitterService $litterService, Request $request, EntityManagerInterface $entityManager, BookingRepository $bookingRepository, ?string $keyWord, BreedRepository $breedRepository): Response
     {
+        if(!$keyWord) $keyWord = 'main-coons';
         $breed = $breedRepository->findOneBy(['keyWord' => $keyWord]);
         $litters = $litterService->getAllLitters($breed);
         $buttons = [];
@@ -78,6 +79,7 @@ class AvailableKittensController extends AbstractController
             'kittens' => $kittens,
             'form' => $form->createView(),
             'bookings' => $bookingRepository->findAll(),
+            'keyWord' => $keyWord,
         ]);
     }
 
