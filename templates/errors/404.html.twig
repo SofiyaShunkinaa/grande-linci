@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="section section-green">
+<div class="container d-flex justify-content-center d-flex flex-column align-items-center">
+    <div class="title d-flex flex-column align-items-center justify-content-center">
+        <h2>{{'Page not found'|trans}}</h2>
+        <img src="{{ asset('img/arrow/simple-arrow.png') }}" alt="arrow">
+        <p>{{ 'Пожалуйста, вернитесь на главную'|trans }}</p>
+        <button class="btn"><a href="{{ path('app_home') }}">Вернуться на главную</a></button>
+    </div>
+</div>
+    </div>
+{% endblock %}

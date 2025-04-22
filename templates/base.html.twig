@@ -107,9 +107,13 @@
                             {{ languageLabel }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">Eng</a></li>
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'ru'})) }}">Rus</a></li>
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'lv'})) }}">Lat</a></li>
+                                {% set currentRoute = app.request.attributes.get('_route', 'app_home') %}
+                                {% set currentParams = app.request.attributes.get('_route_params', {}) %}
+
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'lv'})) }}">Lat</a></li>
+
                             </ul>
 
                         </li>
@@ -231,9 +235,13 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">Eng</a></li>
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'ru'})) }}">Rus</a></li>
-                                <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'lv'})) }}">Lat</a></li>
+                                {% set currentRoute = app.request.attributes.get('_route', 'app_home') %}
+                                {% set currentParams = app.request.attributes.get('_route_params', {}) %}
+
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'lv'})) }}">Lat</a></li>
+
                             </ul>
 
                         </li>
