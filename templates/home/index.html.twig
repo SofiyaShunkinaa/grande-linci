@@ -130,6 +130,7 @@
                                     <img src="{{ asset('img/kittens/' ~ kitten.imageLink )}}" alt="kitten">
                                 </div>
                                 <h4>{{ kitten.name }}</h4>
+                                <h5>{{ kitten.price }}€</h5>
                                 <button class="kitten-status book-kitten-button
             {% if kitten.kittenStatus == 'At home' %}status-home disabled btn{% endif %}
             {% if kitten.kittenStatus == 'Reserved' %}status-reserved disabled btn{% endif %}

@@ -25,6 +25,9 @@ class Kitten
     #[ORM\JoinColumn(nullable: false)]
     private ?Breed $breed = null;
 
+    #[ORM\Column(nullable: false)]
+    private ?int $price = null;
+
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?KittenStatus $kittenStatus = null;
@@ -60,6 +63,18 @@ class Kitten
     public function setName(string $name): static
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getPrice(): ?int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(int $price): static
+    {
+        $this->price = $price;
 
         return $this;
     }

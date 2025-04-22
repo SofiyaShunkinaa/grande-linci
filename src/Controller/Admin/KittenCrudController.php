@@ -12,6 +12,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use App\Enum\StatusType;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 
 class KittenCrudController extends AbstractCrudController
 {
@@ -28,6 +29,7 @@ class KittenCrudController extends AbstractCrudController
             AssociationField::new('breed'),
             AssociationField::new('gender'),
             AssociationField::new('color'),
+            IntegerField::new('price'),
             AssociationField::new('kittenStatus'),
             AssociationField::new('litter'),
             ImageField::new('imageLink')
