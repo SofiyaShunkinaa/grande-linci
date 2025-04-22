@@ -613,6 +613,10 @@
         <source>Your password should be at least {{ limit }} characters</source>
         <target>__Your password should be at least {{ limit }} characters</target>
       </trans-unit>
+      <trans-unit id="cmWNkrJ" resname="Invalid status">
+        <source>Invalid status</source>
+        <target>__Invalid status</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

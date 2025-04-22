@@ -55,7 +55,7 @@
       </trans-unit>
       <trans-unit id="R6rzG4P" resname="Contact us">
         <source>Contact us</source>
-        <target>Контакты</target>
+        <target>Свяжитесь с нами</target>
       </trans-unit>
       <trans-unit id="M6wAmTA" resname="Maine Coon and Oriental Cattery">
         <source>Maine Coon and Oriental Cattery</source>
@@ -366,126 +366,177 @@
         <target>Уход и содержание</target>
       </trans-unit>
       <trans-unit id="64FL48o" resname="Main">
-          <source>Main</source>
-          <target>Главная</target>
+        <source>Main</source>
+        <target>Главная</target>
       </trans-unit>
       <trans-unit id="38Hm0Wu" resname="Toggle navigation">
-          <source>Toggle navigation</source>
-          <target>Переключить навигацию</target>
+        <source>Toggle navigation</source>
+        <target>Переключить навигацию</target>
       </trans-unit>
       <trans-unit id="fZ63rLE" resname="Close">
-          <source>Close</source>
-          <target>Закрыть</target>
+        <source>Close</source>
+        <target>Закрыть</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
-          <source>Home</source>
-          <target>Домой</target>
+        <source>Home</source>
+        <target>Домой</target>
       </trans-unit>
-      <trans-unit id="2v52lEY" resname="Hello, ">
-          <source>Hello, </source>
-          <target>Привет, </target>
+      <trans-unit id="I0Kb2bq" resname="Hello, ">
+        <source>Hello, </source>
+        <target>Привет, </target>
       </trans-unit>
       <trans-unit id="5Nu8xOi" resname="Personal Cabinet">
-          <source>Personal Cabinet</source>
-          <target>Личный кабинет</target>
+        <source>Personal Cabinet</source>
+        <target>Личный кабинет</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
-          <source>Logout</source>
-          <target>Выход</target>
+        <source>Logout</source>
+        <target>Выход</target>
       </trans-unit>
       <trans-unit id="wYmEDPf" resname="Log in">
-          <source>Log in</source>
-          <target>Войти</target>
+        <source>Log in</source>
+        <target>Войти</target>
       </trans-unit>
       <trans-unit id="vNZ49q2" resname="Grande Linci LV">
-          <source>Grande Linci LV</source>
-          <target>Grande Linci LV</target>
+        <source>Grande Linci LV</source>
+        <target>Grande Linci LV</target>
       </trans-unit>
       <trans-unit id="i6XISnl" resname="No active litter available!">
-          <source>No active litter available!</source>
-          <target>Нет доступных пометов!</target>
+        <source>No active litter available!</source>
+        <target>Нет доступных пометов!</target>
       </trans-unit>
       <trans-unit id="u3I07BJ" resname="Register">
-          <source>Register</source>
-          <target>Зарегистрироваться</target>
+        <source>Register</source>
+        <target>Зарегистрироваться</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
-          <source>Username</source>
-          <target>Имя пользователя</target>
+        <source>Username</source>
+        <target>Имя пользователя</target>
       </trans-unit>
       <trans-unit id="ls5uYZO" resname="First Name">
-          <source>First Name</source>
-          <target>Имя</target>
+        <source>First Name</source>
+        <target>Имя</target>
       </trans-unit>
       <trans-unit id="lpzL089" resname="Email">
-          <source>Email</source>
-          <target>Электронная почта</target>
+        <source>Email</source>
+        <target>Электронная почта</target>
       </trans-unit>
       <trans-unit id="588_9PF" resname="Password">
-          <source>Password</source>
-          <target>Пароль</target>
+        <source>Password</source>
+        <target>Пароль</target>
       </trans-unit>
       <trans-unit id="SO_e8C8" resname="I agree to the terms and conditions">
-          <source>I agree to the terms and conditions</source>
-          <target>Я согласен с условиями</target>
+        <source>I agree to the terms and conditions</source>
+        <target>Я согласен с условиями</target>
       </trans-unit>
       <trans-unit id="yKeA0.P" resname="Log in!">
-          <source>Log in!</source>
-          <target>Войти!</target>
+        <source>Log in!</source>
+        <target>Войти!</target>
       </trans-unit>
       <trans-unit id="dDUw20Q" resname="Please sign in">
-          <source>Please sign in</source>
-          <target>Пожалуйста, войдите</target>
+        <source>Please sign in</source>
+        <target>Пожалуйста, войдите</target>
       </trans-unit>
       <trans-unit id="acVpEs4" resname="You are logged in as">
-          <source>You are logged in as</source>
-          <target>Вы вошли как</target>
+        <source>You are logged in as</source>
+        <target>Вы вошли как</target>
       </trans-unit>
       <trans-unit id="v9QCsvb" resname="Sign in">
-          <source>Sign in</source>
-          <target>Войти</target>
+        <source>Sign in</source>
+        <target>Войти</target>
       </trans-unit>
       <trans-unit id="bfXSF0S" resname="Личный кабинет">
-          <source>Личный кабинет</source>
-          <target>Личный кабинет</target>
+        <source>Личный кабинет</source>
+        <target>Личный кабинет</target>
       </trans-unit>
       <trans-unit id="egbT18m" resname="Добро пожаловать в Личный кабинет">
-          <source>Добро пожаловать в Личный кабинет</source>
-          <target>Добро пожаловать в Личный кабинет</target>
+        <source>Добро пожаловать в Личный кабинет</source>
+        <target>Добро пожаловать в Личный кабинет</target>
       </trans-unit>
       <trans-unit id="Z1NLMOq" resname="Мой профиль">
-          <source>Мой профиль</source>
-          <target>Мой профиль</target>
+        <source>Мой профиль</source>
+        <target>Мой профиль</target>
       </trans-unit>
       <trans-unit id="oRX9b3l" resname="Просмотр и редактирование информации о себе.">
-          <source>Просмотр и редактирование информации о себе.</source>
-          <target>Просмотр и редактирование информации о себе.</target>
+        <source>Просмотр и редактирование информации о себе.</source>
+        <target>Просмотр и редактирование информации о себе.</target>
       </trans-unit>
       <trans-unit id="Vmq0IeS" resname="Редактировать профиль">
-          <source>Редактировать профиль</source>
-          <target>Редактировать профиль</target>
+        <source>Редактировать профиль</source>
+        <target>Редактировать профиль</target>
       </trans-unit>
       <trans-unit id="3ee24JS" resname="Ваш чат">
-          <source>Ваш чат</source>
-          <target>Ваш чат</target>
+        <source>Ваш чат</source>
+        <target>Ваш чат</target>
       </trans-unit>
       <trans-unit id="OtdrhJ1" resname="Перейти в чат">
-          <source>Перейти в чат</source>
-          <target>Перейти в чат</target>
+        <source>Перейти в чат</source>
+        <target>Перейти в чат</target>
       </trans-unit>
       <trans-unit id="K1mPZj9" resname="Начать чат с администратором">
-          <source>Начать чат с администратором</source>
-          <target>Начать чат с администратором</target>
+        <source>Начать чат с администратором</source>
+        <target>Начать чат с администратором</target>
       </trans-unit>
       <trans-unit id="PJ0VNJE" resname="Редактировать данные">
-          <source>Редактировать данные</source>
-          <target>Редактировать данные</target>
+        <source>Редактировать данные</source>
+        <target>Редактировать данные</target>
       </trans-unit>
       <trans-unit id="tNMMrlK" resname="Сохранить">
-          <source>Сохранить</source>
-          <target>Сохранить</target>
+        <source>Сохранить</source>
+        <target>Сохранить</target>
       </trans-unit>
-
+      <trans-unit id="2v52lEY" resname="Hello,">
+        <source>Hello,</source>
+        <target>Привет, </target>
+      </trans-unit>
+      <trans-unit id="pGmrTKT" resname="Page not found">
+        <source>Page not found</source>
+        <target>Страница не найдена</target>
+      </trans-unit>
+      <trans-unit id="_qp80Dr" resname="Пожалуйста, вернитесь на главную">
+        <source>Пожалуйста, вернитесь на главную</source>
+        <target>Пожалуйста, вернитесь на главную</target>
+      </trans-unit>
+      <trans-unit id="Zp6hPrx" resname="If you have any questions or cooperation issues, please sign up to have request to the extra conent!">
+        <source>If you have any questions or cooperation issues, please sign up to have request to the extra conent!</source>
+        <target>Если у вас есть вопросы или предложения по сотрудничеству, пожалуйста, зарегистрируйтесь, чтобы отправить запрос на дополнительный контент!</target>
+      </trans-unit>
+      <trans-unit id="PbSSyVs" resname="Welcome-text">
+        <source>Welcome-text</source>
+        <target>Добро пожаловать в питомник Grande Linci! Мы рады видеть вас в нашем уютном уголке, где царит любовь и забота о кошках. Здесь вы найдете великолепных мейн кунов и элегантных ориентальных кошек, которые станут верными спутниками и любимцами вашей семьи. Наша цель — создать здоровое и дружелюбное окружение для наших питомцев, а также поделиться с вами красотой и уникальностью этих замечательных пород.</target>
+      </trans-unit>
+      <trans-unit id="m1RDCwb" resname="About us text">
+        <source>About us text</source>
+        <target>Grande Linci — это питомник в Риге, который специализируется на разведении мейн кунов и ориентальных кошек. Мы с гордостью занимаемся селекцией и заботой о наших питомцах, обеспечивая им высочайший уровень жизни и здоровья. Наши кошки отличаются великолепным характером, яркой внешностью и, что не менее важно, крепким здоровьем. Мы стремимся к тому, чтобы каждая семья, принявшая в дом одного из наших котят, ощутила всю радость общения с этими удивительными существами.</target>
+      </trans-unit>
+      <trans-unit id="GjzGze9" resname="Уведомление">
+        <source>Уведомление</source>
+        <target>Уведомление</target>
+      </trans-unit>
+      <trans-unit id=".mOFJIm" resname="Вы уже оставили заявку на этого котенка">
+        <source>Вы уже оставили заявку на этого котенка</source>
+        <target>Вы уже оставили заявку на этого котенка</target>
+      </trans-unit>
+      <trans-unit id="XZ1.EYF" resname="Забронировать">
+        <source>Забронировать</source>
+        <target>Забронировать</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv" resname="Отмена">
+        <source>Отмена</source>
+        <target>Отмена</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv1" resname="Available">
+                          <source>Available</source>
+                          <target>Доступен</target>
+                        </trans-unit>
+                        <trans-unit id="j76bdcv2" resname="At home">
+                                      <source>At home</source>
+                                      <target>Дома</target>
+                                    </trans-unit>
+                  <trans-unit id="j76bdcv3" resname="Reserved">
+                                            <source>Reserved</source>
+                                            <target>Забронирован</target>
+                                          </trans-unit>
     </body>
   </file>
 </xliff>

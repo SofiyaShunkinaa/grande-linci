@@ -605,6 +605,10 @@
         <source>Invalid email format</source>
         <target>__Invalid email format</target>
       </trans-unit>
+      <trans-unit id="cmWNkrJ" resname="Invalid status">
+        <source>Invalid status</source>
+        <target>__Invalid status</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

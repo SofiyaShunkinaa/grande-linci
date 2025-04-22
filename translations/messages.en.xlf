@@ -6,297 +6,349 @@
     </header>
     <body>
       <trans-unit id="_orotqB" resname="vich_uploader.form_label.delete_confirm">
-          <source>vich_uploader.form_label.delete_confirm</source>
-          <target>Delete?</target>
+        <source>vich_uploader.form_label.delete_confirm</source>
+        <target>Delete?</target>
       </trans-unit>
       <trans-unit id="Zk.KlSD" resname="vich_uploader.link.download">
-          <source>vich_uploader.link.download</source>
-          <target>Download</target>
+        <source>vich_uploader.link.download</source>
+        <target>Download</target>
       </trans-unit>
       <trans-unit id="ar4003." resname="About breed">
-          <source>About breed</source>
-          <target>About breed</target>
+        <source>About breed</source>
+        <target>About breed</target>
       </trans-unit>
       <trans-unit id="64FL48o" resname="Main">
-          <source>Main</source>
-          <target>Main</target>
+        <source>Main</source>
+        <target>Main</target>
       </trans-unit>
       <trans-unit id="V.6Pqep" resname="Main Coons">
-          <source>Main Coons</source>
-          <target>Main Coons</target>
+        <source>Main Coons</source>
+        <target>Main Coons</target>
       </trans-unit>
       <trans-unit id="uOKh2Be" resname="About_breed.contents.title">
-          <source>About_breed.contents.title</source>
-          <target>About breed contents</target>
+        <source>About_breed.contents.title</source>
+        <target>About breed contents</target>
       </trans-unit>
       <trans-unit id="ME1DIwu" resname="About_breed.main_coons.breed_history.title">
-          <source>About_breed.main_coons.breed_history.title</source>
-          <target>Breed history</target>
+        <source>About_breed.main_coons.breed_history.title</source>
+        <target>Breed history</target>
       </trans-unit>
       <trans-unit id="hRXb2d8" resname="About_breed.main_coons.breed_history.text">
-          <source>About_breed.main_coons.breed_history.text</source>
-          <target>History of the breed</target>
+        <source>About_breed.main_coons.breed_history.text</source>
+        <target>History of the breed</target>
       </trans-unit>
       <trans-unit id="KZ8ohsG" resname="About_breed.main_coons.appearance.title">
-          <source>About_breed.main_coons.appearance.title</source>
-          <target>Appearance</target>
+        <source>About_breed.main_coons.appearance.title</source>
+        <target>Appearance</target>
       </trans-unit>
       <trans-unit id="8mtnigJ" resname="About_breed.main_coons.appearance.text">
-          <source>About_breed.main_coons.appearance.text</source>
-          <target>Physical appearance</target>
+        <source>About_breed.main_coons.appearance.text</source>
+        <target>Physical appearance</target>
       </trans-unit>
       <trans-unit id="C86GxE0" resname="About_breed.main_coons.character.title">
-          <source>About_breed.main_coons.character.title</source>
-          <target>Character</target>
+        <source>About_breed.main_coons.character.title</source>
+        <target>Character</target>
       </trans-unit>
       <trans-unit id="W5iVSd3" resname="About_breed.main_coons.character.text">
-          <source>About_breed.main_coons.character.text</source>
-          <target>Temperament and behavior</target>
+        <source>About_breed.main_coons.character.text</source>
+        <target>Temperament and behavior</target>
       </trans-unit>
       <trans-unit id="iWt8gIG" resname="About_breed.main_coons.health.title">
-          <source>About_breed.main_coons.health.title</source>
-          <target>Health</target>
+        <source>About_breed.main_coons.health.title</source>
+        <target>Health</target>
       </trans-unit>
       <trans-unit id="qwcPHog" resname="About_breed.main_coons.health.text">
-          <source>About_breed.main_coons.health.text</source>
-          <target>Health care</target>
+        <source>About_breed.main_coons.health.text</source>
+        <target>Health care</target>
       </trans-unit>
       <trans-unit id="1Iwl2ZR" resname="About_breed.main_coons.care.title">
-          <source>About_breed.main_coons.care.title</source>
-          <target>Care</target>
+        <source>About_breed.main_coons.care.title</source>
+        <target>Care</target>
       </trans-unit>
       <trans-unit id="Hkg6Dp4" resname="About_breed.main_coons.care.text">
-          <source>About_breed.main_coons.care.text</source>
-          <target>How to take care</target>
+        <source>About_breed.main_coons.care.text</source>
+        <target>How to take care</target>
       </trans-unit>
       <trans-unit id="tLWAqa2" resname="About us">
-          <source>About us</source>
-          <target>About us</target>
+        <source>About us</source>
+        <target>About us</target>
       </trans-unit>
       <trans-unit id="dPKiqLP" resname="History of Grande linci">
-          <source>History of Grande linci</source>
-          <target>History of Grande Linci</target>
+        <source>History of Grande linci</source>
+        <target>History of Grande Linci</target>
       </trans-unit>
       <trans-unit id="JVvusfg" resname="our advantages">
-          <source>our advantages</source>
-          <target>Our advantages</target>
+        <source>our advantages</source>
+        <target>Our advantages</target>
       </trans-unit>
       <trans-unit id="jyhLq5v" resname="Full Health">
-          <source>Full Health</source>
-          <target>Full Health</target>
+        <source>Full Health</source>
+        <target>Full Health</target>
       </trans-unit>
       <trans-unit id="QmBcAfp" resname="Worldwide">
-          <source>Worldwide</source>
-          <target>Worldwide</target>
+        <source>Worldwide</source>
+        <target>Worldwide</target>
       </trans-unit>
       <trans-unit id="ouzXBs6" resname="Socialization">
-          <source>Socialization</source>
-          <target>Socialization</target>
+        <source>Socialization</source>
+        <target>Socialization</target>
       </trans-unit>
       <trans-unit id="i72KU89" resname="Care Package">
-          <source>Care Package</source>
-          <target>Care Package</target>
+        <source>Care Package</source>
+        <target>Care Package</target>
       </trans-unit>
       <trans-unit id="Pi5Anz4" resname="Available kittens">
-          <source>Available kittens</source>
-          <target>Available kittens</target>
+        <source>Available kittens</source>
+        <target>Available kittens</target>
       </trans-unit>
       <trans-unit id="QTnzyot" resname="Choose litter">
-          <source>Choose litter</source>
-          <target>Choose litter</target>
+        <source>Choose litter</source>
+        <target>Choose litter</target>
       </trans-unit>
       <trans-unit id="YjYsL4Q" resname="All kittens adopted">
-          <source>All kittens adopted</source>
-          <target>All kittens adopted</target>
+        <source>All kittens adopted</source>
+        <target>All kittens adopted</target>
       </trans-unit>
       <trans-unit id="ZBhDjPs" resname="Riga, Latvia">
-          <source>Riga, Latvia</source>
-          <target>Riga, Latvia</target>
+        <source>Riga, Latvia</source>
+        <target>Riga, Latvia</target>
       </trans-unit>
       <trans-unit id="38Hm0Wu" resname="Toggle navigation">
-          <source>Toggle navigation</source>
-          <target>Toggle navigation</target>
+        <source>Toggle navigation</source>
+        <target>Toggle navigation</target>
       </trans-unit>
       <trans-unit id="fZ63rLE" resname="Close">
-          <source>Close</source>
-          <target>Close</target>
+        <source>Close</source>
+        <target>Close</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
-          <source>Home</source>
-          <target>Home</target>
+        <source>Home</source>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="33_A4d9" resname="Kittens">
-          <source>Kittens</source>
-          <target>Kittens</target>
+        <source>Kittens</source>
+        <target>Kittens</target>
       </trans-unit>
       <trans-unit id="k7PmUu1" resname="Main Coon">
-          <source>Main Coon</source>
-          <target>Main Coon</target>
+        <source>Main Coon</source>
+        <target>Main Coon</target>
       </trans-unit>
       <trans-unit id="1QTxyOX" resname="Oriaental">
-          <source>Oriaental</source>
-          <target>Oriaental</target>
+        <source>Oriaental</source>
+        <target>Oriaental</target>
       </trans-unit>
       <trans-unit id="ltSA73n" resname="Our cats">
-          <source>Our cats</source>
-          <target>Our cats</target>
+        <source>Our cats</source>
+        <target>Our cats</target>
       </trans-unit>
       <trans-unit id="NSz8dJ5" resname="Gallery">
-          <source>Gallery</source>
-          <target>Gallery</target>
+        <source>Gallery</source>
+        <target>Gallery</target>
       </trans-unit>
       <trans-unit id="tFBkXev" resname="Contacts">
-          <source>Contacts</source>
-          <target>Contacts</target>
+        <source>Contacts</source>
+        <target>Contacts</target>
       </trans-unit>
       <trans-unit id="2v52lEY" resname="Hello,">
-          <source>Hello,</source>
-          <target>Hello,</target>
+        <source>Hello,</source>
+        <target>Hello,</target>
       </trans-unit>
       <trans-unit id="5Nu8xOi" resname="Personal Cabinet">
-          <source>Personal Cabinet</source>
-          <target>Personal Cabinet</target>
+        <source>Personal Cabinet</source>
+        <target>Personal Cabinet</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
-          <source>Logout</source>
-          <target>Logout</target>
+        <source>Logout</source>
+        <target>Logout</target>
       </trans-unit>
       <trans-unit id="wYmEDPf" resname="Log in">
-          <source>Log in</source>
-          <target>Log in</target>
+        <source>Log in</source>
+        <target>Log in</target>
       </trans-unit>
       <trans-unit id="FPz28o7" resname="Follow us">
-          <source>Follow us</source>
-          <target>Follow us</target>
+        <source>Follow us</source>
+        <target>Follow us</target>
       </trans-unit>
       <trans-unit id="vNZ49q2" resname="Grande Linci LV">
-          <source>Grande Linci LV</source>
-          <target>Grande Linci LV</target>
+        <source>Grande Linci LV</source>
+        <target>Grande Linci LV</target>
       </trans-unit>
       <trans-unit id="M6wAmTA" resname="Maine Coon and Oriental Cattery">
-          <source>Maine Coon and Oriental Cattery</source>
-          <target>Maine Coon and Oriental Cattery</target>
+        <source>Maine Coon and Oriental Cattery</source>
+        <target>Maine Coon and Oriental Cattery</target>
       </trans-unit>
       <trans-unit id="R6rzG4P" resname="Contact us">
-          <source>Contact us</source>
-          <target>Contact us</target>
+        <source>Contact us</source>
+        <target>Contact us</target>
       </trans-unit>
       <trans-unit id="CpA.zDz" resname="Our Winners">
-          <source>Our Winners</source>
-          <target>Our Winners</target>
+        <source>Our Winners</source>
+        <target>Our Winners</target>
       </trans-unit>
       <trans-unit id="I9.np4l" resname="Our Pride">
-          <source>Our Pride</source>
-          <target>Our Pride</target>
+        <source>Our Pride</source>
+        <target>Our Pride</target>
       </trans-unit>
       <trans-unit id="n2G_LnN" resname="Our Graduates">
-          <source>Our Graduates</source>
-          <target>Our Graduates</target>
+        <source>Our Graduates</source>
+        <target>Our Graduates</target>
       </trans-unit>
       <trans-unit id="onf7LRH" resname="Choose a kitten">
-          <source>Choose a kitten</source>
-          <target>Choose a kitten</target>
+        <source>Choose a kitten</source>
+        <target>Choose a kitten</target>
       </trans-unit>
       <trans-unit id="DiImtSN" resname="Welcome">
-          <source>Welcome</source>
-          <target>Welcome</target>
+        <source>Welcome</source>
+        <target>Welcome</target>
       </trans-unit>
       <trans-unit id="FEV5nAM" resname="Learn more">
-          <source>Learn more</source>
-          <target>Learn more</target>
+        <source>Learn more</source>
+        <target>Learn more</target>
       </trans-unit>
       <trans-unit id="8yzqcKb" resname="LITTER">
-          <source>LITTER</source>
-          <target>LITTER</target>
+        <source>LITTER</source>
+        <target>LITTER</target>
       </trans-unit>
       <trans-unit id="i6XISnl" resname="No active litter available!">
-          <source>No active litter available!</source>
-          <target>No active litter available!</target>
+        <source>No active litter available!</source>
+        <target>No active litter available!</target>
       </trans-unit>
       <trans-unit id="u3I07BJ" resname="Register">
-          <source>Register</source>
-          <target>Register</target>
+        <source>Register</source>
+        <target>Register</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
-          <source>Username</source>
-          <target>Username</target>
+        <source>Username</source>
+        <target>Username</target>
       </trans-unit>
       <trans-unit id="ls5uYZO" resname="First Name">
-          <source>First Name</source>
-          <target>First Name</target>
+        <source>First Name</source>
+        <target>First Name</target>
       </trans-unit>
       <trans-unit id="lpzL089" resname="Email">
-          <source>Email</source>
-          <target>Email</target>
+        <source>Email</source>
+        <target>Email</target>
       </trans-unit>
       <trans-unit id="Y9zriAC" resname="Phone">
-          <source>Phone</source>
-          <target>Phone</target>
+        <source>Phone</source>
+        <target>Phone</target>
       </trans-unit>
       <trans-unit id="588_9PF" resname="Password">
-          <source>Password</source>
-          <target>Password</target>
+        <source>Password</source>
+        <target>Password</target>
       </trans-unit>
       <trans-unit id="SO_e8C8" resname="I agree to the terms and conditions">
-          <source>I agree to the terms and conditions</source>
-          <target>I agree to the terms and conditions</target>
+        <source>I agree to the terms and conditions</source>
+        <target>I agree to the terms and conditions</target>
       </trans-unit>
       <trans-unit id="yKeA0.P" resname="Log in!">
-          <source>Log in!</source>
-          <target>Log in!</target>
+        <source>Log in!</source>
+        <target>Log in!</target>
       </trans-unit>
       <trans-unit id="dDUw20Q" resname="Please sign in">
-          <source>Please sign in</source>
-          <target>Please sign in</target>
+        <source>Please sign in</source>
+        <target>Please sign in</target>
       </trans-unit>
       <trans-unit id="acVpEs4" resname="You are logged in as">
-          <source>You are logged in as</source>
-          <target>You are logged in as</target>
+        <source>You are logged in as</source>
+        <target>You are logged in as</target>
       </trans-unit>
       <trans-unit id="v9QCsvb" resname="Sign in">
-          <source>Sign in</source>
-          <target>Sign in</target>
+        <source>Sign in</source>
+        <target>Sign in</target>
       </trans-unit>
       <trans-unit id="bfXSF0S" resname="Личный кабинет">
-          <source>Личный кабинет</source>
-          <target>Personal Cabinet</target>
+        <source>Личный кабинет</source>
+        <target>Personal Cabinet</target>
       </trans-unit>
       <trans-unit id="egbT18m" resname="Добро пожаловать в Личный кабинет">
-          <source>Добро пожаловать в Личный кабинет</source>
-          <target>Welcome to the Personal Cabinet</target>
+        <source>Добро пожаловать в Личный кабинет</source>
+        <target>Welcome to the Personal Cabinet</target>
       </trans-unit>
       <trans-unit id="Z1NLMOq" resname="Мой профиль">
-          <source>Мой профиль</source>
-          <target>My Profile</target>
+        <source>Мой профиль</source>
+        <target>My Profile</target>
       </trans-unit>
       <trans-unit id="oRX9b3l" resname="Просмотр и редактирование информации о себе.">
-          <source>Просмотр и редактирование информации о себе.</source>
-          <target>View and edit your information.</target>
+        <source>Просмотр и редактирование информации о себе.</source>
+        <target>View and edit your information.</target>
       </trans-unit>
       <trans-unit id="Vmq0IeS" resname="Редактировать профиль">
-          <source>Редактировать профиль</source>
-          <target>Edit Profile</target>
+        <source>Редактировать профиль</source>
+        <target>Edit Profile</target>
       </trans-unit>
       <trans-unit id="3ee24JS" resname="Ваш чат">
-          <source>Ваш чат</source>
-          <target>Your Chat</target>
+        <source>Ваш чат</source>
+        <target>Your Chat</target>
       </trans-unit>
       <trans-unit id="OtdrhJ1" resname="Перейти в чат">
-          <source>Перейти в чат</source>
-          <target>Go to chat</target>
+        <source>Перейти в чат</source>
+        <target>Go to chat</target>
       </trans-unit>
       <trans-unit id="K1mPZj9" resname="Начать чат с администратором">
-          <source>Начать чат с администратором</source>
-          <target>Start chat with administrator</target>
+        <source>Начать чат с администратором</source>
+        <target>Start chat with administrator</target>
       </trans-unit>
       <trans-unit id="PJ0VNJE" resname="Редактировать данные">
-          <source>Редактировать данные</source>
-          <target>Edit data</target>
+        <source>Редактировать данные</source>
+        <target>Edit data</target>
       </trans-unit>
       <trans-unit id="tNMMrlK" resname="Сохранить">
-          <source>Сохранить</source>
-          <target>Save</target>
+        <source>Сохранить</source>
+        <target>Save</target>
       </trans-unit>
+      <trans-unit id="pGmrTKT" resname="Page not found">
+        <source>Page not found</source>
+        <target>Page not found</target>
+      </trans-unit>
+      <trans-unit id="_qp80Dr" resname="Пожалуйста, вернитесь на главную">
+        <source>Пожалуйста, вернитесь на главную</source>
+        <target>Please return to the homepage</target>
+      </trans-unit>
+      <trans-unit id="Zp6hPrx" resname="If you have any questions or cooperation issues, please sign up to have request to the extra conent!">
+        <source>If you have any questions or cooperation issues, please sign up to have request to the extra conent!</source>
+        <target>If you have any questions or cooperation issues, please sign up to have request to the extra conent!</target>
+      </trans-unit>
+      <trans-unit id="Omn4lym" resname="Send request">
+        <source>Send request</source>
+        <target>Send request</target>
+      </trans-unit>
+      <trans-unit id="PbSSyVs" resname="Welcome-text">
+        <source>Welcome-text</source>
+        <target>Welcome to Grande Linci Cattery! We’re delighted to see you in our cozy corner filled with love and care for cats. Here you will find magnificent Maine Coons and elegant Oriental cats who will become loyal companions and beloved members of your family. Our goal is to create a healthy and friendly environment for our cats, and to share with you the beauty and uniqueness of these wonderful breeds.</target>
+      </trans-unit>
+      <trans-unit id="m1RDCwb" resname="About us text">
+        <source>About us text</source>
+        <target>Grande Linci is a cattery in Riga that specializes in breeding Maine Coons and Oriental cats. We take great pride in carefully selecting and caring for our cats, ensuring them the highest standards of living and health. Our cats are known for their wonderful temperament, striking appearance, and, just as importantly, robust health. Our goal is to ensure that every family that welcomes one of our kittens into their home experiences the full joy of bonding with these amazing creatures.</target>
+      </trans-unit>
+      <trans-unit id="GjzGze9" resname="Уведомление">
+        <source>Уведомление</source>
+        <target>Attention</target>
+      </trans-unit>
+      <trans-unit id=".mOFJIm" resname="Вы уже оставили заявку на этого котенка">
+        <source>Вы уже оставили заявку на этого котенка</source>
+        <target>You have already submitted a request for this kitten</target>
+      </trans-unit>
+      <trans-unit id="XZ1.EYF" resname="Забронировать">
+        <source>Забронировать</source>
+        <target>Reserve</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv" resname="Отмена">
+        <source>Отмена</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv1" resname="Available">
+                    <source>Available</source>
+                    <target>Available</target>
+                  </trans-unit>
+                  <trans-unit id="j76bdcv2" resname="At home">
+                                <source>At home</source>
+                                <target>At home</target>
+                              </trans-unit>
+            <trans-unit id="j76bdcv3" resname="Reserved">
+                                      <source>Reserved</source>
+                                      <target>Reserved</target>
+                                    </trans-unit>
     </body>
   </file>
 </xliff>

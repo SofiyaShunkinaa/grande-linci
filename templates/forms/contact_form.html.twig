@@ -9,16 +9,16 @@
 
             <div class="col-lg-6 col-md-7">
                 <div class="title ungapped">
-                    <h2>Contact us</h2>
+                    <h2>{{ 'Contact us'|trans}}</h2>
                 </div>
-                <p class="form-desc col-10">If you have any questions or cooperation issues, please sign up to have request to the extra conent!</p>
+                <p class="form-desc col-10">{{ 'If you have any questions or cooperation issues, please sign up to have request to the extra conent!'|trans}}</p>
                 <div class="col-lg-7 col-md-10 form-wrapper">
                 {{ form_start(form, {'attr': {'id': 'contact-form'}}) }}
                     {{ form_row(form.name) }}
                     {{ form_row(form.email) }}
                     {{ form_row(form.phone, {'attr': {'id': 'phone'}}) }}
                     {{ form_row(form.message) }}
-                    <button class="btn btn-primary">Send request</button>
+                    <button class="btn btn-primary">{{ 'Send request'|trans}}</button>
                     {{ form_end(form) }}
 
                 </div>

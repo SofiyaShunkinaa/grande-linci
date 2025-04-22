@@ -6,293 +6,341 @@
     </header>
     <body>
       <trans-unit id="tLWAqa2" resname="About us">
-          <source>About us</source>
-          <target>Par mums</target>
+        <source>About us</source>
+        <target>Par mums</target>
       </trans-unit>
       <trans-unit id="dPKiqLP" resname="History of Grande linci">
-          <source>History of Grande linci</source>
-          <target>Grande linci vēsture</target>
+        <source>History of Grande linci</source>
+        <target>Grande linci vēsture</target>
       </trans-unit>
       <trans-unit id="JVvusfg" resname="our advantages">
-          <source>our advantages</source>
-          <target>mūsu priekšrocības</target>
+        <source>our advantages</source>
+        <target>mūsu priekšrocības</target>
       </trans-unit>
       <trans-unit id="jyhLq5v" resname="Full Health">
-          <source>Full Health</source>
-          <target>Pilna veselība</target>
+        <source>Full Health</source>
+        <target>Pilna veselība</target>
       </trans-unit>
       <trans-unit id="QmBcAfp" resname="Worldwide">
-          <source>Worldwide</source>
-          <target>Pasaules mērogā</target>
+        <source>Worldwide</source>
+        <target>Pasaules mērogā</target>
       </trans-unit>
       <trans-unit id="ouzXBs6" resname="Socialization">
-          <source>Socialization</source>
-          <target>Sociālā adaptācija</target>
+        <source>Socialization</source>
+        <target>Sociālā adaptācija</target>
       </trans-unit>
       <trans-unit id="i72KU89" resname="Care Package">
-          <source>Care Package</source>
-          <target>Aprūpes pakete</target>
+        <source>Care Package</source>
+        <target>Aprūpes pakete</target>
       </trans-unit>
       <trans-unit id="Pi5Anz4" resname="Available kittens">
-          <source>Available kittens</source>
-          <target>Pieejamie kaķēni</target>
+        <source>Available kittens</source>
+        <target>Pieejamie kaķēni</target>
       </trans-unit>
       <trans-unit id="V.6Pqep" resname="Main Coons">
-          <source>Main Coons</source>
-          <target>Galvenie Koonsi</target>
+        <source>Main Coons</source>
+        <target>Galvenie Koonsi</target>
       </trans-unit>
       <trans-unit id="QTnzyot" resname="Choose litter">
-          <source>Choose litter</source>
-          <target>Izvēlieties metienu</target>
+        <source>Choose litter</source>
+        <target>Izvēlieties metienu</target>
       </trans-unit>
       <trans-unit id="YjYsL4Q" resname="All kittens adopted">
-          <source>All kittens adopted</source>
-          <target>Visi kaķēni adoptēti</target>
+        <source>All kittens adopted</source>
+        <target>Visi kaķēni adoptēti</target>
       </trans-unit>
       <trans-unit id="ZBhDjPs" resname="Riga, Latvia">
-          <source>Riga, Latvia</source>
-          <target>Rīga, Latvija</target>
+        <source>Riga, Latvia</source>
+        <target>Rīga, Latvija</target>
       </trans-unit>
       <trans-unit id="33_A4d9" resname="Kittens">
-          <source>Kittens</source>
-          <target>Kaķēni</target>
+        <source>Kittens</source>
+        <target>Kaķēni</target>
       </trans-unit>
       <trans-unit id="k7PmUu1" resname="Main Coon">
-          <source>Main Coon</source>
-          <target>Galvenais Koons</target>
+        <source>Main Coon</source>
+        <target>Galvenais Koons</target>
       </trans-unit>
       <trans-unit id="1QTxyOX" resname="Oriaental">
-          <source>Oriaental</source>
-          <target>Orientālais</target>
+        <source>Oriaental</source>
+        <target>Orientālais</target>
       </trans-unit>
       <trans-unit id="ltSA73n" resname="Our cats">
-          <source>Our cats</source>
-          <target>Unsere kaķi</target>
+        <source>Our cats</source>
+        <target>Unsere kaķi</target>
       </trans-unit>
       <trans-unit id="NSz8dJ5" resname="Gallery">
-          <source>Gallery</source>
-          <target>Galerija</target>
+        <source>Gallery</source>
+        <target>Galerija</target>
       </trans-unit>
       <trans-unit id="ar4003." resname="About breed">
-          <source>About breed</source>
-          <target>Par šķirni</target>
+        <source>About breed</source>
+        <target>Par šķirni</target>
       </trans-unit>
       <trans-unit id="tFBkXev" resname="Contacts">
-          <source>Contacts</source>
-          <target>Kontakti</target>
+        <source>Contacts</source>
+        <target>Kontakti</target>
       </trans-unit>
       <trans-unit id="M6wAmTA" resname="Maine Coon and Oriental Cattery">
-          <source>Maine Coon and Oriental Cattery</source>
-          <target>Maine Coon un orientālie kaķi</target>
+        <source>Maine Coon and Oriental Cattery</source>
+        <target>Maine Coon un orientālie kaķi</target>
       </trans-unit>
       <trans-unit id="R6rzG4P" resname="Contact us">
-          <source>Contact us</source>
-          <target>Sazinieties ar mums</target>
+        <source>Contact us</source>
+        <target>Sazinieties ar mums</target>
       </trans-unit>
       <trans-unit id="FPz28o7" resname="Follow us">
-          <source>Follow us</source>
-          <target>Sekojiet mums</target>
+        <source>Follow us</source>
+        <target>Sekojiet mums</target>
       </trans-unit>
       <trans-unit id="Omn4lym" resname="Send request">
-          <source>Send request</source>
-          <target>Sūtīt pieprasījumu</target>
+        <source>Send request</source>
+        <target>Sūtīt pieprasījumu</target>
       </trans-unit>
       <trans-unit id="CpA.zDz" resname="Our Winners">
-          <source>Our Winners</source>
-          <target>Unsere uzvarētāji</target>
+        <source>Our Winners</source>
+        <target>Unsere uzvarētāji</target>
       </trans-unit>
       <trans-unit id="I9.np4l" resname="Our Pride">
-          <source>Our Pride</source>
-          <target>Mūsu lepnums</target>
+        <source>Our Pride</source>
+        <target>Mūsu lepnums</target>
       </trans-unit>
       <trans-unit id="n2G_LnN" resname="Our Graduates">
-          <source>Our Graduates</source>
-          <target>Mūsu absolventi</target>
+        <source>Our Graduates</source>
+        <target>Mūsu absolventi</target>
       </trans-unit>
       <trans-unit id="onf7LRH" resname="Choose a kitten">
-          <source>Choose a kitten</source>
-          <target>Izvēlieties kaķēnu</target>
+        <source>Choose a kitten</source>
+        <target>Izvēlieties kaķēnu</target>
       </trans-unit>
       <trans-unit id="DiImtSN" resname="Welcome">
-          <source>Welcome</source>
-          <target>Laipni lūdzam</target>
+        <source>Welcome</source>
+        <target>Laipni lūdzam</target>
       </trans-unit>
       <trans-unit id="FEV5nAM" resname="Learn more">
-          <source>Learn more</source>
-          <target>Uzzināt vairāk</target>
+        <source>Learn more</source>
+        <target>Uzzināt vairāk</target>
       </trans-unit>
       <trans-unit id="8yzqcKb" resname="LITTER">
-          <source>LITTER</source>
-          <target>Metiena</target>
+        <source>LITTER</source>
+        <target>Metiena</target>
       </trans-unit>
       <trans-unit id="64FL48o" resname="Main">
-          <source>Main</source>
-          <target>Galvenais</target>
+        <source>Main</source>
+        <target>Galvenais</target>
       </trans-unit>
       <trans-unit id="uOKh2Be" resname="About_breed.contents.title">
-          <source>About_breed.contents.title</source>
-          <target>Par šķirni</target>
+        <source>About_breed.contents.title</source>
+        <target>Par šķirni</target>
       </trans-unit>
       <trans-unit id="ME1DIwu" resname="About_breed.main_coons.breed_history.title">
-          <source>About_breed.main_coons.breed_history.title</source>
-          <target>Par šķirnes vēsturi</target>
+        <source>About_breed.main_coons.breed_history.title</source>
+        <target>Par šķirnes vēsturi</target>
       </trans-unit>
       <trans-unit id="hRXb2d8" resname="About_breed.main_coons.breed_history.text">
-          <source>About_breed.main_coons.breed_history.text</source>
-          <target>Par šķirnes vēsturi</target>
+        <source>About_breed.main_coons.breed_history.text</source>
+        <target>Par šķirnes vēsturi</target>
       </trans-unit>
       <trans-unit id="KZ8ohsG" resname="About_breed.main_coons.appearance.title">
-          <source>About_breed.main_coons.appearance.title</source>
-          <target>Par šķirnes izskatu</target>
+        <source>About_breed.main_coons.appearance.title</source>
+        <target>Par šķirnes izskatu</target>
       </trans-unit>
       <trans-unit id="8mtnigJ" resname="About_breed.main_coons.appearance.text">
-          <source>About_breed.main_coons.appearance.text</source>
-          <target>Par šķirnes izskatu</target>
+        <source>About_breed.main_coons.appearance.text</source>
+        <target>Par šķirnes izskatu</target>
       </trans-unit>
       <trans-unit id="C86GxE0" resname="About_breed.main_coons.character.title">
-          <source>About_breed.main_coons.character.title</source>
-          <target>Par šķirnes raksturu</target>
+        <source>About_breed.main_coons.character.title</source>
+        <target>Par šķirnes raksturu</target>
       </trans-unit>
       <trans-unit id="W5iVSd3" resname="About_breed.main_coons.character.text">
-          <source>About_breed.main_coons.character.text</source>
-          <target>Par šķirnes raksturu</target>
+        <source>About_breed.main_coons.character.text</source>
+        <target>Par šķirnes raksturu</target>
       </trans-unit>
       <trans-unit id="iWt8gIG" resname="About_breed.main_coons.health.title">
-          <source>About_breed.main_coons.health.title</source>
-          <target>Par šķirnes veselību</target>
+        <source>About_breed.main_coons.health.title</source>
+        <target>Par šķirnes veselību</target>
       </trans-unit>
       <trans-unit id="qwcPHog" resname="About_breed.main_coons.health.text">
-          <source>About_breed.main_coons.health.text</source>
-          <target>Par šķirnes veselību</target>
+        <source>About_breed.main_coons.health.text</source>
+        <target>Par šķirnes veselību</target>
       </trans-unit>
       <trans-unit id="1Iwl2ZR" resname="About_breed.main_coons.care.title">
-          <source>About_breed.main_coons.care.title</source>
-          <target>Par šķirnes aprūpi</target>
+        <source>About_breed.main_coons.care.title</source>
+        <target>Par šķirnes aprūpi</target>
       </trans-unit>
       <trans-unit id="Hkg6Dp4" resname="About_breed.main_coons.care.text">
-          <source>About_breed.main_coons.care.text</source>
-          <target>Par šķirnes aprūpi</target>
+        <source>About_breed.main_coons.care.text</source>
+        <target>Par šķirnes aprūpi</target>
       </trans-unit>
       <trans-unit id="38Hm0Wu" resname="Toggle navigation">
-          <source>Toggle navigation</source>
-          <target>Pārslēgt navigāciju</target>
+        <source>Toggle navigation</source>
+        <target>Pārslēgt navigāciju</target>
       </trans-unit>
       <trans-unit id="fZ63rLE" resname="Close">
-          <source>Close</source>
-          <target>Aizvērt</target>
+        <source>Close</source>
+        <target>Aizvērt</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
-          <source>Home</source>
-          <target>Sākums</target>
+        <source>Home</source>
+        <target>Sākums</target>
       </trans-unit>
       <trans-unit id="2v52lEY" resname="Hello,">
-          <source>Hello,</source>
-          <target>Sveiki,</target>
+        <source>Hello,</source>
+        <target>Sveiki,</target>
       </trans-unit>
       <trans-unit id="5Nu8xOi" resname="Personal Cabinet">
-          <source>Personal Cabinet</source>
-          <target>Personīgais kabinets</target>
+        <source>Personal Cabinet</source>
+        <target>Personīgais kabinets</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
-          <source>Logout</source>
-          <target>Izrakstīties</target>
+        <source>Logout</source>
+        <target>Izrakstīties</target>
       </trans-unit>
       <trans-unit id="wYmEDPf" resname="Log in">
-          <source>Log in</source>
-          <target>Autentificēties</target>
+        <source>Log in</source>
+        <target>Autentificēties</target>
       </trans-unit>
       <trans-unit id="vNZ49q2" resname="Grande Linci LV">
-          <source>Grande Linci LV</source>
-          <target>Grande Linci LV</target>
+        <source>Grande Linci LV</source>
+        <target>Grande Linci LV</target>
       </trans-unit>
       <trans-unit id="i6XISnl" resname="No active litter available!">
-          <source>No active litter available!</source>
-          <target>Nav pieejams aktīvs metiens!</target>
+        <source>No active litter available!</source>
+        <target>Nav pieejams aktīvs metiens!</target>
       </trans-unit>
       <trans-unit id="u3I07BJ" resname="Register">
-          <source>Register</source>
-          <target>Reģistrēties</target>
+        <source>Register</source>
+        <target>Reģistrēties</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
-          <source>Username</source>
-          <target>Lietotājvārds</target>
+        <source>Username</source>
+        <target>Lietotājvārds</target>
       </trans-unit>
       <trans-unit id="ls5uYZO" resname="First Name">
-          <source>First Name</source>
-          <target>Vārds</target>
+        <source>First Name</source>
+        <target>Vārds</target>
       </trans-unit>
       <trans-unit id="lpzL089" resname="Email">
-          <source>Email</source>
-          <target>E-pasts</target>
+        <source>Email</source>
+        <target>E-pasts</target>
       </trans-unit>
       <trans-unit id="Y9zriAC" resname="Phone">
-          <source>Phone</source>
-          <target>Tālrunis</target>
+        <source>Phone</source>
+        <target>Tālrunis</target>
       </trans-unit>
       <trans-unit id="588_9PF" resname="Password">
-          <source>Password</source>
-          <target>Parole</target>
+        <source>Password</source>
+        <target>Parole</target>
       </trans-unit>
       <trans-unit id="SO_e8C8" resname="I agree to the terms and conditions">
-          <source>I agree to the terms and conditions</source>
-          <target>Piekrītu noteikumiem un nosacījumiem</target>
+        <source>I agree to the terms and conditions</source>
+        <target>Piekrītu noteikumiem un nosacījumiem</target>
       </trans-unit>
       <trans-unit id="yKeA0.P" resname="Log in!">
-          <source>Log in!</source>
-          <target>Autentificējies!</target>
+        <source>Log in!</source>
+        <target>Autentificējies!</target>
       </trans-unit>
       <trans-unit id="dDUw20Q" resname="Please sign in">
-          <source>Please sign in</source>
-          <target>Lūdzu, pierakstieties</target>
+        <source>Please sign in</source>
+        <target>Lūdzu, pierakstieties</target>
       </trans-unit>
       <trans-unit id="acVpEs4" resname="You are logged in as">
-          <source>You are logged in as</source>
-          <target>Jūs esat pierakstījies kā</target>
+        <source>You are logged in as</source>
+        <target>Jūs esat pierakstījies kā</target>
       </trans-unit>
       <trans-unit id="v9QCsvb" resname="Sign in">
-          <source>Sign in</source>
-          <target>Pierakstīties</target>
+        <source>Sign in</source>
+        <target>Pierakstīties</target>
       </trans-unit>
       <trans-unit id="bfXSF0S" resname="Личный кабинет">
-          <source>Личный кабинет</source>
-          <target>Personīgais kabinets</target>
+        <source>Личный кабинет</source>
+        <target>Personīgais kabinets</target>
       </trans-unit>
       <trans-unit id="egbT18m" resname="Добро пожаловать в Личный кабинет">
-          <source>Добро пожаловать в Личный кабинет</source>
-          <target>Laipni lūdzam personīgajā kabinetā</target>
+        <source>Добро пожаловать в Личный кабинет</source>
+        <target>Laipni lūdzam personīgajā kabinetā</target>
       </trans-unit>
       <trans-unit id="Z1NLMOq" resname="Мой профиль">
-          <source>Мой профиль</source>
-          <target>Mana profilā</target>
+        <source>Мой профиль</source>
+        <target>Mana profilā</target>
       </trans-unit>
       <trans-unit id="oRX9b3l" resname="Просмотр и редактирование информации о себе.">
-          <source>Просмотр и редактирование информации о себе.</source>
-          <target>Informācijas par sevi apskate un rediģēšana</target>
+        <source>Просмотр и редактирование информации о себе.</source>
+        <target>Informācijas par sevi apskate un rediģēšana</target>
       </trans-unit>
       <trans-unit id="Vmq0IeS" resname="Редактировать профиль">
-          <source>Редактировать профиль</source>
-          <target>Rediģēt profilu</target>
+        <source>Редактировать профиль</source>
+        <target>Rediģēt profilu</target>
       </trans-unit>
       <trans-unit id="3ee24JS" resname="Ваш чат">
-          <source>Ваш чат</source>
-          <target>Jūsu čats</target>
+        <source>Ваш чат</source>
+        <target>Jūsu čats</target>
       </trans-unit>
       <trans-unit id="OtdrhJ1" resname="Перейти в чат">
-          <source>Перейти в чат</source>
-          <target>Pāriet uz čatu</target>
+        <source>Перейти в чат</source>
+        <target>Pāriet uz čatu</target>
       </trans-unit>
       <trans-unit id="K1mPZj9" resname="Начать чат с администратором">
-          <source>Начать чат с администратором</source>
-          <target>Sākt čatu ar administratoru</target>
+        <source>Начать чат с администратором</source>
+        <target>Sākt čatu ar administratoru</target>
       </trans-unit>
       <trans-unit id="PJ0VNJE" resname="Редактировать данные">
-          <source>Редактировать данные</source>
-          <target>Rediģēt datus</target>
+        <source>Редактировать данные</source>
+        <target>Rediģēt datus</target>
       </trans-unit>
       <trans-unit id="tNMMrlK" resname="Сохранить">
-          <source>Сохранить</source>
-          <target>Saglabāt</target>
+        <source>Сохранить</source>
+        <target>Saglabāt</target>
       </trans-unit>
+      <trans-unit id="pGmrTKT" resname="Page not found">
+          <source>Page not found</source>
+          <target>Lapa nav atrasta</target>
+      </trans-unit>
+      <trans-unit id="_qp80Dr" resname="Пожалуйста, вернитесь на главную">
+          <source>Пожалуйста, вернитесь на главную</source>
+          <target>Lūdzu, atgriezieties sākumlapā</target>
+      </trans-unit>
+      <trans-unit id="Zp6hPrx" resname="If you have any questions or cooperation issues, please sign up to have request to the extra conent!">
+          <source>If you have any questions or cooperation issues, please sign up to have request to the extra conent!</source>
+          <target>Ja jums ir kādi jautājumi vai sadarbības piedāvājumi, lūdzu, reģistrējieties, lai pieprasītu papildu saturu!</target>
+      </trans-unit>
+      <trans-unit id="PbSSyVs" resname="Welcome-text">
+          <source>Welcome-text</source>
+          <target>Laipni lūdzam audzētavā Grande Linci! Mēs esam priecīgi jūs redzēt mūsu mājīgajā stūrītī, kur valda mīlestība un rūpes par kaķiem. Šeit jūs atradīsiet brīnišķīgus Meinkūnus un elegantus Orientālos kaķus, kuri kļūs par uzticamiem pavadoņiem un iemīļotiem ģimenes locekļiem. Mūsu mērķis ir radīt veselīgu un draudzīgu vidi mūsu mīluļiem, kā arī dalīties ar jums šo brīnišķīgo šķirņu skaistumā un unikalitātē.</target>
+      </trans-unit>
+      <trans-unit id="m1RDCwb" resname="About us text">
+          <source>About us text</source>
+          <target>Grande Linci ir audzētava Rīgā, kas specializējas Meinkūnu un Orientālo kaķu audzēšanā. Mēs ar lepnumu nodarbojamies ar selekciju un rūpējamies par saviem mīluļiem, nodrošinot viņiem visaugstāko dzīves un veselības līmeni. Mūsu kaķi izceļas ar lielisku raksturu, izteiksmīgu izskatu un, kas nav mazāk svarīgi, stipru veselību. Mēs cenšamies, lai katra ģimene, kas savās mājās uzņem kādu no mūsu kaķēniem, izjustu patieso prieku par šo apbrīnojamo radību klātbūtni.</target>
+      </trans-unit>
+      <trans-unit id="GjzGze9" resname="Уведомление">
+          <source>Уведомление</source>
+          <target>Paziņojums</target>
+      </trans-unit>
+      <trans-unit id=".mOFJIm" resname="Вы уже оставили заявку на этого котенка">
+        <source>Вы уже оставили заявку на этого котенка</source>
+        <target>Jūs jau esat iesnieguši pieteikumu par šo kaķēnu</target>
+      </trans-unit>
+      <trans-unit id="XZ1.EYF" resname="Забронировать">
+        <source>Забронировать</source>
+        <target>Rezervēt</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv" resname="Отмена">
+        <source>Отмена</source>
+        <target>Atcelt</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv1" resname="Available">
+              <source>Available</source>
+              <target>Pieejams</target>
+            </trans-unit>
+            <trans-unit id="j76bdcv2" resname="At home">
+                          <source>At home</source>
+                          <target>Mājās</target>
+                        </trans-unit>
+      <trans-unit id="j76bdcv3" resname="Reserved">
+                                <source>Reserved</source>
+                                <target>Rezervēts</target>
+                              </trans-unit>
     </body>
   </file>
 </xliff>
