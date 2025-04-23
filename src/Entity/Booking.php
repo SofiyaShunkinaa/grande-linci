@@ -30,6 +30,9 @@ class Booking
     #[Assert\Choice(choices: ["В ожидании", "Подтверждено", "Отклонено"], message: "Invalid status")]
     private string $status = 'В ожидании';
 
+    #[ORM\Column(type: 'boolean')]
+    private bool $isViewed = false;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -76,6 +79,17 @@ class Booking
     public function setStatus(string $status): self
     {
         $this->status = $status;
+        return $this;
+    }
+
+    public function isViewed(): bool
+    {
+        return $this->isViewed;
+    }
+
+    public function setIsViewed(bool $isViewed): self
+    {
+        $this->isViewed = $isViewed;
         return $this;
     }
 

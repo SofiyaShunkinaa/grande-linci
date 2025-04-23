@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\BookingRepository;
 use App\Repository\BreedRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,7 +12,7 @@ use App\Service\CatService;
 class OurCatsController extends AbstractController
 {
     #[Route('/our-cats/{keyWord}', name: 'app_our_cats', defaults: ['keyWord' => ''])]
-    public function index(?string $keyWord, CatService $catService, BreedRepository $breedRepository): Response
+    public function index(?string $keyWord, CatService $catService, BreedRepository $breedRepository, BookingRepository $bookingRepository): Response
     {
         $breed = $breedRepository->findOneBy(['keyWord' => $keyWord]);
         $females = $catService->getFemaleCats($breed);
@@ -61,12 +62,21 @@ class OurCatsController extends AbstractController
         }
         
         $catsCount = count($cats);
-        
+
+        $user = $this->getUser();
+        $book = false;
+
+        if ($user) {
+            var_dump($bookingRepository->userHasNewUpdates($user));
+            $book = $bookingRepository->userHasNewUpdates($user);
+        }
      
         return $this->render('our_cats/index.html.twig', [
             'controller_name' => 'OurCatsController',
             'cats' => $cats,
             'count' => $catsCount,
+            'title' => $breed->getName(),
+            'book' => $book
         ]);
     }
 }

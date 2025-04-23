@@ -20,7 +20,8 @@ class RequestType extends AbstractType
         ->add('email', EmailType::class, [
             'attr' => ['placeholder' => 'example@gmail.com']
         ])
-            ->add('phone')
+            ->add('phone', TextType::class, [
+                'attr' => ['placeholder' => '+123 (456) 789-0123']])
             ->add('message')
         ;
     }

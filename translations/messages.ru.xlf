@@ -411,7 +411,7 @@
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
-        <target>Имя пользователя</target>
+        <target>Логин</target>
       </trans-unit>
       <trans-unit id="ls5uYZO" resname="First Name">
         <source>First Name</source>
@@ -600,6 +600,14 @@
       <trans-unit id="LSHsgV8" resname="У вас пока нет заявок.">
         <source>У вас пока нет заявок.</source>
         <target>У вас пока нет заявок.</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV81" resname="Maine Coon">
+        <source>Maine Coon</source>
+        <target>Мейн кун</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV82" resname="Oriental">
+        <source>Oriental</source>
+        <target>Ориентальные</target>
       </trans-unit>
     </body>
   </file>

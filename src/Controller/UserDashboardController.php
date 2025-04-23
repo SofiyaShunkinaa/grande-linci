@@ -42,6 +42,15 @@ class UserDashboardController extends AbstractController
             return $this->redirectToRoute('app_login');
         }
 
+        foreach ($bookings as $booking) {
+            if (!$booking->isViewed()) {
+                $booking->setIsViewed(true);
+            }
+        }
+
+        $this->entityManager->flush();
+
+
         return $this->render('user_dashboard/index.html.twig', [
             'chat' => $chat,
             'bookings' => $bookings, // Передаем заявки в шаблон

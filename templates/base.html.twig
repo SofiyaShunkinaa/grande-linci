@@ -186,9 +186,13 @@
                                 <a class="nav-link active" aria-current="page" href="{{ path('app_contacts') }}">{{ 'Contacts'|trans }}</a>
                             </li>
                             <li class="nav-item dropdown">
+                                {% set hasBookingUpdates = false %}
                                 {% if app.user %}
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         {{ 'Hello, '|trans}}{{ app.user.username }}
+                                        {% if book is defined and book %}
+                                            <span class="notification-dot"></span>
+                                        {% endif %}
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="{{ path('app_user_dashboard') }}">{{ 'Personal Cabinet'|trans }}</a></li>
@@ -217,9 +221,7 @@
                             <li class="nav-item d-block d-lg-none">
                                 <a class="nav-link disabled" aria-disabled="true">{{ 'Riga, Latvia'|trans }}</a>
                             </li>
-                        </ul>
-                    </div>
-                </div>
+
 
 
                 <li class="nav-item d-block d-lg-none">

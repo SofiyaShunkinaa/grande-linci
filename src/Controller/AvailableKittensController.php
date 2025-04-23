@@ -70,6 +70,14 @@ class AvailableKittensController extends AbstractController
             ]);
         }
 
+        $user = $this->getUser();
+        $book = false;
+
+        if ($user) {
+            var_dump($bookingRepository->userHasNewUpdates($user));
+            $book = $bookingRepository->userHasNewUpdates($user);
+        }
+
         return $this->render('available_kittens/index.html.twig', [
             'controller_name' => 'AvailableKittensController',
             'buttons' => $buttons,
@@ -80,6 +88,8 @@ class AvailableKittensController extends AbstractController
             'form' => $form->createView(),
             'bookings' => $bookingRepository->findAll(),
             'keyWord' => $keyWord,
+            'title' => $breed->getName(),
+            'book' => $book,
         ]);
     }
 

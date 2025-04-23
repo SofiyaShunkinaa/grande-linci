@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Booking;
+use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -15,6 +16,21 @@ class BookingRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Booking::class);
     }
+
+    public function userHasNewUpdates(User $user): bool
+    {
+        return $this->createQueryBuilder('b')
+                ->select('COUNT(b.id)')
+                ->where('b.user = :user')
+                ->andWhere('b.isViewed = false')
+                ->andWhere('b.status != :pendingStatus')
+                ->setParameter('user', $user)
+                ->setParameter('pendingStatus', 'В ожидании')
+                ->getQuery()
+                ->getSingleScalarResult() > 0; // 👈 сравнение!
+    }
+
+
 
 //    /**
 //     * @return Booking[] Returns an array of Booking objects

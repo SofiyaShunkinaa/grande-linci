@@ -24,6 +24,7 @@ class BookingController extends AbstractController
         $booking->setKitten($kitten);
         $booking->setCreatedAt(new \DateTime());
         $booking->setStatus('В ожидании');
+        $booking->setIsViewed(false);
 
         $entityManager->persist($booking);
         $entityManager->flush();

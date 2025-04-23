@@ -35,7 +35,7 @@
 <div class="container-fluid d-flex flex-column align-items-center justify-content-between home-preview position-fixed z-0">
 </div>
 <div class="container-fluid d-flex align-items-top justify-content-start preview-content position-fixed z-1">
-    <div class="col-6 d-flex justify-content-center align-items-end">
+    <div class="col-6 d-flex justify-content-center align-items-end side-image">
         <img class="image-container col-9" src="{{ asset('img/our-cats.png')}}" alt="cat">
     </div>
    
@@ -65,7 +65,7 @@
                 <div class="arrow-body"></div>
                 <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
             </div>
-            <h2 class="text-capitalize text-white">{{ 'Main Coons'|trans }}</h2>
+            <h2 class="text-capitalize text-white">{{ title|trans }}</h2>
         </div>
 </div>
 
@@ -109,29 +109,30 @@
                     <p>{{ litter.date | date('d.m.Y') }}</p>
                 </div>
 
-                <div class="section-inner d-flex justify-content-center align-items-start litter__parents">
-                    <div class="col-3 cat-parent d-flex flex-column align-items-center">
-                        <div class="image-container shaded-green">
-                            <img src="{{ asset('img/cats/' ~ mother.imageLink )}}" alt="Cat mother">
-                        </div>
-                        <h4>{{ mother.name }}</h4>
-                    </div>
+                <div class="section-inner d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start litter__parents">
+                    <div class="d-flex d-md-block col-lg-3 col-md-4"><div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
+                            <div class="image-container shaded-green">
+                                <img src="{{ asset('img/cats/' ~ mother.imageLink )}}" alt="Cat mother">
+                            </div>
+                            <h4>{{ mother.name }}</h4>
+                        </div><div class="horizontal-line col-2 d-block d-md-none"></div> </div>
 
-                    <div class="parent-divider">
+                    <div class="parent-divider image-container mb-0 d-none d-md-block">
                         <img src="{{ asset('img/arrow/litter-divider-lg.png') }}" alt="arrow">
                     </div>
-
-                    <div class="col-3 cat-parent d-flex flex-column align-items-center">
-                        <div class="image-container shaded-green">
-                            <img src="{{ asset('img/cats/' ~ father.imageLink )}}" alt="Cat father">
-                        </div>
-                        <h4>{{ father.name }}</h4>
-                    </div>
+                    <div class="d-flex d-md-block col-lg-3 col-md-4">
+                        <div class="col-sm-10 col-md-12 cat-parent d-flex flex-column align-items-center">
+                            <div class="image-container shaded-green">
+                                <img src="{{ asset('img/cats/' ~ father.imageLink )}}" alt="Cat father">
+                            </div>
+                            <h4>{{ father.name }}</h4>
+                        </div><div class="horizontal-line col-2 d-block d-md-none"></div></div>
                 </div>
+                <div class="vertical-line"></div>
 
                 <div class="section-white container section d-flex flex-wrap section-kittens justify-content-center">
                     {% for kitten in kittens %}
-                        <div class="col-3 d-flex flex-column align-items-center">
+                        <div class="col-md-3 col-12 d-flex flex-column align-items-center">
                             <div class="image-container">
                                 <img src="{{ asset('img/kittens/' ~ kitten.imageLink )}}" alt="kitten">
                             </div>

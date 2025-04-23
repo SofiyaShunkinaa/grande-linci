@@ -13,7 +13,7 @@
 <div class="container-fluid d-flex flex-column align-items-center justify-content-between home-preview position-fixed z-0">
 </div>
 <div class="container-fluid d-flex align-items-top justify-content-start preview-content position-fixed z-1">
-    <div class="col-6 d-flex justify-content-center align-items-end">
+    <div class="col-6 d-flex justify-content-center align-items-end side-image">
         <img class="image-container col-9" src="{{ asset('img/our-cats.png')}}" alt="cat">
     </div>
    
@@ -43,7 +43,7 @@
                 <div class="arrow-body"></div>
                 <div class="arrow-end"><img src="{{ asset('img/arrow/ending.svg') }}" alt="arrow end"></div>
             </div>
-            <h2 class="text-capitalize text-white">{{ 'Main Coons'|trans }}</h2>
+            <h2 class="text-capitalize text-white">{{ title|trans }}</h2>
         </div>
 </div>
 
@@ -88,7 +88,15 @@
                                         <h3>{{ cat.male.name }}</h3>
                                     </div>
                                     <div class="aside-text d-flex flex-column align-items-start col-sm-12 col-md-9">
-                                        <p>{{ cat.male.description }}</p>
+                                        <p>
+                                            {% if app.request.locale == 'en' %}
+                                                {{ cat.male.description }}
+                                            {% elseif app.request.locale == 'ru' %}
+                                                {{ cat.male.descriptionRu }}
+                                            {% elseif app.request.locale == 'lv' %}
+                                                {{ cat.male.descriptionLv }}
+                                            {% endif %}
+                                        </p>
                                         {% if loop.index0%2 == 0 %}
                                             <div class="image-container"><img src="{{ asset('img/arrow/dark-arrow.png') }}" alt="arrow"></div>
                                         {% else %}

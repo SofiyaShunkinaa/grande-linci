@@ -235,7 +235,7 @@
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
-        <target>Username</target>
+        <target>Login</target>
       </trans-unit>
       <trans-unit id="ls5uYZO" resname="First Name">
         <source>First Name</source>
@@ -453,7 +453,14 @@
           <source>Отклонено</source>
           <target>Declined</target>
       </trans-unit>
-
+      <trans-unit id="LSHsgV811" resname="Maine Coon">
+        <source>Maine Coon</source>
+        <target>Main Coon</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV821" resname="Oriental">
+        <source>Oriental</source>
+        <target>Oriental</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

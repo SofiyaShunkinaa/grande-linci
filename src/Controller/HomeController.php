@@ -88,6 +88,14 @@ class HomeController extends AbstractController
             return $this->redirectToRoute('app_home');
         }
 
+        $user = $this->getUser();
+        $book = false;
+
+        if ($user) {
+            //var_dump($bookingRepository->userHasNewUpdates($user));
+            $book = $bookingRepository->userHasNewUpdates($user);
+        }
+
         return $this->render('home/index.html.twig', [
             'litter' => $litter,
             'kittens' => $kittens,
@@ -96,6 +104,7 @@ class HomeController extends AbstractController
             'form' => $form->createView(),
             'formBooking' => $formBooking->createView(),
             'bookings' => $bookingRepository->findAll(),
+            'book' => $book,
         ]);
     }
 }

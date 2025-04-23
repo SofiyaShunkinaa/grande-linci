@@ -66,10 +66,14 @@ main{
 }
 .home-preview{
    height: calc(100vh - 97px);
-   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../img/background.webp);
+   background: url(../img/back1.png);
    background-size: cover;
    background-repeat: no-repeat;
    filter: brightness(0.8) contrast(1.2);
+    background-position: center bottom;
+}
+.preview-content .side-image img{
+    display: none;
 }
 .home{
     height: 350px;
@@ -242,6 +246,8 @@ h4{
 }
 .litter .image-container{
     margin-bottom: 20px;
+    width:318px;
+    height:318px;
 }
 .section-kittens{
     column-gap: 20px;
@@ -482,6 +488,32 @@ p{
 .modal-body a{
     color: var(--green);
 }
+.notification-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--green-light);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+@media (max-width: 1400px){
+    .litter .image-container{
+        width: 273px;
+        height: 273px;
+    }
+}
+@media (max-width: 1200px){
+    .litter .image-container{
+        width: 228px;
+        height: 228px;
+    }
+    .side-image{
+        display: none !important;
+    }
+    .preview-content{
+        justify-content: center !important;
+    }
+}
 @media (max-width:1024px){
     .section-inner.about-us.home{
         gap: 40px;
@@ -537,6 +569,10 @@ p{
     }
     .footer-logo h3{
         font-size: 28px;
+    }
+    .litter .image-container{
+        width: 168px;
+        height: 168px;
     }
 }
 
@@ -597,6 +633,10 @@ p{
     }
     .image-sm, .image-xs{
         height: auto;
+    }
+    .litter .image-container{
+        width: 123px;
+        height: 123px;
     }
 }
 @media (max-width: 650px){

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\BookingRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,7 +22,7 @@ class ContactsController extends AbstractController
     }
 
     #[Route('/contacts', name: 'app_contacts')]
-    public function index(Request $request): Response
+    public function index(Request $request, BookingRepository $bookingRepository): Response
     {
         // Создаем объект для формы
         $guestRequest = new GuestRequest();
@@ -36,9 +37,17 @@ class ContactsController extends AbstractController
 
             $this->addFlash('success', 'Your request has been submitted successfully.');
         }
+        $user = $this->getUser();
+        $book = false;
+
+        if ($user) {
+            var_dump($bookingRepository->userHasNewUpdates($user));
+            $book = $bookingRepository->userHasNewUpdates($user);
+        }
 
         return $this->render('contacts/index.html.twig', [
             'form' => $form->createView(),
+            'book' => $book
         ]);
     }
 }
