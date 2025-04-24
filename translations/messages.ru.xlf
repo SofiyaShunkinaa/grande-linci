@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+  <file source-language="ru" target-language="ru" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -55,7 +55,7 @@
       </trans-unit>
       <trans-unit id="R6rzG4P" resname="Contact us">
         <source>Contact us</source>
-        <target>Контакты</target>
+        <target>Свяжитесь с нами</target>
       </trans-unit>
       <trans-unit id="M6wAmTA" resname="Maine Coon and Oriental Cattery">
         <source>Maine Coon and Oriental Cattery</source>
@@ -69,16 +69,16 @@
         <source>Choose a kitten</source>
         <target>Выбрать котенка</target>
       </trans-unit>
-      <trans-unit id="5nREczf" resname="Available">
-        <source>Available</source>
+      <trans-unit id="4TQpl.U" resname="Statuses.Available">
+        <source>Statuses.Available</source>
         <target>Доступен</target>
       </trans-unit>
-      <trans-unit id="M4X.5nR" resname="Reserved">
-        <source>Reserved</source>
+      <trans-unit id="u2Yc9SC" resname="Statuses.Reserved">
+        <source>Statuses.Reserved</source>
         <target>Зарезервирован</target>
       </trans-unit>
-      <trans-unit id="_8zaBg6" resname="At home">
-        <source>At home</source>
+      <trans-unit id="YW2rfId" resname="Statuses.At home">
+        <source>Statuses.At home</source>
         <target>Дома</target>
       </trans-unit>
       <trans-unit id="8yzqcKb" resname="LITTER">
@@ -145,6 +145,190 @@
         <source>All kittens adopted</source>
         <target>Все котята куплены</target>
       </trans-unit>
+      <trans-unit id="ME1DIwu" resname="About_breed.main_coons.breed_history.title">
+        <source>About_breed.main_coons.breed_history.title</source>
+        <target>История породы</target>
+      </trans-unit>
+      <trans-unit id="hRXb2d8" resname="About_breed.main_coons.breed_history.text">
+        <source>About_breed.main_coons.breed_history.text</source>
+        <target>Порода мейн кун окутана множеством легенд, каждая из которых добавляет шарма и загадочности этой величественной кошке. По первой из них, мейн кун берет свое начало на североамериканском континенте, а именно в штате Мэн. Именно этот штат стал основой для первой части названия породы – "мейн", что отсылает к ее географическому происхождению. Вторая часть – это сокращение от английского слова "racoon", что означает енот. Визуальное сходство с лесным зверем действительно заметно, особенно по их пушистому хвосту, однако с научной точки зрения эти два животных не имеют генетической связи. Другая, не менее интересная версия связана с именем знаменитой французской королевы Марии Антуанетты. Согласно легенде, во время французской революции она планировала побег в Америку, спасаясь от участи своего мужа Людовика XVI. Королева отправила на корабль не только свои личные вещи, но и любимых кошек северных пород. Когда планы королевы рухнули, кошки все же добрались до Америки. Там они скрестились с местными кошками, что привело к появлению новой породы, которая и стала предком современных мейн-кунов. Третья легенда уходит корнями в морскую историю. Согласно этому рассказу, мейн-куны попали в Северную Америку вместе с моряками, которые часто брали кошек с собой в длительные плавания, чтобы защитить корабль от крыс. Мейн-куны, обладая отличными охотничьими навыками и густой шерстью, которая защищала их от сурового климата, прижились на новых землях и быстро стали любимцами местных жителей. Смешение морских кошек с местными породами способствовало укреплению породы, и именно благодаря этому естественному отбору мейн-куны обрели свой узнаваемый внешний вид. Несмотря на разнообразие версий, все они сходятся в одном — мейн-куны всегда были особенными кошками, привлекающими внимание людей своей необычной внешностью, охотничьими качествами и дружелюбным нравом. Современные мейн-куны продолжают удивлять своей преданностью, интеллигентностью и уникальной внешностью, что делает их одной из самых популярных пород среди любителей кошек. Таким образом, мейн-кун — это не просто домашний питомец, это символ истории, силы и выносливости. Независимо от того, какая версия происхождения вам ближе, эти кошки навсегда остались в сердцах тех, кто ценит их неповторимый характер и роскошный внешний вид.</target>
+      </trans-unit>
+      <trans-unit id="KZ8ohsG" resname="About_breed.main_coons.appearance.title">
+        <source>About_breed.main_coons.appearance.title</source>
+        <target>Внешний вид</target>
+      </trans-unit>
+      <trans-unit id="8mtnigJ" resname="About_breed.main_coons.appearance.text">
+        <source>About_breed.main_coons.appearance.text</source>
+        <target>Мейн-куны – это порода кошек, которая мгновенно привлекает внимание благодаря своим впечатляющим размерам и мощному телосложению. Они заметно выделяются на фоне других домашних кошек, не только за счет своих крупных габаритов, но и за счет характерных черт, которые делают их похожими на диких хищников. Одной из таких черт является форма головы, которая у мейн-кунов имеет квадратный контур, что придает им внушительный вид. Уши этих кошек высоко посажены, они крупные и часто украшены кисточками на концах, что создает сходство с дикими кошками, такими как рысь. Эти кисточки не только добавляют эстетики внешности, но и играют важную роль в улучшении слуха, помогая улавливать даже самые тихие звуки. Мускулистое и крепкое тело мейн-кунов – еще одна особенность, которая делает их сильными и выносливыми. Они обладают широкой грудной клеткой и крепкими лапами, что позволяет им оставаться активными и энергичными даже в зрелом возрасте. Такой тип телосложения делает их не только грациозными в движении, но и способными к долгим и энергичным играм. Один из самых запоминающихся элементов внешности мейн-куна – это их длинный и пушистый хвост. Этот хвост не только красив, но и выполняет важные функции. Во время сна мейн-кун часто сворачивается в клубок и использует свой хвост как "одеяло", защищая себя от холода и создавая дополнительное тепло. Хвост также помогает кошке сохранять равновесие во время прыжков и игр. Шерсть у мейн-кунов имеет особую структуру. На голове и передних лапах она относительно короткая и плотная, однако по мере движения к бокам и спине она становится длиннее и гуще, создавая эффект "шубы". Эта шерсть особенно полезна в холодное время года, когда она служит дополнительной защитой от низких температур, помогая кошкам оставаться теплыми и комфортными. Важно отметить, что шерсть у мейн-кунов обладает водоотталкивающими свойствами, что позволяет им чувствовать себя уютно даже в дождливую погоду. Разнообразие окрасов мейн-кунов также заслуживает внимания. По данным CFA (Ассоциации любителей кошек), существует более 75 различных вариантов окраса у этой породы. Это делает каждого мейн-куна уникальным, ведь среди такого множества окрасов сложно найти двух абсолютно одинаковых кошек. От классического черного или серого до редких рыжих и пятнистых расцветок – каждый мейн-кун отличается своим индивидуальным внешним обликом, что добавляет ещё больше очарования этой породе.</target>
+      </trans-unit>
+      <trans-unit id="C86GxE0" resname="About_breed.main_coons.character.title">
+        <source>About_breed.main_coons.character.title</source>
+        <target>Характер</target>
+      </trans-unit>
+      <trans-unit id="W5iVSd3" resname="About_breed.main_coons.character.text">
+        <source>About_breed.main_coons.character.text</source>
+        <target>Мейн куны — это удивительно дружелюбная и привязчивая порода кошек, которая сохраняет баланс между независимостью и преданностью своим владельцам. Несмотря на их внушительные размеры и дикий внешний вид, эти кошки обладают спокойным и уравновешенным характером, что делает их отличными компаньонами для семьи. Важно отметить, что мейн куны не требуют постоянного внимания и могут оставаться ненавязчивыми, предпочитая проводить время рядом с людьми, но не настаивая на активном взаимодействии, если оно не требуется. Одна из замечательных особенностей мейн кунов — это их умение легко приспосабливаться к различным жизненным условиям и взаимодействовать с людьми разных возрастов. Они хорошо ладят с детьми, проявляя терпение и добродушие в играх и общении. Эти кошки сохраняют игривость на протяжении всей жизни, поэтому даже взрослый мейн кун не теряет интереса к активным играм и охотничьим развлечениям. Их дружелюбие распространяется и на других животных, особенно если знакомство с ними произошло в раннем возрасте. Мейн куны могут уживаться с собаками и другими кошками, демонстрируя свою социальную природу. Однако стоит помнить об охотничьем инстинкте мейн кунов, который может проявляться в отношениях с мелкими животными. Птицы, грызуны и даже аквариумные рыбки могут стать объектами их внимания. Несмотря на это, их охотничье поведение редко переходит в агрессию. Чаще всего это проявляется в интересе к движению или шуму, который производят мелкие животные. Владельцам стоит быть осторожными, если в доме есть такие питомцы, чтобы предотвратить потенциальные инциденты. Мейн куны обожают активные игры, особенно те, которые включают в себя элементы охоты и преследования. Подвижные игрушки, такие как мыши на веревочках или интерактивные устройства, надолго занимают этих кошек. Они любят исследовать пространство и часто проявляют интерес к высоте, поэтому полки и когтеточки на разных уровнях станут прекрасным дополнением к игровому пространству мейн куна. Благодаря своей любознательности и активности, они легко учатся новым трюкам и с удовольствием принимают участие в обучающих играх. Таким образом, мейн куны – это настоящие "тихие гиганты" кошачьего мира. Несмотря на их внушительные размеры, они остаются добрыми, миролюбивыми и игривыми питомцами, которые привносят в дом гармонию и радость.</target>
+      </trans-unit>
+      <trans-unit id="iWt8gIG" resname="About_breed.main_coons.health.title">
+        <source>About_breed.main_coons.health.title</source>
+        <target>Здоровье и заболевания</target>
+      </trans-unit>
+      <trans-unit id="qwcPHog" resname="About_breed.main_coons.health.text">
+        <source>About_breed.main_coons.health.text</source>
+        <target>Мейн-куны, как правило, являются крепкими и выносливыми кошками, но, несмотря на это, они могут быть склонны к ряду наследственных заболеваний, характерных для породы. Забота о здоровье вашего питомца начинается с понимания возможных рисков и регулярных ветеринарных осмотров. Одной из самых распространенных проблем является гипертрофическая кардиомиопатия — заболевание, при котором сердечная мышца становится слишком толстой. Это приводит к снижению эффективности сердечной функции, что может вызывать различные осложнения, такие как одышка, вялость и сердечные приступы. Для своевременного обнаружения кардиомиопатии важно проводить регулярные обследования у ветеринара, так как на ранних стадиях заболевание может протекать бессимптомно. Еще одно потенциальное заболевание у мейн-кунов — дисплазия тазобедренного сустава. Это состояние возникает, когда тазобедренный сустав развивается неправильно, что приводит к боли и ограничению движений. Мейн-куны — крупные кошки с мощной мускулатурой, и дисплазия может значительно снижать их активность и подвижность. Симптомы дисплазии могут включать хромоту, нежелание прыгать или бегать, а также заметное снижение активности. Также среди мейн-кунов встречается дефицит пируваткиназы, фермента, необходимого для нормального обмена веществ. Недостаток этого фермента приводит к анемии, что проявляется в виде слабости, вялости и быстрой утомляемости. Это наследственное заболевание может быть диагностировано с помощью специального анализа крови. Спинальная мышечная атрофия — еще одно генетическое заболевание, которое может проявиться у мейн-кунов. Это состояние характеризуется прогрессивной потерей нервных клеток, контролирующих движение мышц. Постепенно кошки с этим заболеванием могут испытывать проблемы с координацией движений и слабостью в конечностях. Хотя это заболевание не вызывает боли, оно ограничивает активность и качество жизни питомца. Ответственные заводчики мейн-кунов уделяют большое внимание профилактике наследственных заболеваний. Они проводят ДНК-тесты на выявление предрасположенности к гипертрофической кардиомиопатии, дефициту пируваткиназы и спинальной мышечной атрофии, что позволяет минимизировать риски появления этих болезней у будущих поколений. Приобретая котенка у проверенного заводчика, вы можете быть уверены, что ваш питомец прошел необходимые обследования и не имеет серьезных генетических предрасположенностей.</target>
+      </trans-unit>
+      <trans-unit id="1Iwl2ZR" resname="About_breed.main_coons.care.title">
+        <source>About_breed.main_coons.care.title</source>
+        <target>Забота и уход</target>
+      </trans-unit>
+      <trans-unit id="Hkg6Dp4" resname="About_breed.main_coons.care.text">
+        <source>About_breed.main_coons.care.text</source>
+        <target>Мейн-куны — это крупные и красивые кошки, известные своей густой и длинной шерстью, которая требует особого внимания. Перед тем как завести эту породу, следует учитывать, что мейн-куны нуждаются в регулярном уходе, особенно за шерстью. Для поддержания её в хорошем состоянии рекомендуется использовать качественные расчески с широкими зубцами и специальные щетки для ежедневного ухода. Регулярное расчесывание помогает избежать спутывания шерсти и появления колтунов, которые чаще всего возникают в области живота, задних лап и подмышек. Если же шерсть уже сбилась в колтуны, потребуется специальный инструмент для их аккуратного удаления. Для новичков в уходе за мейн-кунами лучше обратиться к профессиональному грумеру, чтобы убедиться, что все процедуры выполняются правильно и безболезненно для животного. Кроме ухода за шерстью, мейн-куны нуждаются в регулярных медицинских осмотрах и плановой вакцинации. Ежегодные визиты к ветеринару и обновление прививок — это важная часть заботы о здоровье питомца. Важно следить за состоянием зубов, десен и ушей мейн-куна, так как проблемы с ними могут развиваться незаметно, но иметь серьезные последствия. Также ветеринар может порекомендовать профилактические анализы, особенно для крупных пород кошек, чтобы исключить возможные генетические заболевания. Если вы приобрели котенка в питомнике, обычно он уже привит от основных заболеваний, таких как кошачий грипп и другие инфекции. Однако в будущем питомцу потребуются повторные прививки, чтобы поддерживать иммунитет и защищать его от различных инфекций. Необходимо также вовремя проводить обработки от паразитов, таких как блохи и клещи, особенно если кошка выходит на улицу. Для комфорта и полноценного развития мейн-куна дома необходимо создать уютное пространство, где питомец сможет активно проводить время. Мейн-куны — активные и любопытные кошки, поэтому важно предоставить им достаточное количество игрушек, которые помогут реализовать их охотничьи инстинкты. Подойдут интерактивные игрушки, мягкие мячики, перьевые удочки, а также лазательные комплексы с полками. Важно, чтобы полки и когтеточки были прочными и устойчивыми, поскольку взрослый мейн-кун может весить до 10 кг. Обратите внимание на качество когтеточек — они должны быть достаточно высокими и крепкими, чтобы выдерживать вес и активные игры крупных кошек. Кроме того, мейн-куны любят наблюдать за происходящим с высоты, поэтому им понравятся высокие конструкции, на которых они смогут отдыхать и играть. Лазательные комплексы не только поддерживают физическую активность кошки, но и позволяют избежать порчи мебели и обоев, так как питомец сможет точить когти на специально отведенной поверхности. Правильный уход за мейн-куном включает в себя не только гигиену, но и внимание к эмоциональному состоянию питомца. Эта порода кошек отличается умом и дружелюбным характером, поэтому они нуждаются в общении и взаимодействии с хозяином. Регулярные игры, ласка и забота сделают вашего мейн-куна счастливым и здоровым, а уход за ним превратится в удовольствие.</target>
+      </trans-unit>
+      <trans-unit id="uOKh2Be" resname="About_breed.contents.title">
+        <source>About_breed.contents.title</source>
+        <target>Содержание</target>
+      </trans-unit>
+      <trans-unit id="Fu5Zu7H" resname="Home.welcome.title">
+        <source>Home.welcome.title</source>
+        <target>Добро пожаловать</target>
+      </trans-unit>
+      <trans-unit id="s_GiZtD" resname="Home.welcome.text">
+        <source>Home.welcome.text</source>
+        <target>Добро пожаловать в питомник Grande Linci! Мы рады видеть вас в нашем уютном уголке, где царит любовь и забота о кошках. Здесь вы найдете великолепных мейн кунов и элегантных ориентальных кошек, которые станут верными спутниками и любимцами вашей семьи. Наша цель — создать здоровое и дружелюбное окружение для наших питомцев, а также поделиться с вами красотой и уникальностью этих замечательных пород.</target>
+      </trans-unit>
+      <trans-unit id="9sxKxTL" resname="Home.about.title">
+        <source>Home.about.title</source>
+        <target>О нас</target>
+      </trans-unit>
+      <trans-unit id="YUa6HVi" resname="Home.about.text">
+        <source>Home.about.text</source>
+        <target>Grande Linci — это питомник в Риге, который специализируется на разведении мейн кунов и ориентальных кошек. Мы с гордостью занимаемся селекцией и заботой о наших питомцах, обеспечивая им высочайший уровень жизни и здоровья. Наши кошки отличаются великолепным характером, яркой внешностью и, что не менее важно, крепким здоровьем. Мы стремимся к тому, чтобы каждая семья, принявшая в дом одного из наших котят, ощутила всю радость общения с этими удивительными существами.</target>
+      </trans-unit>
+      <trans-unit id="x83uIEa" resname="Home.contact.title">
+        <source>Home.contact.title</source>
+        <target>Связь с нами</target>
+      </trans-unit>
+      <trans-unit id="KIq22Fp" resname="Home.contact.text">
+        <source>Home.contact.text</source>
+        <target>Если у вас возникли какие-либо вопросы или пожелания просто заполните форму ниже и мы обязательно с вами свяжемся!</target>
+      </trans-unit>
+      <trans-unit id="HiQnVtW" resname="About_us.history.title">
+        <source>About_us.history.title</source>
+        <target>История Grande Linci</target>
+      </trans-unit>
+      <trans-unit id="OY2k.4a" resname="About_us.history.text">
+        <source>About_us.history.text</source>
+        <target>Наша история началась с одной маленькой кошечки по имени [Линда], которая, несмотря на свои скромные размеры, завоевала наши сердца своей игривостью и добротой. С тех пор мы решили поделиться этой любовью с миром и создать место, где каждая кошка чувствует себя как дома. С годами мы расширили нашу коллекцию, добавив в нашу семью ориентальных кошек, которые привнесли в наш питомник новые краски и разнообразие. Мы гордимся тем, что наши питомцы не только красивые, но и обладают уникальными характерами, что делает каждую встречу с ними незабываемой.</target>
+      </trans-unit>
+      <trans-unit id="_2jIf2E" resname="About_us.advantages.health.title">
+        <source>About_us.advantages.health.title</source>
+        <target>Полное здоровье</target>
+      </trans-unit>
+      <trans-unit id="sEBtw0b" resname="About_us.advantages.health.text">
+        <source>About_us.advantages.health.text</source>
+        <target>Все наши мейн-куны имеют отличное здоровье и готовы к переезду в ваш дом.</target>
+      </trans-unit>
+      <trans-unit id="g7FgHST" resname="About_us.advantages.world.title">
+        <source>About_us.advantages.world.title</source>
+        <target>По всему миру</target>
+      </trans-unit>
+      <trans-unit id="GS7ZyTF" resname="About_us.advantages.world.text">
+        <source>About_us.advantages.world.text</source>
+        <target>Мы предлагаем доставку по всему миру, и наши выпускники уже живут в 35 странах!</target>
+      </trans-unit>
+      <trans-unit id="pmlqLr6" resname="About_us.advantages.socio.title">
+        <source>About_us.advantages.socio.title</source>
+        <target>Социализация</target>
+      </trans-unit>
+      <trans-unit id="pdh0sTI" resname="About_us.advantages.socio.text">
+        <source>About_us.advantages.socio.text</source>
+        <target>Мы уделяем особое внимание социализации, делая из них отличных компаньонов.</target>
+      </trans-unit>
+      <trans-unit id="AOKtdw2" resname="About_us.advantages.full_health.title">
+        <source>About_us.advantages.full_health.title</source>
+        <target>Пакет здоровья</target>
+      </trans-unit>
+      <trans-unit id="Gasy_ZE" resname="About_us.advantages.full_health.text">
+        <source>About_us.advantages.full_health.text</source>
+        <target>We pay special attention to socialization, making them excellent companions.</target>
+      </trans-unit>
+      <trans-unit id="EOOIntU" resname="Gallery_page.winners.title">
+        <source>Gallery_page.winners.title</source>
+        <target>Наши победители</target>
+      </trans-unit>
+      <trans-unit id="IHX8i7N" resname="Gallery_page.winners.text">
+        <source>Gallery_page.winners.text</source>
+        <target>Лучшие моментов славы и побед, когда наши мейн-куны великолепно представляли наш питомник на международных выставках.</target>
+      </trans-unit>
+      <trans-unit id="VYrajkI" resname="Gallery_page.pride.title">
+        <source>Gallery_page.pride.title</source>
+        <target>Наш прайд</target>
+      </trans-unit>
+      <trans-unit id=".Bv1aiI" resname="Gallery_page.pride.text">
+        <source>Gallery_page.pride.text</source>
+        <target>Наши самые очаровательные и красивые кошки!</target>
+      </trans-unit>
+      <trans-unit id="yOyTdwx" resname="Gallery_page.graduates.title">
+        <source>Gallery_page.graduates.title</source>
+        <target>Наши выпускники</target>
+      </trans-unit>
+      <trans-unit id="NAwCpQS" resname="Gallery_page.graduates.text">
+        <source>Gallery_page.graduates.text</source>
+        <target>Нежные и ласкаовые кошки и котики, которые переехали в любящие семьи</target>
+      </trans-unit>
+      <trans-unit id="2gcWoCM" resname="Buttons.send">
+        <source>Buttons.send</source>
+        <target>Отправить форму</target>
+      </trans-unit>
+      <trans-unit id="B8NDdUU" resname="Buttons.learn">
+        <source>Buttons.learn</source>
+        <target>Узнать больше</target>
+      </trans-unit>
+      <trans-unit id="e0Lgvx4" resname="Head.about">
+        <source>Head.about</source>
+        <target>О нас</target>
+      </trans-unit>
+      <trans-unit id="4xz1Nf4" resname="Head.kittens">
+        <source>Head.kittens</source>
+        <target>Доступные котята</target>
+      </trans-unit>
+      <trans-unit id="84gFagd" resname="Head.cats">
+        <source>Head.cats</source>
+        <target>Наши коты и кошки</target>
+      </trans-unit>
+      <trans-unit id="qhBzJgr" resname="Head.gallery">
+        <source>Head.gallery</source>
+        <target>галерея</target>
+      </trans-unit>
+      <trans-unit id="5FoC8rp" resname="Head.breed">
+        <source>Head.breed</source>
+        <target>О породе</target>
+      </trans-unit>
+      <trans-unit id="a4eP8CI" resname="Head.contact">
+        <source>Head.contact</source>
+        <target>Контакты</target>
+      </trans-unit>
+      <trans-unit id="UZi9E9p" resname="Head.breeds.main_coons">
+        <source>Head.breeds.main_coons</source>
+        <target>Мейн куны</target>
+      </trans-unit>
+      <trans-unit id="q_hFelL" resname="Head.breeds.orientals">
+        <source>Head.breeds.orientals</source>
+        <target>Ориентальные</target>
+      </trans-unit>
+      <trans-unit id="5nREczf" resname="Available">
+        <source>Available</source>
+        <target>Доступен</target>
+      </trans-unit>
+      <trans-unit id="M4X.5nR" resname="Reserved">
+        <source>Reserved</source>
+        <target>Забронирован</target>
+      </trans-unit>
+      <trans-unit id="_8zaBg6" resname="At home">
+        <source>At home</source>
+        <target>Дома</target>
+      </trans-unit>
       <trans-unit id="CpA.zDz" resname="Our Winners">
         <source>Our Winners</source>
         <target>Наши победители</target>
@@ -180,6 +364,250 @@
       <trans-unit id="qGra0MB" resname="Care and Maintenance">
         <source>Care and Maintenance</source>
         <target>Уход и содержание</target>
+      </trans-unit>
+      <trans-unit id="64FL48o" resname="Main">
+        <source>Main</source>
+        <target>Главная</target>
+      </trans-unit>
+      <trans-unit id="38Hm0Wu" resname="Toggle navigation">
+        <source>Toggle navigation</source>
+        <target>Переключить навигацию</target>
+      </trans-unit>
+      <trans-unit id="fZ63rLE" resname="Close">
+        <source>Close</source>
+        <target>Закрыть</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Домой</target>
+      </trans-unit>
+      <trans-unit id="I0Kb2bq" resname="Hello, ">
+        <source>Hello, </source>
+        <target>Привет, </target>
+      </trans-unit>
+      <trans-unit id="5Nu8xOi" resname="Personal Cabinet">
+        <source>Personal Cabinet</source>
+        <target>Личный кабинет</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Выход</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>Войти</target>
+      </trans-unit>
+      <trans-unit id="vNZ49q2" resname="Grande Linci LV">
+        <source>Grande Linci LV</source>
+        <target>Grande Linci LV</target>
+      </trans-unit>
+      <trans-unit id="i6XISnl" resname="No active litter available!">
+        <source>No active litter available!</source>
+        <target>Нет доступных пометов!</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Зарегистрироваться</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>Логин</target>
+      </trans-unit>
+      <trans-unit id="ls5uYZO" resname="First Name">
+        <source>First Name</source>
+        <target>Имя</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>Электронная почта</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Пароль</target>
+      </trans-unit>
+      <trans-unit id="SO_e8C8" resname="I agree to the terms and conditions">
+        <source>I agree to the terms and conditions</source>
+        <target>Я согласен с условиями</target>
+      </trans-unit>
+      <trans-unit id="yKeA0.P" resname="Log in!">
+        <source>Log in!</source>
+        <target>Войти!</target>
+      </trans-unit>
+      <trans-unit id="dDUw20Q" resname="Please sign in">
+        <source>Please sign in</source>
+        <target>Пожалуйста, войдите</target>
+      </trans-unit>
+      <trans-unit id="acVpEs4" resname="You are logged in as">
+        <source>You are logged in as</source>
+        <target>Вы вошли как</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>Войти</target>
+      </trans-unit>
+      <trans-unit id="bfXSF0S" resname="Личный кабинет">
+        <source>Личный кабинет</source>
+        <target>Личный кабинет</target>
+      </trans-unit>
+      <trans-unit id="egbT18m" resname="Добро пожаловать в Личный кабинет">
+        <source>Добро пожаловать в Личный кабинет</source>
+        <target>Добро пожаловать в Личный кабинет</target>
+      </trans-unit>
+      <trans-unit id="Z1NLMOq" resname="Мой профиль">
+        <source>Мой профиль</source>
+        <target>Мой профиль</target>
+      </trans-unit>
+      <trans-unit id="oRX9b3l" resname="Просмотр и редактирование информации о себе.">
+        <source>Просмотр и редактирование информации о себе.</source>
+        <target>Просмотр и редактирование информации о себе.</target>
+      </trans-unit>
+      <trans-unit id="Vmq0IeS" resname="Редактировать профиль">
+        <source>Редактировать профиль</source>
+        <target>Редактировать профиль</target>
+      </trans-unit>
+      <trans-unit id="3ee24JS" resname="Ваш чат">
+        <source>Ваш чат</source>
+        <target>Ваш чат</target>
+      </trans-unit>
+      <trans-unit id="OtdrhJ1" resname="Перейти в чат">
+        <source>Перейти в чат</source>
+        <target>Перейти в чат</target>
+      </trans-unit>
+      <trans-unit id="K1mPZj9" resname="Начать чат с администратором">
+        <source>Начать чат с администратором</source>
+        <target>Начать чат с администратором</target>
+      </trans-unit>
+      <trans-unit id="PJ0VNJE" resname="Редактировать данные">
+        <source>Редактировать данные</source>
+        <target>Редактировать данные</target>
+      </trans-unit>
+      <trans-unit id="tNMMrlK" resname="Сохранить">
+        <source>Сохранить</source>
+        <target>Сохранить</target>
+      </trans-unit>
+      <trans-unit id="2v52lEY" resname="Hello,">
+        <source>Hello,</source>
+        <target>Привет, </target>
+      </trans-unit>
+      <trans-unit id="pGmrTKT" resname="Page not found">
+        <source>Page not found</source>
+        <target>Страница не найдена</target>
+      </trans-unit>
+      <trans-unit id="_qp80Dr" resname="Пожалуйста, вернитесь на главную">
+        <source>Пожалуйста, вернитесь на главную</source>
+        <target>Пожалуйста, вернитесь на главную</target>
+      </trans-unit>
+      <trans-unit id="Zp6hPrx" resname="If you have any questions or cooperation issues, please sign up to have request to the extra conent!">
+        <source>If you have any questions or cooperation issues, please sign up to have request to the extra conent!</source>
+        <target>Если у вас есть вопросы или предложения по сотрудничеству, пожалуйста, зарегистрируйтесь, чтобы отправить запрос на дополнительный контент!</target>
+      </trans-unit>
+      <trans-unit id="PbSSyVs" resname="Welcome-text">
+        <source>Welcome-text</source>
+        <target>Добро пожаловать в питомник Grande Linci! Мы рады видеть вас в нашем уютном уголке, где царит любовь и забота о кошках. Здесь вы найдете великолепных мейн кунов и элегантных ориентальных кошек, которые станут верными спутниками и любимцами вашей семьи. Наша цель — создать здоровое и дружелюбное окружение для наших питомцев, а также поделиться с вами красотой и уникальностью этих замечательных пород.</target>
+      </trans-unit>
+      <trans-unit id="m1RDCwb" resname="About us text">
+        <source>About us text</source>
+        <target>Grande Linci — это питомник в Риге, который специализируется на разведении мейн кунов и ориентальных кошек. Мы с гордостью занимаемся селекцией и заботой о наших питомцах, обеспечивая им высочайший уровень жизни и здоровья. Наши кошки отличаются великолепным характером, яркой внешностью и, что не менее важно, крепким здоровьем. Мы стремимся к тому, чтобы каждая семья, принявшая в дом одного из наших котят, ощутила всю радость общения с этими удивительными существами.</target>
+      </trans-unit>
+      <trans-unit id="GjzGze9" resname="Уведомление">
+        <source>Уведомление</source>
+        <target>Уведомление</target>
+      </trans-unit>
+      <trans-unit id=".mOFJIm" resname="Вы уже оставили заявку на этого котенка">
+        <source>Вы уже оставили заявку на этого котенка</source>
+        <target>Вы уже оставили заявку на этого котенка</target>
+      </trans-unit>
+      <trans-unit id="XZ1.EYF" resname="Забронировать">
+        <source>Забронировать</source>
+        <target>Забронировать</target>
+      </trans-unit>
+      <trans-unit id="j76bdcv" resname="Отмена">
+        <source>Отмена</source>
+        <target>Отмена</target>
+      </trans-unit>
+      <trans-unit id="ujBHTeH" resname="About us page text">
+        <source>About us page text</source>
+        <target>В самом сердце нашего питомника разворачивается удивительная история, начавшаяся с любви к мейн кунам. Мы, как команда, посвятили свою страсть этой благородной породе, стремясь создать не просто питомник, а настоящий дом для каждого пушистого сердца. Наш путь озарён радостью рождений и успехами на выставках, но главной целью всегда было — построить семью для наших мейн кунов и их будущих владельцев. История нашего питомника — это история любви к этим великолепным существам, и мы рады поделиться ею с вами!</target>
+      </trans-unit>
+      <trans-unit id="Log7bKe" resname="advanage 1">
+        <source>advanage 1</source>
+        <target>Все наши мейн куны находятся в отличном состоянии здоровья и готовы переехать в ваш дом.</target>
+      </trans-unit>
+      <trans-unit id="F7dKU6a" resname="advantage 2">
+        <source>advantage 2</source>
+        <target>Мы осуществляем доставку по всему миру, и наши выпускники уже живут в 35 странах!</target>
+      </trans-unit>
+      <trans-unit id="OtVeKUa" resname="advantage 3">
+        <source>advantage 3</source>
+        <target>Мы уделяем особое внимание социализации, делая их отличными компаньонами.</target>
+      </trans-unit>
+      <trans-unit id="M8murZS" resname="advantage 4">
+        <source>advantage 4</source>
+        <target>Мы уделяем особое внимание социализации, делая их отличными компаньонами.</target>
+      </trans-unit>
+      <trans-unit id="FtYtDnx" resname="Для бронирования необходимо">
+        <source>Для бронирования необходимо</source>
+        <target>Для бронирования необходимо</target>
+      </trans-unit>
+      <trans-unit id=".WP8AWh" resname="зарегистрироваться">
+        <source>зарегистрироваться</source>
+        <target>зарегистрироваться</target>
+      </trans-unit>
+      <trans-unit id="vKy.96V" resname="или">
+        <source>или</source>
+        <target>или</target>
+      </trans-unit>
+      <trans-unit id="EhImKD_" resname="войти">
+        <source>войти</source>
+        <target>войти</target>
+      </trans-unit>
+      <trans-unit id=".GdyDFr" resname="Вы уже оставили заявку на этого котенка.">
+        <source>Вы уже оставили заявку на этого котенка.</source>
+        <target>Вы уже оставили заявку на этого котенка.</target>
+      </trans-unit>
+      <trans-unit id="OfbYXm4" resname="Мои заявки">
+        <source>Мои заявки</source>
+        <target>Мои заявки</target>
+      </trans-unit>
+      <trans-unit id="viNiMAp" resname="Номер заявки">
+        <source>Номер заявки</source>
+        <target>Номер заявки</target>
+      </trans-unit>
+      <trans-unit id="FEZWbmu" resname="Котенок">
+        <source>Котенок</source>
+        <target>Котенок</target>
+      </trans-unit>
+      <trans-unit id="jv271Dv" resname="Дата бронирования">
+        <source>Дата бронирования</source>
+        <target>Дата бронирования</target>
+      </trans-unit>
+      <trans-unit id="IlB3xtR" resname="Статус">
+        <source>Статус</source>
+        <target>Статус</target>
+      </trans-unit>
+      <trans-unit id="a1Oq.ii" resname="Действие">
+        <source>Действие</source>
+        <target>Действие</target>
+      </trans-unit>
+      <trans-unit id="fEf3KSu" resname="Отменить">
+        <source>Отменить</source>
+        <target>Отменить</target>
+      </trans-unit>
+      <trans-unit id="SJqK5xs" resname="Нельзя отменить">
+        <source>Нельзя отменить</source>
+        <target>Нельзя отменить</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV8" resname="У вас пока нет заявок.">
+        <source>У вас пока нет заявок.</source>
+        <target>У вас пока нет заявок.</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV81" resname="Maine Coon">
+        <source>Maine Coon</source>
+        <target>Мейн кун</target>
+      </trans-unit>
+      <trans-unit id="LSHsgV82" resname="Oriental">
+        <source>Oriental</source>
+        <target>Ориентальные</target>
       </trans-unit>
     </body>
   </file>

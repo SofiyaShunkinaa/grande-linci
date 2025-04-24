@@ -94,9 +94,11 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Eng</a></li>
-                                <li><a class="dropdown-item" href="#">Rus</a></li>
-                                <li><a class="dropdown-item" href="#">Lat</a></li>
+                                {% set currentRoute = app.request.attributes.get('_route', 'app_home') %}
+                                {% set currentParams = app.request.attributes.get('_route_params', {}) %}
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'lv'})) }}">Lat</a></li>
                             </ul>
                             </li>
                             </ul>
@@ -142,11 +144,11 @@
                         {{ 'Our cats'|trans }}
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ path('app_our_cats') }}">{{ 'Main Coon'|trans }}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">{{ 'Oriaental'|trans }}</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_our_cats', {'keyWord': 'main-coons'}) }}">{{ 'Main Coon'|trans }}</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ path('app_our_cats', {'keyWord': 'orientals'}) }}">{{ 'Oriaental'|trans }}</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -157,7 +159,7 @@
                        {{ 'About breed'|trans }}
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ path('app_about_main_coon') }}">{{ 'Main Coon'|trans }}</a></li>
+                        <li><a class="dropdown-item" href="{{ path('app_about_main_coon', {'keyWord': 'main-coons'}) }}">{{ 'Main Coon'|trans }}</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -189,9 +191,11 @@
                                 lang
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Eng</a></li>
-                                <li><a class="dropdown-item" href="#">Rus</a></li>
-                                <li><a class="dropdown-item" href="#">Lat</a></li>
+                                {% set currentRoute = app.request.attributes.get('_route', 'app_home') %}
+                                {% set currentParams = app.request.attributes.get('_route_params', {}) %}
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'en'})) }}">Eng</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'ru'})) }}">Rus</a></li>
+                                <li><a class="dropdown-item" href="{{ path(currentRoute, currentParams|merge({'_locale': 'lv'})) }}">Lat</a></li>
                             </ul>
                         </li>
                     </ul>

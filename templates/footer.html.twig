@@ -7,11 +7,13 @@
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-5 col-sm-12 mb-4 mb-md-0">
                     <div class="footer-logo d-flex flex-column align-items-center">
-                        <h3 class="text-uppercase">Grande Linci LV</h3>
-                        <div class="image-container d-none d-lg-block"><img src="{{ asset('img/arrow/simple-arrow.png')}}" alt="arrow"></div>
-                        <p class="d-none d-lg-block">
-                            Maine Coon and Oriental Cattery
-                        </p>
+                        <a href="{{ path('app_home') }}">
+                            <h3 class="text-uppercase">Grande Linci LV</h3>
+                            <div class="image-container d-none d-lg-block"><img src="{{ asset('img/arrow/simple-arrow.png')}}" alt="arrow"></div>
+                            <p class="d-none d-lg-block">
+                                Maine Coon and Oriental Cattery
+                            </p>
+                        </a>
                     </div>
                 </div>
                 <!--Grid column-->
@@ -20,7 +22,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-12 mb-4 mb-md-0">
                 <ul class="list-unstyled col-lg-12 col-md-12 col-sm-6 mb-0">
                     <li>
-                    <a href="#!" class="text-decoration-none text-white">About us</a>
+                    <a class="text-decoration-none text-white" href="{{ path('app_about_us') }}">{{ 'About us'|trans }}</a>
                     </li>
                     <li>
                     <a href="#!" class="text-decoration-none text-white">Kittens</a>
