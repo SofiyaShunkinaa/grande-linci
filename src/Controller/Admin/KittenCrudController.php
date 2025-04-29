@@ -3,9 +3,12 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Kitten;
+use App\Repository\ColorRepository;
+use App\Repository\LitterRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -22,7 +25,11 @@ class KittenCrudController extends AbstractCrudController
     {
         return Kitten::class;
     }
-    public function __construct(private RequestStack $requestStack) {}
+    public function __construct(
+        private RequestStack $requestStack,
+        private LitterRepository $litterRepository,
+        private ColorRepository $colorRepository,
+    ) {}
     public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
         $request = $this->requestStack->getCurrentRequest();
@@ -37,30 +44,79 @@ class KittenCrudController extends AbstractCrudController
         parent::updateEntity($entityManager, $entityInstance);
     }
 
-    
+
     public function configureFields(string $pageName): iterable
     {
+        /** @var Kitten|null $kitten */
         $kitten = $this->getContext()?->getEntity()?->getInstance();
+        $selectedBreed = $kitten?->getBreed();
 
-        $breedId = $kitten?->getBreed()?->getId();
         return [
             TextField::new('name'),
             AssociationField::new('breed'),
+
             AssociationField::new('gender'),
-            AssociationField::new('color'),
+
+            // окрас, фильтруется по породе
+            AssociationField::new('color')
+                ->setFormTypeOptions([
+                    'query_builder' => function (ColorRepository $repo) use ($selectedBreed) {
+                        $qb = $repo->createQueryBuilder('c')
+                            ->orderBy('c.name', 'ASC');
+
+                        if ($selectedBreed) {
+                            $qb->where('c.breed = :breed')
+                                ->setParameter('breed', $selectedBreed);
+                        }
+
+                        return $qb;
+                    },
+                ]),
+
             IntegerField::new('price'),
             AssociationField::new('kittenStatus'),
-            AssociationField::new('litter'),
+
+            // помёт, фильтруется по породе
+            AssociationField::new('litter')
+                ->setFormTypeOptions([
+                    'query_builder' => function (LitterRepository $repo) use ($selectedBreed) {
+                        $qb = $repo->createQueryBuilder('l')
+                            ->orderBy('l.name', 'ASC');
+
+                        if ($selectedBreed) {
+                            $qb->where('l.breed = :breed')
+                                ->setParameter('breed', $selectedBreed);
+                        }
+
+                        return $qb;
+                    },
+                ]),
+
             ImageField::new('imageLink')
                 ->setBasePath('/img/cats')
                 ->setUploadDir('public/img/cats')
                 ->setUploadedFileNamePattern('[randomhash].[extension]')
                 ->onlyOnIndex(),
+
             TextField::new('imageFile')
                 ->setFormType(VichImageType::class)
                 ->setLabel('Image')
                 ->onlyOnForms(),
+
+            // скрытое поле с JSON данными
+            TextareaField::new('kittenData')
+                ->setFormTypeOption('mapped', false)
+                ->setFormTypeOption('attr', [
+                    'id' => 'kitten-json-data',
+                    'style' => 'display:none;',
+                ])
+                ->setFormTypeOption('data', json_encode([
+                    'litters' => $this->litterRepository->findAllWithBreed(),
+                    'colors' => $this->colorRepository->findAllWithBreed(),
+                ]))
+                ->onlyOnForms(),
         ];
     }
-    
+
+
 }

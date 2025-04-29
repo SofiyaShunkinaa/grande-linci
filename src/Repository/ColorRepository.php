@@ -16,6 +16,18 @@ class ColorRepository extends ServiceEntityRepository
         parent::__construct($registry, Color::class);
     }
 
+    public function findAllWithBreed(): array
+    {
+        return array_map(function ($color) {
+            return [
+                'id' => $color->getId(),
+                'name' => $color->getName(),
+                'breed' => $color->getBreed()?->getId(),
+            ];
+        }, $this->findAll());
+    }
+
+
     //    /**
     //     * @return Color[] Returns an array of Color objects
     //     */

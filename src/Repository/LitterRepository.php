@@ -42,6 +42,16 @@ class LitterRepository extends ServiceEntityRepository
             ->getOneOrNullResult();
     }
 
+    public function findAllWithBreed(): array
+    {
+        return array_map(function ($litter) {
+            return [
+                'id' => $litter->getId(),
+                'name' => $litter->getName(),
+                'breed' => $litter->getBreed()?->getId(),
+            ];
+        }, $this->findAll());
+    }
 
 //    /**
 //     * @return Litter[] Returns an array of Litter objects

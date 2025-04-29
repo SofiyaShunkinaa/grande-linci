@@ -3,6 +3,8 @@ namespace App\Controller\Admin;
 
 use App\Entity\Booking;
 use App\Entity\KittenStatus;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
@@ -24,6 +26,12 @@ class BookingCrudController extends AbstractCrudController
         return Booking::class;
     }
 
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            ->disable(Action::NEW); // Запрещает добавление новых записей
+    }
+
     public function configureFields(string $pageName): iterable
     {
         return [
@@ -34,7 +42,8 @@ class BookingCrudController extends AbstractCrudController
             // Выбор пользователя
             AssociationField::new('user', 'Пользователь')
                 ->setCrudController(UserCrudController::class)
-                ->setRequired(true),
+                ->setRequired(true)
+                ->setFormTypeOption('disabled', true),
 
             // Поля, которые будут обновляться динамически
             TextField::new('userDetails', 'Информация о пользователе')
@@ -44,7 +53,8 @@ class BookingCrudController extends AbstractCrudController
             // Выбор котенка
             AssociationField::new('kitten', 'Котенок')
                 ->setCrudController(KittenCrudController::class)
-                ->setRequired(true),
+                ->setRequired(true)
+                ->setFormTypeOption('disabled', true),
 
             TextField::new('kittenDetails', 'Информация о котенке')
                 ->setFormTypeOption('disabled', true)

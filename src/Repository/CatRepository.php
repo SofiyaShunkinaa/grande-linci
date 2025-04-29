@@ -30,6 +30,24 @@ class CatRepository extends ServiceEntityRepository
        ;
    }
 
+    public function findAllWithBreedAndGender(): array
+    {
+        $cats = $this->createQueryBuilder('c')
+            ->leftJoin('c.breed', 'b')->addSelect('b')
+            ->leftJoin('c.gender', 'g')->addSelect('g')
+            ->getQuery()
+            ->getResult();
+
+        return array_map(function (Cat $cat) {
+            return [
+                'id' => $cat->getId(),
+                'name' => $cat->getName(),
+                'breed' => $cat->getBreed()?->getId(),
+                'gender' => $cat->getGender()?->getId(), // Предположим: 1 = самец, 2 = самка
+            ];
+        }, $cats);
+    }
+
 //    public function findOneBySomeField($value): ?Cat
 //    {
 //        return $this->createQueryBuilder('c')
