@@ -5,12 +5,16 @@ use App\Entity\Booking;
 use App\Entity\KittenStatus;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
+use EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Response;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
+
 
 class BookingCrudController extends AbstractCrudController
 {
@@ -29,11 +33,27 @@ class BookingCrudController extends AbstractCrudController
     public function configureActions(Actions $actions): Actions
     {
         return $actions
-            ->disable(Action::NEW); // Запрещает добавление новых записей
+            ->disable(Action::NEW) // Запрещает добавление новых записей
+            ->add(Crud::PAGE_EDIT, Action::INDEX) // Добавляем кнопку "К списку" на страницу редактирования
+            ->update(Crud::PAGE_EDIT, Action::INDEX, function (Action $action) {
+                return $action->setLabel('Назад к записям')
+                    ->setIcon('fa fa-arrow-left');
+        });
     }
 
     public function configureFields(string $pageName): iterable
     {
+        if ($pageName === Crud::PAGE_EDIT) {
+            $request = $this->getContext()->getRequest();
+            $id = $request->get('entityId');
+
+            $booking = $this->entityManager->getRepository(Booking::class)->find($id);
+            if ($booking && !$booking->isViewedByAdmin()) {
+                $booking->setIsViewedByAdmin(true);
+                $this->entityManager->flush();
+            }
+        }
+
         return [
             DateTimeField::new('createdAt', 'Создано')
                 ->setFormat('dd.MM.yyyy HH:mm')

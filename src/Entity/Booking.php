@@ -33,6 +33,21 @@ class Booking
     #[ORM\Column(type: 'boolean')]
     private bool $isViewed = false;
 
+    #[ORM\Column(type: 'boolean')]
+    private bool $isViewedByAdmin = false;
+
+    public function isViewedByAdmin(): bool
+    {
+        return $this->isViewedByAdmin;
+    }
+
+    public function setIsViewedByAdmin(bool $isViewedByAdmin): static
+    {
+        $this->isViewedByAdmin = $isViewedByAdmin;
+        return $this;
+    }
+
+
     public function getId(): ?int
     {
         return $this->id;

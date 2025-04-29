@@ -16,6 +16,15 @@ class GuestRequestRepository extends ServiceEntityRepository
         parent::__construct($registry, GuestRequest::class);
     }
 
+    public function hasUnseen(): bool
+    {
+        return (bool) $this->createQueryBuilder('b')
+            ->select('COUNT(b.id)')
+            ->where('b.isViewedByAdmin = false')
+            ->getQuery()
+            ->getSingleScalarResult();
+    }
+
     //    /**
     //     * @return GuestRequest[] Returns an array of GuestRequest objects
     //     */

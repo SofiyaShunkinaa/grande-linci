@@ -30,7 +30,14 @@ class BookingRepository extends ServiceEntityRepository
                 ->getSingleScalarResult() > 0; // 👈 сравнение!
     }
 
-
+    public function hasUnseen(): bool
+    {
+        return (bool) $this->createQueryBuilder('b')
+            ->select('COUNT(b.id)')
+            ->where('b.isViewedByAdmin = false')
+            ->getQuery()
+            ->getSingleScalarResult();
+    }
 
 //    /**
 //     * @return Booking[] Returns an array of Booking objects
