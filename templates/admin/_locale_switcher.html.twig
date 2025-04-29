@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        {{ app.request.locale|upper }}
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes|merge({'_locale': 'en'})) }}">EN</a></li>
+        <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes|merge({'_locale': 'ru'})) }}">RU</a></li>
+        <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes|merge({'_locale': 'lv'})) }}">LV</a></li>
+    </ul>
+</div>
