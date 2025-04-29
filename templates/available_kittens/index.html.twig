@@ -141,7 +141,7 @@
                             <button class="kitten-status book-kitten-button
             {% if kitten.kittenStatus == 'At home' %}status-home disabled btn{% endif %}
             {% if kitten.kittenStatus == 'Reserved' %}status-reserved disabled btn{% endif %}
-            {% if kitten.kittenStatus == 'Available' %}status-available{% endif %}"
+            {% if kitten.kittenStatus == 'Available' %}status-available btn{% endif %}"
                                     data-bs-toggle="modal"
                                     data-bs-target="#bookingModal{{ kitten.id }}"
                                     data-kitten-id="{{ kitten.id }}">
