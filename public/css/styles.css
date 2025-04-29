@@ -37,6 +37,7 @@ button a{
 button.btn:hover{
     background: var(--green-light);
     border: 2px solid var(--green-light);
+    color: white;
 }
 button.btn:hover a{
     color: white;
@@ -270,8 +271,9 @@ h4{
     color: white;
 }
 .status-available{
-    background: var(--greeт-light-extra);
+    background: var(--green-light);
     color: white;
+    border-color: var(--green-light);
 }
 .status-reserved{
     border: 2px solid var(--grey-light);
