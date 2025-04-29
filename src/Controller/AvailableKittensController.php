@@ -8,13 +8,16 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;
 use App\Service\LitterService;
 use Symfony\Component\HttpFoundation\Request;
+use App\Repository\BreedRepository;
 
 class AvailableKittensController extends AbstractController
 {
-    #[Route('/available-kittens/{id}', name: 'app_available_kittens', methods: ['GET'])]
-    public function index($id, LitterService $litterService, Request $request): Response
+    #[Route('/available-kittens/{keyWord}/{id}', name: 'app_available_kittens', requirements: ['keyWord' => '[^/]+'], defaults: ['id' => 'default'], methods: ['GET'])]
+    public function index(?string $keyWord,$id, LitterService $litterService, Request $request, BreedRepository $breedRepository): Response
     {
-        $litters = $litterService->getAllLitters();
+        if(!$keyWord) $keyWord = 'main-coons';
+        $breed = $breedRepository->findOneBy(['keyWord' => $keyWord]);
+        $litters = $litterService->getAllLitters($breed);
         $buttons = [];
         foreach($litters as $litter){
             $status = $litterService->getLitterStatus($litter);
@@ -30,7 +33,7 @@ class AvailableKittensController extends AbstractController
             $kittens = $litterService->getAllKittens($litter);
         }
         else{
-            [$litter, $mom, $dad] = $litterService->getLitter(); 
+            [$litter, $mom, $dad] = $litterService->getLitterbyBreed($breed);
             $kittens = $litterService->getAllKittens($litter);
         }
        
@@ -56,6 +59,8 @@ class AvailableKittensController extends AbstractController
                         'kittenStatus' => $kitten->getKittenStatus()->getName(),
                     ];
                 }, $kittens),
+                'title' => $breed->getName(),
+                'keyWord' => $keyWord,
             ]);
         }
         else{
@@ -66,6 +71,8 @@ class AvailableKittensController extends AbstractController
                 'mother' => $mom,
                 'father' => $dad,
                 'kittens' => $kittens,
+                'title' => $breed->getName(),
+                'keyWord' => $keyWord,
             ]);
         }
     }

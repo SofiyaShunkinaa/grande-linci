@@ -100,8 +100,8 @@ else{
 //     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/utils.js",
 // });
 
-function selectLitter(litterId){
-    fetch(`/available-kittens/${litterId}`, {
+function selectLitter(keyWord, litterId){
+    fetch(`/available-kittens/${keyWord}/${litterId}`, {
         method: 'GET',
         headers: {
             'X-Requested-With': 'XMLHttpRequest'

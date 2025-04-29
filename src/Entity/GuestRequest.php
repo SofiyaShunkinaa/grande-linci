@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\GuestRequestRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: GuestRequestRepository::class)]
 class GuestRequest
@@ -21,6 +22,10 @@ class GuestRequest
     private ?string $email = null;
 
     #[ORM\Column(length: 50)]
+    #[Assert\Regex(
+        pattern: '/^\+?[0-9\s\-\(\)]+$/',
+        message: 'Invalid phone number format.'
+    )]
     private ?string $phone = null;
 
     #[ORM\Column(type: Types::TEXT)]

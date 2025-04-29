@@ -23,6 +23,8 @@ class CatCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             TextAreaField::new('description'),
+            TextAreaField::new('descriptionRu'),
+            TextAreaField::new('descriptionLv'),
             AssociationField::new('breed'),
             AssociationField::new('gender'),
             ImageField::new('imageLink')

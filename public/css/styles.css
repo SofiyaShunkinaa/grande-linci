@@ -89,6 +89,9 @@ main{
     width: 100%;
     background: white;
 }
+h2.mb-3.font-weight-normal, label, .login-container p{
+    color: white;
+}
 h1{
     font-size: 64px;
     font-family: "Charm", cursive;

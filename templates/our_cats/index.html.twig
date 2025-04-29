@@ -61,7 +61,14 @@
                                         <h3>{{ cat.female.name }}</h3>
                                     </div>
                                     <div class="aside-text d-flex flex-column align-items-start col-sm-12 col-md-9">
-                                        <p>{{ cat.female.description }}</p>
+                                        <p> {% if app.request.locale == 'en' %}
+                                                {{ cat.female.description }}
+                                            {% elseif app.request.locale == 'ru' %}
+                                                {{ cat.female.descriptionRu }}
+                                            {% elseif app.request.locale == 'lv' %}
+                                                {{ cat.female.descriptionLv }}
+                                            {% endif %}
+                                        </p>
                                         {% if loop.index0%2 == 0 %}
                                             <div class="image-container"><img src="{{ asset('img/arrow/dark-arrow.png') }}" alt="arrow"></div>
                                         {% else %}
@@ -79,7 +86,15 @@
                                         <h3>{{ cat.male.name }}</h3>
                                     </div>
                                     <div class="aside-text d-flex flex-column align-items-start col-sm-12 col-md-9">
-                                        <p>{{ cat.male.description }}</p>
+                                        <p>
+                                            {% if app.request.locale == 'en' %}
+                                                {{ cat.male.description }}
+                                            {% elseif app.request.locale == 'ru' %}
+                                                {{ cat.male.descriptionRu }}
+                                            {% elseif app.request.locale == 'lv' %}
+                                                {{ cat.male.descriptionLv }}
+                                            {% endif %}
+                                        </p>
                                         {% if loop.index0%2 == 0 %}
                                             <div class="image-container"><img src="{{ asset('img/arrow/dark-arrow.png') }}" alt="arrow"></div>
                                         {% else %}

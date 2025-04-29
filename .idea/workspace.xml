@@ -5,77 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce7b429e-51cc-42d6-acd7-69d05b50be57" name="Changes" comment="added booking alerts in header">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_02_10_2024__16_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/grande-linci.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20250324132100.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20250324132807.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20250324182558.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20250330095313.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AjaxController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/BookingCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ChatController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserDashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Chat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/BookingType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserProfileType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/BookingRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ChatRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/MessageRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ajax/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/chat/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/message/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user_dashboard/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user_profile/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/EasyAdminBundle.en.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/messages.en.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/messages.lv.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/security.en.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/validators.en.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cats/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AboutUsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AboutUsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CatCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/CatCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/KittenCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/KittenCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AvailableKittensController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AvailableKittensController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ContactsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Kitten.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Kitten.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/GuestRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/GuestRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/LitterRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/LitterRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/LitterService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/LitterService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/available_kittens/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/available_kittens/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forms/contact_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/contact_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/our_cats/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/our_cats/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/EasyAdminBundle.ru.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/EasyAdminBundle.ru.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.lv.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.lv.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/messages.ru.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages.ru.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/security.lv.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/security.lv.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/security.ru.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/security.ru.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/validators.lv.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/validators.lv.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/validators.ru.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/validators.ru.xlf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +220,9 @@
       <workItem from="1745386731492" duration="7159000" />
       <workItem from="1745397078666" duration="4532000" />
       <workItem from="1745448882478" duration="1932000" />
-      <workItem from="1745496931721" duration="6670000" />
+      <workItem from="1745496931721" duration="10906000" />
+      <workItem from="1745564931143" duration="3107000" />
+      <workItem from="1745907926740" duration="2183000" />
     </task>
     <task id="LOCAL-00031" summary="Merged deploy with main">
       <option name="closed" value="true" />

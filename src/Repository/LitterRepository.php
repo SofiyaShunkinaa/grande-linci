@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Litter;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use App\Entity\Breed;
 
 /**
  * @extends ServiceEntityRepository<Litter>
@@ -25,6 +26,30 @@ class LitterRepository extends ServiceEntityRepository
             ->getQuery()
             ->getOneOrNullResult()
         ;
+    }
+
+    public function findOneByIsActiveBreed(Breed $breed): ?Litter
+    {
+        return $this->createQueryBuilder('l')
+            ->andWhere('l.isActive = :isActive')
+            ->andWhere('l.breed = :breed')
+            ->setParameter('isActive', true)
+            ->setParameter('breed', $breed)
+            ->orderBy('l.id', 'DESC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
+    public function findOneByBreed(Breed $breed): ?Litter
+    {
+        return $this->createQueryBuilder('l')
+            ->andWhere('l.breed = :breed')
+            ->setParameter('breed', $breed)
+            ->orderBy('l.id', 'DESC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getOneOrNullResult();
     }
 
 //    /**

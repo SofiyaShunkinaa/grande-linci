@@ -23,6 +23,12 @@ class Cat
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $descriptionRu = null;
+
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $descriptionLv = null;
+
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?Breed $breed = null;
@@ -59,9 +65,33 @@ class Cat
         return $this->description;
     }
 
+    public function setDescriptionRu(?string $descriptionRu): static
+    {
+        $this->descriptionRu = $descriptionRu;
+
+        return $this;
+    }
+
+    public function getDescriptionRu(): ?string
+    {
+        return $this->descriptionRu;
+    }
+
     public function setDescription(?string $description): static
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDescriptionLv(): ?string
+    {
+        return $this->descriptionLv;
+    }
+
+    public function setDescriptionLv(?string $descriptionLv): static
+    {
+        $this->descriptionLv = $descriptionLv;
 
         return $this;
     }

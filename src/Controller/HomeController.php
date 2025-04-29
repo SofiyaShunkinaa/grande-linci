@@ -43,11 +43,13 @@ class HomeController extends AbstractController
         [$litter, $mom, $dad] = $litterService->getLitter();   
         $kittens = $litterService->get5Kittens($litter);
 
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
+            $guestRequest->setRequestDate(new \DateTime());  // Устанавливаем текущую дату запроса
             $this->entityManager->persist($guestRequest);
             $this->entityManager->flush();
 
-            $this->addFlash('success', 'Your request has been submitted successfully.');
+            $this->addFlash('success', 'Ваша форма успешно отправлена!');
+            return $this->redirectToRoute('app_home');
         }
 
         return $this->render('home/index.html.twig', [
