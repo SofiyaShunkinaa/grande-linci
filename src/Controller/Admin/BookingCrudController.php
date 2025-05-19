@@ -94,20 +94,34 @@ class BookingCrudController extends AbstractCrudController
 
     public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        if($entityInstance instanceof Booking){
+        if ($entityInstance instanceof Booking) {
             $status = $entityInstance->getStatus();
 
             if ($status === 'Подтверждено') {
                 $kitten = $entityInstance->getKitten();
 
                 if ($kitten) {
+                    // 1. Обновить статус котенка на "Reserved"
                     $reservedStatus = $entityManager->getRepository(KittenStatus::class)->findOneBy(['name' => 'Reserved']);
 
                     if ($reservedStatus) {
                         $kitten->setKittenStatus($reservedStatus);
                         $entityManager->persist($kitten);
-                        $entityManager->flush(); // Применяем изменения к котенку
                     }
+
+                    // 2. Отклонить другие заявки на этого же котенка
+                    $otherBookings = $entityManager->getRepository(Booking::class)->findBy([
+                        'kitten' => $kitten,
+                    ]);
+
+                    foreach ($otherBookings as $otherBooking) {
+                        if ($otherBooking->getId() !== $entityInstance->getId() && $otherBooking->getStatus() !== 'Отклонено') {
+                            $otherBooking->setStatus('Отклонено');
+                            $entityManager->persist($otherBooking);
+                        }
+                    }
+
+                    $entityManager->flush(); // Сохраняем все изменения
                 }
             }
         }
