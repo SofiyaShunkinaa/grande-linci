@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\UniqueConstraint(name: 'UNIQ_IDENTIFIER_USERNAME', fields: ['username'])]
@@ -34,12 +35,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $password = null;
 
     #[ORM\Column(length: 255, nullable: false)]
+    #[Assert\NotBlank(message: 'guest_request.phone.not_blank')]
+    #[Assert\Regex(
+        pattern: '/^[\p{L}\s\-]+$/u',
+        message: 'guest_request.name.invalid_format'
+    )]
     private ?string $firstName = null;
 
     #[ORM\Column(length: 180, unique: true, nullable: false)]
     private ?string $email = null;
 
     #[ORM\Column(length: 20, nullable: true)]
+    #[Assert\NotBlank(message: 'guest_request.phone.not_blank')]
+    #[Assert\Regex(
+        pattern: '/^\+?[0-9\s\-\(\)]+$/',
+        message: 'guest_request.phone.invalid_format'
+    )]
     private ?string $phone = null;
 
     private ?string $plainPassword = null;
