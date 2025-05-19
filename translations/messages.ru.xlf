@@ -609,6 +609,25 @@
         <source>Oriental</source>
         <target>Ориентальные</target>
       </trans-unit>
+      <trans-unit id="guest_request.name.not_blank">
+                    <source>guest_request.name.not_blank</source>
+                    <target>Пожалуйста, введите имя.</target>
+                  </trans-unit>
+
+                  <trans-unit id="guest_request.name.invalid_format">
+                    <source>guest_request.name.invalid_format</source>
+                    <target>Имя должно содержать только буквы, пробелы и дефисы.</target>
+                  </trans-unit>
+
+                  <trans-unit id="guest_request.phone.not_blank">
+                    <source>guest_request.phone.not_blank</source>
+                    <target>Пожалуйста, введите номер телефона.</target>
+                  </trans-unit>
+
+                  <trans-unit id="guest_request.phone.invalid_format">
+                    <source>guest_request.phone.invalid_format</source>
+                    <target>Номер телефона может содержать только цифры, пробелы, скобки и символ "+".</target>
+                  </trans-unit>
     </body>
   </file>
 </xliff>
