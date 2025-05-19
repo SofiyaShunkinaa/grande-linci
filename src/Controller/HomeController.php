@@ -61,6 +61,9 @@ class HomeController extends AbstractController
 
             $this->addFlash('success', 'Ваша форма успешно отправлена!');
             return $this->redirectToRoute('app_home');
+        }elseif ($form->isSubmitted() && !$form->isValid()) {
+            // Форма отправлена, но невалидна
+            $this->addFlash('danger', 'Произошла ошибка при отправке формы.');
         }
 
         // Создаем форму бронирования

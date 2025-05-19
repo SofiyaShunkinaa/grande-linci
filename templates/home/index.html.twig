@@ -27,6 +27,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     {% endfor %}
+    {% for message in app.flashes('danger') %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
     <div class="container-fluid d-flex flex-column align-items-center justify-content-between preview-content position-fixed z-1">
         <div class="logo-group container d-flex flex-column align-items-center justify-content-center">
             <h1>GRANDE LINCI* LV</h1>
