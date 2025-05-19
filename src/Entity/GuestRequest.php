@@ -16,15 +16,21 @@ class GuestRequest
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: 'guest_request.name.not_blank')]
+    #[Assert\Regex(
+        pattern: '/^[\p{L}\s\-]+$/u',
+        message: 'guest_request.name.invalid_format'
+    )]
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
     private ?string $email = null;
 
     #[ORM\Column(length: 50)]
+    #[Assert\NotBlank(message: 'guest_request.phone.not_blank')]
     #[Assert\Regex(
         pattern: '/^\+?[0-9\s\-\(\)]+$/',
-        message: 'Invalid phone number format.'
+        message: 'guest_request.phone.invalid_format'
     )]
     private ?string $phone = null;
 
